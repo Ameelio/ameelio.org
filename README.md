@@ -7,6 +7,18 @@
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/license.svg" alt="License"></a>
 </p>
 
+# Getting Started
+
+To get this running locally, clone the repo and cd into the project directory within your terminal. Then run the following commands individually.
+
+```
+composer install
+npm install
+cp .env.example .env
+php artisan key:generate
+php artican serve
+```
+
 ## About Laravel
 
 Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
