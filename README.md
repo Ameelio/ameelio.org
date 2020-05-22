@@ -1,6 +1,6 @@
 # Ameelio.org
 
-![Ameelio Letters Logo v2](./public/logo2.svg)
+![Ameelio Letters Logo v2](./public/logo.png)
 
 The official website for Ameelio: a non-profit technology company committed to transforming prison communications.
 
