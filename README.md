@@ -28,29 +28,21 @@ npm install
 To start the local development server run
 
 ```
-npm run serve
+npm serve
 ```
 
-Visit http://localhost:3000/ in your browser and you should be greeted with the Ameelio landing page. Hooray, you've successfully installed and run the Ameelio website!
+Runs the app in the development mode.<br />
+Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+
+The page will reload if you make edits.<br />
+You will also see any lint errors in the console.
 
 ## Running the tests
 
 ### Run unit tests
 
 ```
-npm run test:unit
-```
-
-### Run end-to-end tests
-
-```
-npm run test:e2e
-```
-
-### Lint and fix files
-
-```
-npm run lint
+npm test
 ```
 
 ## Deployment
@@ -61,9 +53,15 @@ To generate a production build run
 npm run build
 ```
 
+Builds the app for production to the `build` folder.<br />
+It correctly bundles React in production mode and optimizes the build for the best performance.
+
+The build is minified and the filenames include the hashes.
+
 ## Built With
 
-* [Vue.js](https://vuejs.org/) - The web framework used
+* [React](https://reactjs.org/) - The web framework used
+* [Create React App](https://create-react-app.dev/) - Project bootstrapping
 
 ## Contributing
 
