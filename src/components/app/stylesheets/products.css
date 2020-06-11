@@ -1,0 +1,15 @@
+.products-container {
+  background-color: #ebf8ff;
+  margin-top: -10px;
+  padding-bottom: 100px;
+}
+
+.products-title {
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 800;
+  font-size: 48px;
+  line-height: 66px;
+  color: #222222;
+  display: flex;
+  justify-content: center;
+}

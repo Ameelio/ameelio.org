@@ -1,11 +1,18 @@
 import React from "react";
 import NavBar from "./navbar";
+import MainCard from "./maincard";
+import MainCardBackground from "./maincardbackground";
+import Products from "./products";
 
 const Landing: React.FC = () => {
   return (
     <div>
       <NavBar />
-      <p>This is the landing page.</p>
+      <br />
+      <br />
+      <MainCard />
+      <MainCardBackground />
+      <Products />
     </div>
   );
 };
