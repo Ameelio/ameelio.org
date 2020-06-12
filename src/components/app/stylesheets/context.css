@@ -1,2 +1,121 @@
-@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital@0;1&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital@0;1&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&display=swap");
+
+.context-wrapper {
+  background-color: #1e3048;
+  margin-top: 70px;
+  padding-bottom: 80px;
+}
+
+.context-container {
+  display: flex;
+  flex-direction: column;
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-top: 60px;
+}
+
+.context-title {
+  font-family: "Libre Baskerville", serif;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 50px;
+  color: #ffffff;
+}
+
+.context-body-1 {
+  display: flex;
+  justify-content: flex-start;
+  margin-top: 30px;
+  color: #ffffff;
+}
+
+.rectangle-large {
+  background-color: #e53e3e;
+  width: 125%;
+  height: 7px;
+  margin-bottom: 7px;
+}
+
+.context-category-title {
+  font-family: "Libre Baskerville", serif;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 50px;
+}
+
+.context-category-body-1 {
+  font-family: "Libre Baskerville", serif;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 60px;
+}
+
+.context-category-body-2 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 36px;
+}
+
+.context-category-footer {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+  font-size: 16px;
+  line-height: 30px;
+}
+
+.map-image {
+  width: 40%;
+  height: 40%;
+  margin-left: auto;
+}
+
+.rectangle-small {
+  background-color: #e53e3e;
+  width: 100%;
+  height: 7px;
+  margin-bottom: 7px;
+}
+
+.context-body-2 {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 60px;
+  margin-bottom: 60px;
+  color: #ffffff;
+}
+
+.context-body-2-col {
+  width: 25%;
+}
+
+.context-footer {
+  display: flex;
+  justify-content: space-between;
+  color: #ffffff;
+}
+
+.context-footer-text {
+  display: flex;
+  align-items: center;
+  font-family: "Libre Baskerville", serif;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 37px;
+  width: 70%;
+  height: 200px;
+}
+
+.context-footer-left-quote {
+  width: 7%;
+  height: 7%;
+  margin-bottom: auto;
+}
+
+.context-footer-right-quote {
+  width: 7%;
+  height: 7%;
+  margin-top: auto;
+}
