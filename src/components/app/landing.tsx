@@ -3,6 +3,8 @@ import NavBar from "./navbar";
 import MainCard from "./maincard";
 import MainCardBackground from "./maincardbackground";
 import Products from "./products";
+import Testimonials from "./testimonials";
+import Context from "./context";
 
 const Landing: React.FC = () => {
   return (
@@ -13,6 +15,8 @@ const Landing: React.FC = () => {
       <MainCard />
       <MainCardBackground />
       <Products />
+      <Testimonials />
+      <Context />
     </div>
   );
 };

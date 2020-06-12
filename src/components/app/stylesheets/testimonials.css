@@ -1,0 +1,46 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,400;0,600;0,700;1,600&display=swap");
+
+.testimonials-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-top: 50px;
+}
+
+.quote-image {
+  width: 10%;
+  height: 10%;
+}
+
+.quote-footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 35px;
+}
+
+.quote-text {
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 600;
+  font-style: italic;
+  font-size: 28px;
+  line-height: 40px;
+  color: #000000;
+  margin-top: 50px;
+}
+
+.quote-author-text {
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 28px;
+  color: #000000;
+  padding-left: 40px;
+}
+
+.quote-author-image {
+  width: 18%;
+  height: 18%;
+  padding-left: 10px;
+}
