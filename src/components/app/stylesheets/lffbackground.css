@@ -1,0 +1,11 @@
+.lff-background-container {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: -570px;
+}
+
+.circle {
+  width: 35%;
+  height: 35%;
+  z-index: 3;
+}

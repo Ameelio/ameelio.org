@@ -1,0 +1,69 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700;800&display=swap");
+
+.lff-wrapper {
+  width: 100%;
+  background-color: #f3f9ff;
+}
+
+.lff-container {
+  display: flex;
+  padding-left: 10%;
+  padding-top: 80px;
+}
+
+.lff-title {
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 800;
+  font-size: 64px;
+  line-height: 70px;
+  color: #002342;
+}
+
+.lff-subtitle {
+  margin-top: 16px;
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 31px;
+  color: #5884ab;
+}
+
+.lff-list {
+  margin-top: 16px;
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 50px;
+  color: #002342;
+}
+
+.lff-button {
+  padding: 8px 47px;
+  margin-left: 0px;
+  margin-top: 80px;
+  font-size: 20px;
+}
+
+.lff-left-container {
+  width: 50%;
+}
+
+.lff-right-container {
+  display: flex;
+  align-items: center;
+  width: 50%;
+}
+
+.left-screenshot {
+  width: 297px;
+  height: 516px;
+  margin-right: -70px;
+  margin-top: 58px;
+  z-index: 4;
+}
+
+.right-screenshot {
+  width: 362px;
+  height: 589px;
+  z-index: 4;
+}
