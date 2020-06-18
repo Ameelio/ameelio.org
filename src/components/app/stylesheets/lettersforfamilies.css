@@ -1,5 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700;800&display=swap");
-
 .lff-wrapper {
   width: 100%;
   background-color: #f3f9ff;
@@ -7,12 +5,12 @@
 
 .lff-container {
   display: flex;
+  flex-direction: column;
   padding-left: 10%;
   padding-top: 80px;
 }
 
 .lff-title {
-  font-family: "Nunito Sans", sans-serif;
   font-weight: 800;
   font-size: 64px;
   line-height: 70px;
@@ -21,7 +19,6 @@
 
 .lff-subtitle {
   margin-top: 16px;
-  font-family: "Nunito Sans", sans-serif;
   font-weight: 400;
   font-size: 24px;
   line-height: 31px;
@@ -30,7 +27,6 @@
 
 .lff-list {
   margin-top: 16px;
-  font-family: "Nunito Sans", sans-serif;
   font-weight: 600;
   font-size: 24px;
   line-height: 50px;

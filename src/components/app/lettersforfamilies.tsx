@@ -7,7 +7,7 @@ const LettersForFamilies: React.FC = () => {
   const screenshot_right: any = require("../../assets/screenshot_right.png");
   return (
     <div className="lff-wrapper">
-      <div className="lff-container">
+      <div className="lff-container flex-md-row">
         <div className="lff-left-container">
           <div className="lff-title">Letters for families</div>
           <div className="lff-subtitle">

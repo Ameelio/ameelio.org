@@ -4,11 +4,12 @@
   align-items: center;
   text-align: center;
   margin-top: 50px;
+  background-color: white;
 }
 
 .quote-image {
-  width: 10%;
-  height: 10%;
+  width: 150px;
+  /* height: 150px; */
 }
 
 .quote-footer {
@@ -19,7 +20,6 @@
 }
 
 .quote-text {
-  font-weight: 600;
   font-style: italic;
   font-size: 28px;
   line-height: 40px;

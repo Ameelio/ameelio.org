@@ -2,7 +2,7 @@ import React from "react";
 import "./stylesheets/context.css";
 
 const Context: React.FC = () => {
-  const country_map: any = require("../../assets/united_states.png");
+  // const country_map: any = require("../../assets/united_states.png");
   const quote_left: any = require("../../assets/quote-left.png");
   const quote_right: any = require("../../assets/quote-right.png");
   return (
@@ -19,9 +19,8 @@ const Context: React.FC = () => {
             </div>
             <div className="context-category-footer">FFW</div>
           </div>
-          <img className="map-image" src={country_map} alt="" />
         </div>
-        <div className="context-body-2">
+        <div className="context-body-2 flex-md-row">
           <div className="context-body-2-col">
             <div className="rectangle-small"></div>
             <div className="context-category-title">Distance</div>
