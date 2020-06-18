@@ -1,7 +1,7 @@
 import React from "react";
 import "./App.css";
 
-import Landing from "./landing";
+import Landing from "./pages/landing";
 import About from "./about";
 import FAQ from "./faq";
 import GetInvolved from "./getinvolved";

@@ -1,6 +1,15 @@
 .maincard-background {
   position: relative;
-  z-index: 1;
+  /* z-index: 1; */
   width: 100%;
-  margin-top: -200px;
+  margin-top: -50px;
+}
+
+@media (min-width: 992px) {
+  .maincard-background {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    margin-top: -150px;
+  }
 }

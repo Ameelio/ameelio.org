@@ -4,11 +4,11 @@ import "./stylesheets/maincard.css";
 const MainCard: React.FC = () => {
   const illustration: any = require("../../assets/maincard_illustration.png");
   return (
-    <div className="container">
-      <div className="left-container">
-        <div className="title">
+    <div className="ml-5 px-5 d-flex flex-lg-row flex-column align-items-center w-100 justify-content-center">
+      <div className="d-flex flex-column">
+        <h1 className="font-weight-bold">
           Send free letters &amp; <br></br> photos to your loved one.
-        </div>
+        </h1>
         <div className="subtitle">
           You shouldn't have to decide between paying for basic <br></br> needs
           and staying connected to your loved ones.
