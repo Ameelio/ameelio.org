@@ -1,19 +1,7 @@
-@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;700&display=swap");
-
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-}
-
-li,
-a,
-button {
-  font-family: "Nunito Sans", sans-serif;
-  font-size: 16px;
-  font-weight: 400;
-  color: #2d3748;
-  text-decoration: none;
 }
 
 header {
@@ -58,20 +46,4 @@ header {
 
 .auth {
   margin-left: auto;
-}
-
-button {
-  padding: 9px 25px;
-  margin-left: 23px;
-  font-weight: 700;
-  background-color: #5a67d8;
-  color: #ffffff;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-  transition: all 0.3s ease 0s;
-}
-
-button:hover {
-  background-color: #5a67d8cd;
 }
