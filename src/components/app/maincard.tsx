@@ -9,15 +9,17 @@ const MainCard: React.FC = () => {
         <h1 className="font-weight-bold">
           Send free letters &amp; <br></br> photos to your loved one.
         </h1>
-        <div className="subtitle">
+        <div className="subtitle mt-1">
           You shouldn't have to decide between paying for basic <br></br> needs
           and staying connected to your loved ones.
         </div>
         <a className="signup" href="https://letters.ameelio.org/register">
-          <button className="letters-button">Send Free Letters Today</button>
+          <button className="mt-5 letters-button">
+            Send Free Letters Today
+          </button>
         </a>
       </div>
-      <div className="right-container">
+      <div>
         <img className="illustration" src={illustration} alt="" />
       </div>
     </div>

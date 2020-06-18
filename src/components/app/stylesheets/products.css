@@ -15,9 +15,8 @@
 
 .products-container {
   display: flex;
-  justify-content: space-between;
-  padding-left: 10%;
-  padding-right: 10%;
+  flex-direction: column;
+  justify-content: space-evenly;
   padding-top: 50px;
 }
 
@@ -27,11 +26,13 @@
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1), 0px 2px 4px rgba(0, 0, 0, 0.06);
   border-radius: 15px;
   height: 450px;
-  width: 30%;
+  width: 350px;
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
+  margin-bottom: 16px;
+  margin-left: 16px;
 }
 
 .products-card-title {

@@ -5,7 +5,7 @@ const Products: React.FC = () => {
   return (
     <div className="products-wrapper">
       <div className="products-title">Our Products</div>
-      <div className="products-container">
+      <div className="products-container flex-lg-row">
         <div className="products-card-wrapper">
           <div className="products-card-title">Letters for Families</div>
           <div className="products-card-body">
