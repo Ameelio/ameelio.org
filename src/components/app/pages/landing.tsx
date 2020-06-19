@@ -12,11 +12,11 @@ const Landing: React.FC = () => {
     <div>
       <MainCard />
       <MainCardBackground />
-      <Products />
+      {/* <Products /> */}
       <Testimonials />
-      <Context />
       <LettersForFamilies />
-      <LFFBackground />
+      <Context />
+      {/* <LFFBackground /> */}
     </div>
   );
 };

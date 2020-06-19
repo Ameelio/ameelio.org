@@ -1,42 +1,27 @@
-.testimonials-wrapper {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  margin-top: 50px;
-  background-color: white;
-}
-
 .quote-image {
   width: 150px;
-  /* height: 150px; */
-}
-
-.quote-footer {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 35px;
 }
 
 .quote-text {
-  font-style: italic;
-  font-size: 28px;
+  font-size: 18px;
   line-height: 40px;
   color: #000000;
-  margin-top: 50px;
+  max-width: 550px;
 }
 
 .quote-author-text {
-  font-weight: 600;
-  font-style: normal;
-  font-size: 28px;
-  color: #000000;
-  padding-left: 40px;
+  font-size: 22px;
 }
 
 .quote-author-image {
-  width: 18%;
-  height: 18%;
-  padding-left: 10px;
+  max-width: 100px;
+}
+
+.quote-symbol {
+  font-size: 150px;
+  font-family: "Libre Baskerville";
+}
+
+.testimonial-title {
+  font-size: 32px;
 }

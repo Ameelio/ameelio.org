@@ -3,6 +3,7 @@
 :root {
   --main-primary-color: #3182ce;
   --main-cta-color: #319795;
+  --main-lightblue-color: #ebf8ff;
 }
 
 body {
@@ -46,4 +47,12 @@ a {
 
 .bg-blue {
   background-color: var(--main-primary-color);
+}
+
+.blue {
+  color: var(--main-primary-color);
+}
+
+.bg-lightblue {
+  background-color: var(--main-lightblue-color);
 }

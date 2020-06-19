@@ -35,28 +35,11 @@
   transform: translateY(-50%);
 }
 
-@keyframes typewriter {
-  from {
-    width: 0;
-  }
-
-  to {
-    width: 16em;
-  }
-
-  back {
-    width: 0em;
-  }
+.media-container {
+  z-index: 999;
 }
-
-@keyframes blinkTextCursor {
-  from {
-    border-right-color: rgba(255, 255, 255, 0.75);
-  }
-
-  to {
-    border-right-color: transparent;
-  }
+.media-article {
+  max-height: 15px;
 }
 
 @media (min-width: 768px) {
@@ -64,5 +47,9 @@
     display: flex;
     justify-content: flex-start;
     padding: 50px 300px;
+  }
+
+  .media-article {
+    max-height: 20px;
   }
 }
