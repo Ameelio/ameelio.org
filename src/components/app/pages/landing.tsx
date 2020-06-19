@@ -6,6 +6,7 @@ import Testimonials from "../testimonials";
 import Context from "../context";
 import LettersForFamilies from "../lettersforfamilies";
 import LFFBackground from "../lffbackground";
+import LettersForOrgs from "../lettersfororgs";
 
 const Landing: React.FC = () => {
   return (
@@ -16,7 +17,7 @@ const Landing: React.FC = () => {
       <Testimonials />
       <Context />
       <LettersForFamilies />
-      <LFFBackground />
+      <LettersForOrgs />
     </div>
   );
 };

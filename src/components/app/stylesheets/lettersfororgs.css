@@ -1,0 +1,46 @@
+.lfo-wrapper {
+  width: 100%;
+  background-color: #1e3048;
+}
+
+.lfo-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-top: 80px;
+}
+
+.lfo-title {
+  font-weight: 800;
+  font-size: 64px;
+  line-height: 70px;
+  color: #ffffff;
+  text-align: center;
+}
+
+.lfo-subtitle {
+  margin-top: 24px;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 39px;
+  color: #9fb0c9;
+  text-align: center;
+  width: 65%;
+}
+
+.lfo-button {
+  margin-top: 40px;
+  padding: 12px 40px;
+  font-size: 18px;
+  line-height: 25px;
+}
+
+.lfo-preview {
+  margin-top: 40px;
+  width: 70%;
+  height: 70%;
+  margin-right: 5%;
+  margin-bottom: 100px;
+}

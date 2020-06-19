@@ -2,7 +2,6 @@ import React from "react";
 import "./stylesheets/lettersforfamilies.css";
 
 const LettersForFamilies: React.FC = () => {
-  const circle: any = require("../../assets/circle_background.png");
   const screenshot_left: any = require("../../assets/screenshot_left.png");
   const screenshot_right: any = require("../../assets/screenshot_right.png");
   return (

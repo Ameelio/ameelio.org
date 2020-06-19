@@ -1,5 +1,4 @@
 import React from "react";
-import NavBar from "./navbar";
 import MainCard from "./maincard";
 import MainCardBackground from "./maincardbackground";
 import Products from "./products";
