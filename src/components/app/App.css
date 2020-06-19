@@ -57,22 +57,44 @@ a {
   background-color: var(--main-lightblue-color);
 }
 
-p1 {
+.p1 {
   font-size: 40px;
 }
 
-p2 {
+.p2 {
   font-size: 32px;
 }
 
-p3 {
+.p3 {
   font-size: 24px;
 }
 
-p4 {
+.p4 {
   font-size: 18px;
 }
 
-p5 {
+.p5 {
   font-size: 16px;
+}
+
+@media (min-width: 768px) {
+  .p1 {
+    font-size: 60px;
+  }
+
+  .p2 {
+    font-size: 48px;
+  }
+
+  .p3 {
+    font-size: 32px;
+  }
+
+  .p4 {
+    font-size: 24px;
+  }
+
+  .p5 {
+    font-size: 16px;
+  }
 }
