@@ -20,6 +20,7 @@
 .illustration {
   position: relative;
   z-index: 2;
+  height: 300px;
 }
 
 .anim-typewriter {
@@ -51,5 +52,11 @@
 
   .media-article {
     max-height: 20px;
+  }
+
+  .illustration {
+    position: relative;
+    z-index: 2;
+    height: 100%;
   }
 }

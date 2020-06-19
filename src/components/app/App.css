@@ -56,3 +56,23 @@ a {
 .bg-lightblue {
   background-color: var(--main-lightblue-color);
 }
+
+p1 {
+  font-size: 40px;
+}
+
+p2 {
+  font-size: 32px;
+}
+
+p3 {
+  font-size: 24px;
+}
+
+p4 {
+  font-size: 18px;
+}
+
+p5 {
+  font-size: 16px;
+}

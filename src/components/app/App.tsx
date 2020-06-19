@@ -1,8 +1,8 @@
 import React from "react";
 import "./App.css";
 
-import Landing from "./pages/landing";
-import About from "./pages/about";
+import Landing from "./pages/Landing";
+import Mission from "./pages/Mission";
 import GetInvolved from "./getinvolved";
 import NavBar from "./navbar";
 import Team from "./pages/Team";
@@ -24,7 +24,7 @@ const App: React.FC = () => {
       <Switch>
         <Route path="/getinvolved" component={GetInvolved} />
         <Route path="/team" component={Team} />
-        <Route exact path="/about" component={About} />
+        <Route exact path="/mission" component={Mission} />
         <Route path="/" component={Landing} />
       </Switch>
       <Footer />

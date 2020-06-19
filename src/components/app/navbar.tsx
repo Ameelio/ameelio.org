@@ -1,8 +1,7 @@
 import React from "react";
 import "./stylesheets/navbar.css";
 
-import { Link } from "react-router-dom";
-import { Navbar, Nav, NavItem, NavDropdown } from "react-bootstrap";
+import { Navbar, Nav } from "react-bootstrap";
 
 const NavBar: React.FC = () => {
   const nav_logo: any = require("../../assets/logo.png");
@@ -20,7 +19,7 @@ const NavBar: React.FC = () => {
       <Navbar.Toggle aria-controls="responsive-navbar-nav" />
       <Navbar.Collapse id="responsive-navbar-nav">
         <Nav className="mr-auto">
-          <Nav.Link href="/about">Our Mission</Nav.Link>
+          <Nav.Link href="/mission">Our Mission</Nav.Link>
           <Nav.Link href="/howitworks">How it works</Nav.Link>
           <Nav.Link href="/team">Team</Nav.Link>
           {/* <Nav.Link href="/orgs">For Organizations</Nav.Link> */}

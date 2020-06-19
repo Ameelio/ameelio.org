@@ -21,14 +21,14 @@ interface TestimonialProps {
 
 const TestimonialCard = (props: TestimonialProps) => {
   return (
-    <div className="d-flex flex-column align-items-center py-5">
+    <div className="d-flex flex-column align-items-center py-5 testimonial-card px-3">
       <div className="d-flex flex-row text-left">
         <span className="quote-symbol blue font-weight-bold">“</span>
-        <span className="quote-text font-weight-light ml-5 text-lft">
+        <span className="quote-text font-weight-light ml-1 ml-md-5 text-lft">
           {props.testimonial.quote}
         </span>
       </div>
-      <div className="d-flex flex-row text-left align-items-center justify-content-start">
+      <div className="d-flex flex-row text-left align-items-md-center justify-content-start mt-3">
         <span className="quote-author-text ">- {props.testimonial.name}</span>
         <Image
           className="quote-author-image ml-3"

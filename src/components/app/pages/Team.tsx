@@ -1,5 +1,5 @@
 import React from "react";
-import MemberCard from "../member/MemberCard";
+import MemberCard from "../cards/MemberCard";
 
 class Member {
   name: string;

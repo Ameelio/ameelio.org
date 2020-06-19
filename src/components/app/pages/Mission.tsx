@@ -1,7 +1,7 @@
 import React from "react";
 import { ResponsiveEmbed } from "react-bootstrap";
 
-const About: React.FC = () => {
+const Mission: React.FC = () => {
   return (
     <div className="d-flex flex-column justify-content-center align-items-center">
       <h1 className="text-center font-weight-bold bg-blue white rounded px-3 py-1">
@@ -20,4 +20,4 @@ const About: React.FC = () => {
   );
 };
 
-export default About;
+export default Mission;

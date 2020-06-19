@@ -1,11 +1,6 @@
-.quote-image {
-  width: 150px;
-}
-
 .quote-text {
   font-size: 18px;
   line-height: 40px;
-  color: #000000;
   max-width: 550px;
 }
 

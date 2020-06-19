@@ -1,9 +1,9 @@
 import React from "react";
-import "./stylesheets/maincard.css";
+import "./Hero.css";
 import Typical from "react-typical";
 import Image from "react-bootstrap/Image";
 
-const MainCard: React.FC = () => {
+const Hero: React.FC = () => {
   const illustration: any = require("../../assets/maincard_illustration.png");
   const fc: any = require("../../assets/media/fc.png");
   const wapo: string = require("../../assets/media/wapo.png");
@@ -11,7 +11,7 @@ const MainCard: React.FC = () => {
   const bi: string = require("../../assets/media/bi.png");
 
   return (
-    <div className="ml-1 ml-md-5 px-5 mt-3 d-flex flex-lg-row flex-column  w-100 justify-content-center">
+    <div className="ml-1 ml-md-5 px-5 py-3 mt-3 d-flex flex-lg-row flex-column  w-100 justify-content-center">
       <div className="d-flex flex-column">
         <h1 className="font-weight-bold">
           Send free
@@ -63,10 +63,14 @@ const MainCard: React.FC = () => {
         </div>
       </div>
       <div>
-        <img className="illustration" src={illustration} alt="" />
+        <img
+          className="illustration ml-md-5 mt-4 mt-md-1"
+          src={illustration}
+          alt=""
+        />
       </div>
     </div>
   );
 };
 
-export default MainCard;
+export default Hero;
