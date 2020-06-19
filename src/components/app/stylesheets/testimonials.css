@@ -1,16 +1,15 @@
-@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,400;0,600;0,700;1,600&display=swap");
-
 .testimonials-wrapper {
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
   margin-top: 50px;
+  background-color: white;
 }
 
 .quote-image {
-  width: 10%;
-  height: 10%;
+  width: 150px;
+  /* height: 150px; */
 }
 
 .quote-footer {
@@ -21,8 +20,6 @@
 }
 
 .quote-text {
-  font-family: "Nunito Sans", sans-serif;
-  font-weight: 600;
   font-style: italic;
   font-size: 28px;
   line-height: 40px;
@@ -31,7 +28,6 @@
 }
 
 .quote-author-text {
-  font-family: "Nunito Sans", sans-serif;
   font-weight: 600;
   font-style: normal;
   font-size: 28px;

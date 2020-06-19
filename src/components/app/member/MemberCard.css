@@ -1,0 +1,9 @@
+.profile-picture {
+  height: 250px;
+  width: 250px;
+  object-fit: cover;
+}
+
+.team-container {
+  max-width: 800px;
+}

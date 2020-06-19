@@ -1,0 +1,29 @@
+.footer-wrapper {
+  background-color: #00284c;
+  padding-left: 10%;
+}
+
+.social-media-title {
+  color: #cbd5e0;
+  padding-bottom: 0.5rem;
+  border-bottom: #0073eb 1px solid;
+}
+
+.social-media-link {
+  text-decoration: none;
+  color: white;
+}
+
+.social-media-link:hover {
+  text-decoration: none;
+  color: white;
+}
+
+.copyright-title {
+  color: white;
+}
+
+.copyright {
+  color: white;
+  font-size: 12px;
+}

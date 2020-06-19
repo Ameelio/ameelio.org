@@ -16,7 +16,6 @@
 }
 
 .context-title {
-  font-family: "Libre Baskerville", serif;
   font-weight: 700;
   font-size: 40px;
   line-height: 50px;
@@ -38,28 +37,24 @@
 }
 
 .context-category-title {
-  font-family: "Libre Baskerville", serif;
   font-weight: 400;
   font-size: 30px;
   line-height: 50px;
 }
 
 .context-category-body-1 {
-  font-family: "Libre Baskerville", serif;
   font-weight: 700;
   font-size: 48px;
   line-height: 60px;
 }
 
 .context-category-body-2 {
-  font-family: "Poppins", sans-serif;
   font-weight: 400;
   font-size: 24px;
   line-height: 36px;
 }
 
 .context-category-footer {
-  font-family: "Poppins", sans-serif;
   font-weight: 400;
   font-style: italic;
   font-size: 16px;
@@ -81,6 +76,7 @@
 
 .context-body-2 {
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
   margin-top: 60px;
   margin-bottom: 60px;
@@ -88,7 +84,7 @@
 }
 
 .context-body-2-col {
-  width: 25%;
+  max-width: 280px;
 }
 
 .context-footer {
@@ -100,12 +96,11 @@
 .context-footer-text {
   display: flex;
   align-items: center;
-  font-family: "Libre Baskerville", serif;
   font-weight: 400;
   font-size: 30px;
   line-height: 37px;
   width: 70%;
-  height: 200px;
+  /* height: 200px; */
 }
 
 .context-footer-left-quote {

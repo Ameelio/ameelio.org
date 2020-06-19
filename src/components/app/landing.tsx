@@ -11,9 +11,6 @@ import LFFBackground from "./lffbackground";
 const Landing: React.FC = () => {
   return (
     <div>
-      <NavBar />
-      <br />
-      <br />
       <MainCard />
       <MainCardBackground />
       <Products />
