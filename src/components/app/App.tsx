@@ -8,6 +8,7 @@ import GetInvolved from "./getinvolved";
 import Donate from "./donate";
 import NavBar from "./navbar";
 import Team from "./pages/Team";
+import Footer from "./footer/Footer";
 
 import {
   BrowserRouter as Router,
@@ -31,6 +32,7 @@ const App: React.FC = () => {
         <Route path="/about" component={About} />
         <Route path="/" component={Landing} />
       </Switch>
+      <Footer />
     </Router>
   );
 };
