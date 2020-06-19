@@ -28,7 +28,7 @@ const TestimonialCard = (props: TestimonialProps) => {
           {props.testimonial.quote}
         </span>
       </div>
-      <div className="d-flex flex-row text-left align-items-md-center justify-content-start mt-3">
+      <div className="d-flex flex-row text-left align-items-md-center mt-3">
         <span className="quote-author-text ">- {props.testimonial.name}</span>
         <Image
           className="quote-author-image ml-3"
@@ -45,17 +45,17 @@ const Testimonials: React.FC = () => {
   const testimonials = [
     new Testimonial(
       "Shari Copeland",
-      require("../../assets/sarah_doe.png"),
+      require("../../assets/testimonials/shari.png"),
       "This is the most amazing blessing I could have received . It costs so much money for phone calls and I have to sacrifice one or more basic needs to pay . It’s really hard for me to write letters because of pain and numbness in my hands . Thank you from the bottom of my heart for caring enough to actually make a difference . May God bless each and every person that has created Ameelio in very special ways every day."
     ),
     new Testimonial(
       "Trish Cooper",
-      require("../../assets/sarah_doe.png"),
+      require("../../assets/testimonials/trish.png"),
       "It is a blessing to loved ones to be able to communicate with our family especially during these times. I’m grateful for finding Ameelio. I especially like the fact that we can send a picture with our letter. My boyfriend loves when I write him and always wants pictures. So this is perfect for us."
     ),
     new Testimonial(
       "Carol Brown",
-      require("../../assets/sarah_doe.png"),
+      require("../../assets/testimonials/carol.png"),
       "My name is Carol. I am totally blind. Before hearing about you and your organization. I was only able to talk with my son and nephew on the phone, and mail cards. This has allowed me to be able to write to them every day. I’m so excited. I have shared it with at least six others. I know that the others would make fun of my writing, and calls my son and nephew problems that they do not need. Thanks again."
     ),
   ];

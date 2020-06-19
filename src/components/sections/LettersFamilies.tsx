@@ -2,11 +2,11 @@ import React from "react";
 import "./LettersFamilies.css";
 
 const LettersForFamilies: React.FC = () => {
-  const screenshot_left: any = require("../../assets/mockups/mobile.png");
+  const mobile: any = require("../../assets/mockups/mobile.png");
   return (
     <div className="">
-      <div className="d-flex p-5 flex-column flex-md-row justify-content-center align-items-center">
-        <div className="lff-left-container">
+      <div className="d-flex p-md-5 p-3 flex-column flex-md-row justify-content-center  align-items-center ">
+        <div className="d-flex flex-column align-items-center align-items-md-start justify-content-evenly text-center text-md-left">
           <div className="p1 font-weight-bolder">Letters for families</div>
           <div className="lff-subtitle mt-3 p4">
             Share physical memories and new experiences with your loved ones
@@ -23,7 +23,7 @@ const LettersForFamilies: React.FC = () => {
           </div>
           <button className="lff-button">Get Started</button>
         </div>
-        <img className="left-screenshot" src={screenshot_left} alt="" />
+        <img src={mobile} className="lff-mockup" alt="" />
       </div>
     </div>
   );

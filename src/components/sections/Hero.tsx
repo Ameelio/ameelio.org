@@ -13,7 +13,7 @@ const Hero: React.FC = () => {
   return (
     <div className="ml-1 ml-md-5 px-5 py-3 mt-3 d-flex flex-lg-row flex-column  w-100 justify-content-center">
       <div className="d-flex flex-column">
-        <h1 className="font-weight-bold">
+        <span className="p1 font-weight-bold">
           Send free
           <Typical
             steps={["letters", 3000, "photos", 2500, "postcards", 2500]}
@@ -21,7 +21,7 @@ const Hero: React.FC = () => {
             wrapper="h1"
           />
           to your loved ones
-        </h1>
+        </span>
         <div className="subtitle mt-1">
           You shouldn't have to decide between paying for basic <br></br> needs
           and staying connected to your loved ones.
@@ -64,7 +64,7 @@ const Hero: React.FC = () => {
       </div>
       <div>
         <img
-          className="illustration ml-md-5 mt-4 mt-md-1"
+          className="illustration ml-md-5 mt-4 mt-md-5"
           src={illustration}
           alt=""
         />

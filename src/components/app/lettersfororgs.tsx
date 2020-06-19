@@ -6,13 +6,24 @@ const LettersForOrgs: React.FC = () => {
   return (
     <div className="lfo-wrapper">
       <div className="lfo-container">
-        <div className="lfo-title">Letters for Organizations</div>
-        <div className="lfo-subtitle">
+        <div className="p1 font-weight-bold white">
+          Letters for Organizations
+        </div>
+        <div className="p4 white lfo-subtitle">
           Your electronic courier is here. We'll handle your bulk mail, organize
           your contacts, and ease collaboration and visibility within your
           organization.
         </div>
-        <button className="lfo-button">Try the Demo</button>
+        <button
+          onClick={() =>
+            window.open(
+              "https://calendly.com/emma-gray-ameelio/letters-for-organizations-information-session"
+            )
+          }
+          className="lfo-button"
+        >
+          Schedule a Demo
+        </button>
         <img className="lfo-preview" src={preview} alt="" />
       </div>
     </div>

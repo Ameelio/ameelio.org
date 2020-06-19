@@ -1,18 +1,7 @@
-.lff-wrapper {
-  width: 100%;
-  background-color: #f3f9ff;
-}
-
-.lff-container {
-  display: flex;
-  flex-direction: column;
-  padding-left: 10%;
-  padding-top: 80px;
-}
-
 .lff-subtitle {
   line-height: 31px;
   color: #5884ab;
+  max-width: 500px;
 }
 
 .lff-list {
@@ -29,26 +18,8 @@
   font-size: 20px;
 }
 
-.lff-left-container {
-  width: 50%;
-}
-
 .lff-right-container {
   display: flex;
   align-items: center;
   width: 50%;
-}
-
-.left-screenshot {
-  /* width: 297px;
-  height: 516px; */
-  /* margin-right: -70px;
-  margin-top: 58px;
-  z-index: 4; */
-}
-
-.right-screenshot {
-  width: 362px;
-  height: 589px;
-  z-index: 4;
 }

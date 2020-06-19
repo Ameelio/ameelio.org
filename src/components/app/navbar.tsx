@@ -6,7 +6,13 @@ import { Navbar, Nav } from "react-bootstrap";
 const NavBar: React.FC = () => {
   const nav_logo: any = require("../../assets/logo.png");
   return (
-    <Navbar collapseOnSelect expand="lg" bg="light" variant="light">
+    <Navbar
+      collapseOnSelect
+      expand="lg"
+      bg="light"
+      variant="light"
+      sticky="top"
+    >
       <Navbar.Brand href="/">
         <img
           src={nav_logo}
