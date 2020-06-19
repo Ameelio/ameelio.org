@@ -4,7 +4,7 @@ import "./stylesheets/navbar.css";
 import { Navbar, Nav } from "react-bootstrap";
 
 const NavBar: React.FC = () => {
-  const nav_logo: any = require("../../assets/logo.png");
+  const nav_logo: any = "/logo.svg";
   return (
     <Navbar
       collapseOnSelect
