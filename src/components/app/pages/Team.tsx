@@ -54,19 +54,36 @@ const Team: React.FC = () => {
 
   return (
     <div>
-      <h1 className="text-center font-weight-bold">Team</h1>
-      <div className="d-flex flex-column align-items-center">
+      <div className="d-flex flex-column align-items-center py-5">
+        <h1 className="text-center font-weight-bold">Team</h1>
         <span>We are lawyers, engineers, students and designers.</span>
         <span>
           But most importanty we are people that believe that everyone impacted
           by incarceration should be able stay in touch with their loved ones.
         </span>
+
+        <div className="d-flex flex-wrap align-items-center w-100 pt-5">
+          {members.map(function (member, index) {
+            return <MemberCard key={index} member={member} />;
+          })}
+        </div>
       </div>
 
-      <div className="d-flex flex-wrap align-items-center w-100 pt-5">
-        {members.map(function (member, index) {
-          return <MemberCard key={index} member={member} />;
-        })}
+      <div className="d-flex flex-column align-items-center py-5">
+        <h1 className="text-center font-weight-bold">Ambassadors</h1>
+        <span>
+          We are a group of families whose lives were impacted by incarceration.
+        </span>
+        <span>
+          And we believe that everyone should have the right stay in touch with
+          their loved ones.
+        </span>
+
+        <div className="d-flex flex-wrap align-items-center w-100 pt-5">
+          {members.map(function (member, index) {
+            return <MemberCard key={index} member={member} />;
+          })}
+        </div>
       </div>
     </div>
   );

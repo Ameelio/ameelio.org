@@ -30,7 +30,7 @@ const Products: React.FC = () => {
             Learn More
           </a>
         </div>
-        <div className="products-card-wrapper">
+        {/* <div className="products-card-wrapper">
           <div className="products-card-title">Connect Videoconferencing</div>
           <div className="products-card-body">
             The next-generation platform for prison videoconferencing. Secure
@@ -41,7 +41,7 @@ const Products: React.FC = () => {
           <a className="learn-more" href="#">
             Learn More
           </a>
-        </div>
+        </div> */}
       </div>
     </div>
   );

@@ -2,7 +2,7 @@ import React from "react";
 import "./App.css";
 
 import Landing from "./pages/landing";
-import About from "./about";
+import About from "./pages/about";
 import FAQ from "./faq";
 import GetInvolved from "./getinvolved";
 import Donate from "./donate";
@@ -29,7 +29,7 @@ const App: React.FC = () => {
         <Route path="/faq" component={FAQ} />
         <Route path="/team" component={Team} />
         <Route path="/donate" component={Donate} />
-        <Route path="/about" component={About} />
+        <Route exact path="/about" component={About} />
         <Route path="/" component={Landing} />
       </Switch>
       <Footer />

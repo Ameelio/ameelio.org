@@ -8,10 +8,6 @@
 body {
   font-family: "Poppins", sans-serif;
 }
-h1,
-h2 {
-  color: var(--main-primary-color);
-}
 
 button {
   padding: 9px 25px;
@@ -26,7 +22,7 @@ button {
 }
 
 button:hover {
-  background-color: #5a67d8cd;
+  background-color: #4fd1c5;
 }
 
 li,
@@ -42,4 +38,12 @@ a {
 }
 .bg-light {
   background-color: white !important;
+}
+
+.white {
+  color: white;
+}
+
+.bg-blue {
+  background-color: var(--main-primary-color);
 }
