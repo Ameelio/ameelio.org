@@ -5,10 +5,8 @@
 }
 
 .products-title {
-  font-weight: 800;
-  font-size: 48px;
+  /* font-weight: 800; */
   line-height: 66px;
-  color: #222222;
   display: flex;
   justify-content: center;
 }

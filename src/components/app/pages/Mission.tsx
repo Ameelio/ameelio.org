@@ -1,7 +1,8 @@
 import React from "react";
 import { ResponsiveEmbed } from "react-bootstrap";
 import Context from "../context";
-import Products from "../products";
+import Products from "../sections/Products";
+import WhyAmeelio from "../sections/WhyAmeelio";
 
 const Mission: React.FC = () => {
   return (
@@ -17,7 +18,7 @@ const Mission: React.FC = () => {
           src="https://www.youtube.com/embed/dPQV6RZWcsY"
         ></iframe>
       </ResponsiveEmbed>
-      <span className="py-5">Here is our mission</span>
+      <WhyAmeelio />
       <Products />
       <Context />
     </div>

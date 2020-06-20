@@ -4,7 +4,7 @@ import "./App.css";
 import Landing from "./pages/Landing";
 import Mission from "./pages/Mission";
 import GetInvolved from "./getinvolved";
-import NavBar from "./navbar";
+import NavBar from "../Navbar/Navbar";
 import Team from "./pages/Team";
 import Footer from "./footer/Footer";
 

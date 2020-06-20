@@ -4,11 +4,11 @@ import Typical from "react-typical";
 import Image from "react-bootstrap/Image";
 
 const Hero: React.FC = () => {
-  const illustration: any = require("../../assets/maincard_illustration.png");
-  const fc: any = require("../../assets/media/fc.png");
-  const wapo: string = require("../../assets/media/wapo.png");
-  const tc: string = require("../../assets/media/tc.png");
-  const bi: string = require("../../assets/media/bi.png");
+  const illustration: any = require("../../../assets/maincard_illustration.png");
+  const fc: any = require("../../../assets/media/fc.png");
+  const wapo: string = require("../../../assets/media/wapo.png");
+  const tc: string = require("../../../assets/media/tc.png");
+  const bi: string = require("../../../assets/media/bi.png");
 
   return (
     <div className="mx-md-5 px-md-5 py-3 mt-3 d-flex flex-lg-row flex-column  w-100 justify-content-center align-items-center align-items-md-start">
