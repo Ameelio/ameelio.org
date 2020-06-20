@@ -11,8 +11,8 @@ const Hero: React.FC = () => {
   const bi: string = require("../../assets/media/bi.png");
 
   return (
-    <div className="ml-1 ml-md-5 px-5 py-3 mt-3 d-flex flex-lg-row flex-column  w-100 justify-content-center">
-      <div className="d-flex flex-column">
+    <div className="mx-md-5 px-md-5 py-3 mt-3 d-flex flex-lg-row flex-column  w-100 justify-content-center align-items-center align-items-md-start">
+      <div className="mx-5 d-flex flex-column align-items-lg-start">
         <span className="p1 font-weight-bold">
           Send free
           <Typical
@@ -22,13 +22,13 @@ const Hero: React.FC = () => {
           />
           to your loved ones
         </span>
-        <div className="subtitle mt-1">
-          You shouldn't have to decide between paying for basic <br></br> needs
-          and staying connected to your loved ones.
+        <div className="p5 subtitle mt-1">
+          You shouldn't have to decide between paying for basic needs and
+          staying connected to your loved ones.
         </div>
-        <a className="signup" href="https://letters.ameelio.org/register">
-          <button className="mt-3 letters-button">
-            Send Free Letters Today
+        <a className="signup w-100" href="https://letters.ameelio.org/register">
+          <button className="mt-3 w-100 letters-button">
+            Send Free Letters
           </button>
         </a>
         <div className="d-flex flex-row mt-4 position-relative media-container flex-wrap">

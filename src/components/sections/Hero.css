@@ -6,7 +6,7 @@
 }
 
 .subtitle {
-  font-size: 18px;
+  max-width: 500px;
   line-height: 25px;
   color: #000000;
 }
@@ -14,7 +14,6 @@
 .letters-button {
   padding: 15px 50px;
   font-size: 18px;
-  margin-left: 5px;
 }
 
 .illustration {
@@ -58,5 +57,9 @@
     position: relative;
     z-index: 2;
     height: 100%;
+  }
+
+  .letters-button {
+    max-width: 75%;
   }
 }

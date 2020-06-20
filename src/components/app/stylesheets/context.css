@@ -2,7 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&display=swap");
 
 .context-wrapper {
-  background-color: #1e3048;
+  background-color: #042c7a;
   /* margin-top: 70px; */
   padding-bottom: 80px;
 }
@@ -30,7 +30,7 @@
 }
 
 .rectangle-large {
-  background-color: #e53e3e;
+  background-color: #f48888;
   width: 125%;
   height: 7px;
   margin-bottom: 7px;
@@ -68,7 +68,7 @@
 }
 
 .rectangle-small {
-  background-color: #e53e3e;
+  background-color: #f48888;
   width: 100%;
   height: 7px;
   margin-bottom: 7px;

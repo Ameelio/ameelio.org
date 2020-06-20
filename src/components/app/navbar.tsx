@@ -36,7 +36,10 @@ const NavBar: React.FC = () => {
           <a className="login" href="https://letters.ameelio.org/login">
             Login
           </a>
-          <a className="signup" href="https://letters.ameelio.org/register">
+          <a
+            className="signup ml-md-3"
+            href="https://letters.ameelio.org/register"
+          >
             <button>Sign Up</button>
           </a>
         </div>

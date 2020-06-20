@@ -2,7 +2,7 @@
 
 :root {
   --main-primary-color: #3182ce;
-  --main-cta-color: #319795;
+  --main-cta-color: #4884f8;
   --main-lightblue-color: #ebf8ff;
 }
 
@@ -12,7 +12,6 @@ body {
 
 button {
   padding: 9px 25px;
-  margin-left: 23px;
   font-weight: 700;
   background-color: var(--main-cta-color);
   color: #ffffff;
@@ -23,7 +22,7 @@ button {
 }
 
 button:hover {
-  background-color: #4fd1c5;
+  background-color: #b5ceff;
 }
 
 li,

@@ -1,5 +1,7 @@
 import React from "react";
 import { ResponsiveEmbed } from "react-bootstrap";
+import Context from "../context";
+import Products from "../products";
 
 const Mission: React.FC = () => {
   return (
@@ -16,6 +18,8 @@ const Mission: React.FC = () => {
         ></iframe>
       </ResponsiveEmbed>
       <span className="py-5">Here is our mission</span>
+      <Products />
+      <Context />
     </div>
   );
 };
