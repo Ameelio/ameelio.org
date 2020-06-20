@@ -13,15 +13,17 @@ const Hero: React.FC = () => {
   return (
     <div className="mx-md-5 px-md-5 py-3 mt-3 d-flex flex-lg-row flex-column  w-100 justify-content-center align-items-center align-items-md-start">
       <div className="mx-5 d-flex flex-column align-items-lg-start">
-        <span className="p1 font-weight-bold">
-          Send free
-          <Typical
-            steps={["letters", 3000, "photos", 2500, "postcards", 2500]}
-            loop={Infinity}
-            wrapper="h1"
-          />
-          to your loved ones
-        </span>
+        <div className="d-flex flex-column">
+          <div className="d-flex flex-column ">
+            <span className="p1 font-weight-bold">Send free&nbsp;</span>
+            <Typical
+              steps={["letters", 3000, "photos", 2500, "postcards", 2500]}
+              loop={Infinity}
+              wrapper="h1"
+            />
+          </div>
+          <span className="p1 font-weight-bold">to your loved one</span>
+        </div>
         <div className="p5 subtitle mt-1">
           You shouldn't have to decide between paying for basic needs and
           staying connected to your loved ones.

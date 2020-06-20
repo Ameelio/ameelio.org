@@ -14,7 +14,9 @@ const LettersForFamilies: React.FC = () => {
           </div>
           <br></br>
           <br></br>
-          <div className="lff-list p4">1. Choose your contact</div>
+          <div className="lff-list p4">
+            1. Locate your incarcerated loved one
+          </div>
           <div className="lff-list p4">
             2. Write a message &amp; attach a photo
           </div>
