@@ -4,6 +4,7 @@ import MainCardBackground from "../maincardbackground";
 import Testimonials from "../testimonials";
 import LettersForFamilies from "../sections/LettersFamilies";
 import LettersForOrgs from "../lettersfororgs";
+import GetStarted from "../sections/GetStarted";
 
 const Landing: React.FC = () => {
   return (
@@ -13,6 +14,7 @@ const Landing: React.FC = () => {
       <Testimonials />
       <LettersForFamilies />
       <LettersForOrgs />
+      <GetStarted />
     </div>
   );
 };
