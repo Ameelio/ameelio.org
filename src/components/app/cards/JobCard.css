@@ -1,0 +1,17 @@
+.careers-job-title {
+  color: blue;
+}
+
+.careers-job-description {
+  color: #00284c;
+  margin-top: 20px;
+}
+
+.careers-apply-button {
+  padding: 7px 30px;
+  border-radius: 30px;
+}
+
+.job-container {
+  margin-bottom: 40px;
+}
