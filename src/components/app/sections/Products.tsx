@@ -4,8 +4,8 @@ import "./Products.css";
 const Products: React.FC = () => {
   return (
     <div className="products-wrapper w-100">
-      <span className="products-title p2">WHAT WE DO</span>
-      <div className="products-container flex-lg-row">
+      <span className="products-title p2">What we're doing</span>
+      <div className="products-container flex-lg-row align-items-center">
         <div className="products-card-wrapper">
           <div className="products-card-title">Letters for Families</div>
           <div className="products-card-body">
@@ -25,7 +25,7 @@ const Products: React.FC = () => {
             organize your contacts, and ease collaboration and visibility within
             your organization.
           </div>
-          <button className="products-signup-button">Sign Up</button>
+          <button className="products-signup-button">Request Demo</button>
           {/* <a className="learn-more" href="#">
             Learn More
           </a> */}
@@ -37,7 +37,7 @@ const Products: React.FC = () => {
             their services most.  We help reentry organizations find and reach
             well-matched inviduals nearing release.
           </div>
-          <button className="products-signup-button">Sign Up</button>
+          <button className="products-signup-button">Request Demo</button>
           {/* <a className="learn-more" href="#">
             Learn More
           </a> */}

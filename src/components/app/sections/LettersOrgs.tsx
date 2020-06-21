@@ -1,12 +1,12 @@
 import React from "react";
-import "./stylesheets/lettersfororgs.css";
+import "./LettersOrgs.css";
 
 const LettersForOrgs: React.FC = () => {
-  const preview: any = require("../../assets/letters_for_organizations.png");
+  const preview: any = require("../../../assets/letters_for_organizations.png");
   return (
     <div className="lfo-wrapper">
       <div className="lfo-container">
-        <div className="p1 font-weight-bold white">
+        <div className="p1 font-weight-bold white text-center">
           Letters for Organizations
         </div>
         <div className="p4 white lfo-subtitle">

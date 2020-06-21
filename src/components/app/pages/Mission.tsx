@@ -1,6 +1,6 @@
 import React from "react";
 import { ResponsiveEmbed } from "react-bootstrap";
-import Context from "../context";
+import Context from "../sections/Context";
 import Products from "../sections/Products";
 import WhyAmeelio from "../sections/WhyAmeelio";
 
@@ -19,8 +19,8 @@ const Mission: React.FC = () => {
         ></iframe>
       </ResponsiveEmbed>
       <WhyAmeelio />
-      <Products />
       <Context />
+      <Products />
     </div>
   );
 };

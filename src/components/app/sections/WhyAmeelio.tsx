@@ -3,9 +3,9 @@ import "./WhyAmeelio.css";
 
 const WhyAmeelio: React.FC = () => {
   return (
-    <div className="d-flex flex-column justify-content-center py-5">
-      <span className="p2">WHY WE'RE HERE</span>
-      <span className="font-weight-bold mb-5 p5">
+    <div className="d-flex flex-column justify-content-center align-items-center py-5 mw-100 mx-3">
+      <span className="p2">Why we're here</span>
+      <span className="font-weight-bold mb-5 p4 mw-90">
         We’re here to decouple incarceration and profit, and combat mass
         incarceration.
       </span>
@@ -27,7 +27,7 @@ const WhyAmeelio: React.FC = () => {
             by the costs of maintaining contact.
           </span>
         </div>
-        <div className="d-flex flex-column ml-md-5">
+        <div className="d-flex flex-column ml-md-5 mt-3 mt-md-0">
           <span>
             We want to reconnect incarcerated people and their loved ones, for
             free. Our vision is to disrupt the prison telecommunications

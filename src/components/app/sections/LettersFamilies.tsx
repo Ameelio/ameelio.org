@@ -23,9 +23,9 @@ const LettersForFamilies: React.FC = () => {
           <div className="lff-list p4">
             3. We'll print &amp; mail if for you, for free!
           </div>
-          <button className="lff-button">Get Started</button>
+          <button className="lff-button my-3">Get Started</button>
         </div>
-        <img src={mobile} className="lff-mockup" alt="" />
+        <img src={mobile} className="lff-mockup my-5" alt="" />
       </div>
     </div>
   );

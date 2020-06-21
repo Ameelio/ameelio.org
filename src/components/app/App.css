@@ -106,3 +106,15 @@ h1 {
     font-size: 16px;
   }
 }
+
+.carousel-indicators li {
+  background-color: var(--main-primary-color);
+}
+
+.carousel-control-prev {
+  color: var(--main-primary-color);
+}
+
+.mw-90 {
+  max-width: 90%;
+}

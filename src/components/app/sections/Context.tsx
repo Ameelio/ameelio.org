@@ -1,14 +1,14 @@
 import React from "react";
-import "./stylesheets/context.css";
+import "./Context.css";
 
 const Context: React.FC = () => {
   // const country_map: any = require("../../assets/united_states.png");
-  const quote_left: any = require("../../assets/quote-left.png");
-  const quote_right: any = require("../../assets/quote-right.png");
+  const quote_left: any = require("../../../assets/quote-left.png");
+  const quote_right: any = require("../../../assets/quote-right.png");
   return (
     <div className="context-wrapper">
       <div className="context-container">
-        <div className="context-title">A Tale of Isolation</div>
+        <div className="context-title">Why this matters</div>
         <div className="context-body-1">
           <div>
             <div className="rectangle-large"></div>
@@ -57,7 +57,7 @@ const Context: React.FC = () => {
         </div>
         <div className="context-footer">
           <img className="context-footer-left-quote" src={quote_left} alt="" />
-          <div className="context-footer-text">
+          <div className="context-footer-text p3">
             Research shows that close and positive family relationships during
             incarceration reduce recidivism ... and ease the harm to family
             members separated from their loved ones. – US Dept. of Justice
