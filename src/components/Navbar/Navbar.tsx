@@ -26,7 +26,7 @@ const NavBar: React.FC = () => {
       <Navbar.Collapse id="responsive-navbar-nav">
         <Nav className="mr-auto">
           <Nav.Link href="/mission">Our Mission</Nav.Link>
-          <Nav.Link href="/howitworks">How it works</Nav.Link>
+          <Nav.Link href="/how-we-work">How it works</Nav.Link>
           <Nav.Link href="/transparency">How it is free</Nav.Link>
           <Nav.Link href="/team">Team</Nav.Link>
           {/* <Nav.Link href="/orgs">For Organizations</Nav.Link> */}

@@ -7,6 +7,7 @@ import HowFree from "./pages/HowFree";
 import NavBar from "../Navbar/Navbar";
 import Team from "./pages/Team";
 import Footer from "./footer/Footer";
+import HowItWorks from "./pages/HowItWorks";
 
 import {
   BrowserRouter as Router,
@@ -22,8 +23,10 @@ const App: React.FC = () => {
       <NavBar />
       <br />
       <Switch>
+        <Route path="/how-we-work" component={HowItWorks} />
         <Route path="/transparency" component={HowFree} />
         {/* <Route path="/getinvolved" component={GetInvolved} /> */}
+
         <Route path="/team" component={Team} />
         <Route exact path="/mission" component={Mission} />
         <Route path="/" component={Landing} />

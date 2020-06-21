@@ -1,10 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap");
 
 :root {
-  --main-primary-color: #3182ce;
+  --main-primary-color: #4884f8;
   --main-primary-dark: #042c7a;
   --main-cta-color: #4884f8;
   --main-lightblue-color: #ebf8ff;
+  --main-black: #232624;
 }
 
 html {
@@ -18,6 +19,7 @@ html {
 
 body {
   font-family: "Poppins", sans-serif;
+  color: var(--main-black);
 }
 
 button {
