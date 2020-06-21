@@ -37,7 +37,7 @@ const Products: React.FC = () => {
       name: "Connect Videoconferencing",
       img: require("../../../assets/products/connect.svg"),
       description:
-        "The next-generation platform for prison videoconferencing. Secure and reliable for correctional facilities. Free and easy for the incarcerated and their loved ones.",
+        "Our north star is free video conferencing, the closest substitute for in-person contact. We’re building a secure platform to connect incarcerated people with their loved ones, their lawyers, and remote telehealth, educational, and religious services – all for free.",
       cta: "Request Demo",
       ctaLink:
         "https://calendly.com/emma-gray-ameelio/letters-for-organizations-information-session?month=2020-06",
