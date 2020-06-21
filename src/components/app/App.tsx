@@ -3,7 +3,7 @@ import "./App.css";
 
 import Landing from "./pages/landing";
 import Mission from "./pages/Mission";
-import GetInvolved from "./getinvolved";
+import HowFree from "./pages/HowFree";
 import NavBar from "../Navbar/Navbar";
 import Team from "./pages/Team";
 import Footer from "./footer/Footer";
@@ -22,7 +22,8 @@ const App: React.FC = () => {
       <NavBar />
       <br />
       <Switch>
-        <Route path="/getinvolved" component={GetInvolved} />
+        <Route path="/transparency" component={HowFree} />
+        {/* <Route path="/getinvolved" component={GetInvolved} /> */}
         <Route path="/team" component={Team} />
         <Route exact path="/mission" component={Mission} />
         <Route path="/" component={Landing} />

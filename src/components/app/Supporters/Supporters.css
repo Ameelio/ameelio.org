@@ -1,0 +1,12 @@
+.supporter-logo {
+  width: 250px;
+  max-width: 100%;
+  height: auto;
+}
+
+@media (min-width: 768px) {
+  .supporter-logo {
+    width: auto;
+    height: 50px;
+  }
+}

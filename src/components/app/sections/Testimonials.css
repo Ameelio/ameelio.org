@@ -1,0 +1,37 @@
+.quote-text {
+  font-size: 16px;
+  line-height: 40px;
+  max-width: 550px;
+}
+
+.quote-author-text {
+  font-size: 22px;
+}
+
+.quote-author-image {
+  max-width: 100px;
+}
+
+.quote-symbol {
+  font-size: 125px;
+  font-family: "Libre Baskerville";
+}
+
+.testimonial-title {
+  font-size: 32px;
+}
+
+.testimonial-card {
+  min-height: 750px;
+}
+
+@media (min-width: 768px) {
+  .testimonial-card {
+    min-height: 500px;
+  }
+
+  .quote-symbol {
+    font-size: 75px;
+    font-family: "Libre Baskerville";
+  }
+}
