@@ -2,7 +2,7 @@ import React from "react";
 import "./LettersFamilies.css";
 
 const LettersForFamilies: React.FC = () => {
-  const mobile: any = require("../../../assets/mockups/mobile.png");
+  const mobile: any = require("../../../assets/mockups/mobile.svg");
   return (
     <div className="">
       <div className="d-flex p-md-5 p-3 flex-column flex-md-row justify-content-center  align-items-center ">

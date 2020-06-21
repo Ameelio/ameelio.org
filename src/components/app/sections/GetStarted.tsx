@@ -9,11 +9,12 @@ const GetStarted: React.FC = () => {
         <img src={map} className="country-map" alt="" />
         <div className="get-started-right-container d-flex flex-column align-items-center align-items-md-start justify-content-evenly text-center text-md-left">
           <div className="p1 font-weight-bolder">
-            Bring Ameelio's videoconferencing to your facility
+            Bring Ameelio's free videoconferencing to your facility
           </div>
           <div className="get-started-subtitle mt-3 p4">
-            Ameelio works in any facility in the US. To bring Ameelio to your
-            city, email us at team@ameelio.org.
+            Ameelio is working to launch the first videoconferencing pilot sites
+            in the US. If you're are a warden or sheriff interested in being one
+            of the pioneers, email us at team@ameelio.org.
           </div>
           <button className="get-started-button">Get Started</button>
         </div>

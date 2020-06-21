@@ -4,7 +4,7 @@
 }
 
 .get-started-right-container {
-  width: 40%;
+  max-width: 750px;
 }
 
 .get-started-subtitle {
