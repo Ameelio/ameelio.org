@@ -10,7 +10,7 @@
   align-items: center;
   text-align: center;
   margin-bottom: 16px;
-  margin-left: 16px;
+  /* margin-left: 16px; */
 }
 
 .products-card-title {
@@ -26,6 +26,7 @@
 
 .products-card-body {
   font-weight: 400;
+  min-height: 200px;
   font-size: 18px;
   line-height: 24px;
   width: 75%;
@@ -49,4 +50,5 @@
 
 .product-card-illustration {
   max-width: 80%;
+  min-height: 210px;
 }

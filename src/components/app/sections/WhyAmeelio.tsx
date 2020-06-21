@@ -3,13 +3,13 @@ import "./WhyAmeelio.css";
 
 const WhyAmeelio: React.FC = () => {
   return (
-    <div className="d-flex flex-column justify-content-center align-items-center py-5 mw-100 mx-3">
-      <span className="p2">Why we're here</span>
-      <span className="font-weight-bold mb-5 p4 mw-90">
+    <div className="d-flex flex-column justify-content-center mw-100 py-5 default-px">
+      <span className="p2 font-weight-bold">Why we're here</span>
+      <span className="mb-5 p4 text-break">
         We’re here to decouple incarceration and profit, and combat mass
         incarceration.
       </span>
-      <div className="d-flex flex-column flex-lg-row copy">
+      <div className="d-flex flex-column flex-lg-row">
         <div className="d-flex flex-column">
           <span>
             The $1.2 billion prison telecommunications industry is one of the
@@ -20,10 +20,10 @@ const WhyAmeelio: React.FC = () => {
             It exploits vulnerable families’ desire to remain connected while
             separated by incarceration. And current providers are primarily
             profiting from low-income families:{" "}
-            <b>
+            <span className="bg-darkblue white px-1">
               one in three families with incarcerated loved ones are forced into
               debt
-            </b>{" "}
+            </span>{" "}
             by the costs of maintaining contact.
           </span>
         </div>
@@ -36,9 +36,10 @@ const WhyAmeelio: React.FC = () => {
           </span>
           <br />
           <span>
-            We have strong evidence that sustaining contact during incarceration
-            improves post-release outcomes and reduces recidivism. Long-term, we
-            hp shrink prison populations.
+            There is strong evidence that sustaining contact during
+            incarceration improves post-release outcomes and reduces recidivism.
+            We hope that in the long term, our services help shrink prison
+            populations.
           </span>
         </div>
       </div>

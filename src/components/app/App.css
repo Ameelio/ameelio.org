@@ -2,8 +2,18 @@
 
 :root {
   --main-primary-color: #3182ce;
+  --main-primary-dark: #042c7a;
   --main-cta-color: #4884f8;
   --main-lightblue-color: #ebf8ff;
+}
+
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
 }
 
 body {
@@ -46,6 +56,10 @@ a {
 
 .bg-blue {
   background-color: var(--main-primary-color);
+}
+
+.bg-darkblue {
+  background-color: var(--main-primary-dark);
 }
 
 .blue {
@@ -117,4 +131,15 @@ h1 {
 
 .mw-90 {
   max-width: 90%;
+}
+
+.secondary-btn {
+  border: var(--main-primary-color) 1px solid;
+  color: var(--main-primary-color);
+  background-color: white;
+}
+
+.default-px {
+  padding-left: 10%;
+  padding-right: 10%;
 }

@@ -17,17 +17,17 @@ const Careers: React.FC = () => {
 
   const full_time = [
     new Job(
-      "Growth Marketer (Contract, 6-months)",
-      "We're looking for a seasoned growth marketer to help us 10x user acquisition through online and offline channels."
+      "Full-Stack Developers (Contract, 6-months)",
+      "We're looking for senior developers that are motivated to help us create the first free videoconferencing platform in the United States."
     ),
-    new Job(
-      "Senior UX Researcher (Contract, 6-months)",
-      "We're looking for a senior UX researcher to help us lead generative and evaluative research."
-    ),
-    new Job(
-      "Grant Writer (Contract, 5-months)",
-      "We're looking for a seasoned grant writer to help write grants for foundations, government programs and accelerators."
-    ),
+    // new Job(
+    //   "Senior UX Researcher (Contract, 6-months)",
+    //   "We're looking for a senior UX researcher to help us lead generative and evaluative research."
+    // ),
+    // new Job(
+    //   "Grant Writer (Contract, 5-months)",
+    //   "We're looking for a seasoned grant writer to help write grants for foundations, government programs and accelerators."
+    // ),
   ];
 
   const volunteer = [
@@ -36,8 +36,8 @@ const Careers: React.FC = () => {
       "We're looking for a fundraising specialist to assist us in new fundraising initiatives and execute existing ones."
     ),
     new Job(
-      "Senior Developers",
-      "We're looking for senior developers that can help us make better, faster, and smarter code."
+      "Developers",
+      "We're looking for developers that can help us make better, faster, and smarter code."
     ),
     new Job(
       "Growth Hackers",
@@ -73,11 +73,13 @@ const Careers: React.FC = () => {
               );
             })}
             <div className="careers-main-title">Media inquiries</div>
-            <div className="media-contact-container d-flex align-items-center">
+            <div className="media-contact-container d-flex flex-column flex-md-row  align-items-md-center">
               <div className="media-contact-description">
                 Interested in getting in touch?
               </div>
-              <button className="media-contact-button">Contact Us</button>
+              <button className="media-contact-button mt-3 mt-md-0">
+                Contact Us
+              </button>
             </div>
           </div>
         </div>

@@ -4,7 +4,7 @@ import "./LettersOrgs.css";
 const LettersForOrgs: React.FC = () => {
   const preview: any = require("../../../assets/letters_for_organizations.png");
   return (
-    <div className="lfo-wrapper">
+    <div className="lfo-wrapper py-5">
       <div className="lfo-container">
         <div className="p1 font-weight-bold white text-center">
           Letters for Organizations

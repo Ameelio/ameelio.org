@@ -37,15 +37,15 @@ const Products: React.FC = () => {
       name: "Connect Videoconferencing",
       img: require("../../../assets/products/connect.svg"),
       description:
-        "Our north star is free video conferencing, the closest substitute for in-person contact. We’re building a secure platform to connect incarcerated people with their loved ones, their lawyers, and remote telehealth, educational, and religious services – all for free.",
+        "Our north star. We’re building a secure platform to connect incarcerated people with their loved ones, their lawyers, and remote telehealth, educational, and religious services – all for free.",
       cta: "Request Demo",
       ctaLink:
         "https://calendly.com/emma-gray-ameelio/letters-for-organizations-information-session?month=2020-06",
     },
   ];
   return (
-    <div className="py-5">
-      <div className="products-wrapper w-100">
+    <div className="">
+      <div className="products-wrapper w-100 pt-5">
         <span className="products-title p2">What we're doing</span>
         <div className="products-container flex-lg-row align-items-center">
           {PRODUCTS.map(function (product, index) {
@@ -63,8 +63,10 @@ const Products: React.FC = () => {
           {/* </div> */}
         </div>
       </div>
-      <div>
-        <span className="products-title p2">Where we're going</span>
+      <div className="bg-darkblue py-5">
+        <span className="products-title p2 white font-weight-bold">
+          Where we're going
+        </span>
         <div className="products-container flex-lg-row align-items-center">
           {FUTURE_PRODUCTS.map(function (product, index) {
             return (

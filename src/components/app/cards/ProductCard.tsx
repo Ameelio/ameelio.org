@@ -20,7 +20,7 @@ const ProductCard: FunctionComponent<ProductProps> = ({
   learnMoreLink,
 }) => {
   return (
-    <div className="products-card-wrapper">
+    <div className="products-card-wrapper ml-lg-5">
       <div className="products-card-title">{name}</div>
       <Image
         src={image}
