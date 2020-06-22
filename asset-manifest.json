@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/ameelio.org/static/css/main.ebd7aec6.chunk.css",
-    "main.js": "/ameelio.org/static/js/main.08ab6d0b.chunk.js",
-    "main.js.map": "/ameelio.org/static/js/main.08ab6d0b.chunk.js.map",
+    "main.css": "/ameelio.org/static/css/main.11bd44be.chunk.css",
+    "main.js": "/ameelio.org/static/js/main.6f6b1e22.chunk.js",
+    "main.js.map": "/ameelio.org/static/js/main.6f6b1e22.chunk.js.map",
     "runtime-main.js": "/ameelio.org/static/js/runtime-main.8eec9867.js",
     "runtime-main.js.map": "/ameelio.org/static/js/runtime-main.8eec9867.js.map",
     "static/js/2.891f1981.chunk.js": "/ameelio.org/static/js/2.891f1981.chunk.js",
     "static/js/2.891f1981.chunk.js.map": "/ameelio.org/static/js/2.891f1981.chunk.js.map",
     "index.html": "/ameelio.org/index.html",
-    "precache-manifest.fc0451ae1e520c8109a5f336a98164a5.js": "/ameelio.org/precache-manifest.fc0451ae1e520c8109a5f336a98164a5.js",
+    "precache-manifest.f05e73539f7c661a14eb20adf197f5ae.js": "/ameelio.org/precache-manifest.f05e73539f7c661a14eb20adf197f5ae.js",
     "service-worker.js": "/ameelio.org/service-worker.js",
-    "static/css/main.ebd7aec6.chunk.css.map": "/ameelio.org/static/css/main.ebd7aec6.chunk.css.map",
+    "static/css/main.11bd44be.chunk.css.map": "/ameelio.org/static/css/main.11bd44be.chunk.css.map",
     "static/js/2.891f1981.chunk.js.LICENSE.txt": "/ameelio.org/static/js/2.891f1981.chunk.js.LICENSE.txt",
     "static/media/Anna-Jones-California.png": "/ameelio.org/static/media/Anna-Jones-California.d3eaa442.png",
     "static/media/Carolyn-Vargas-New-York.png": "/ameelio.org/static/media/Carolyn-Vargas-New-York.89bc75c6.png",
@@ -73,7 +73,7 @@
   "entrypoints": [
     "static/js/runtime-main.8eec9867.js",
     "static/js/2.891f1981.chunk.js",
-    "static/css/main.ebd7aec6.chunk.css",
-    "static/js/main.08ab6d0b.chunk.js"
+    "static/css/main.11bd44be.chunk.css",
+    "static/js/main.6f6b1e22.chunk.js"
   ]
 }
