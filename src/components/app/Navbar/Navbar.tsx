@@ -1,10 +1,11 @@
-import React from "react";
+import React, { FunctionComponent } from "react";
 import "./Navbar.css";
 
 import { Navbar, Nav, NavDropdown } from "react-bootstrap";
 
-const NavBar: React.FC = () => {
-  const nav_logo: any = "/logo.svg";
+const NavBar: FunctionComponent = () => {
+  const nav_logo: string = require("../../../assets/logo.svg");
+
   return (
     <Navbar
       collapseOnSelect

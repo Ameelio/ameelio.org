@@ -4,7 +4,7 @@ import "./App.css";
 import Landing from "./pages/Landing";
 import Mission from "./pages/Mission";
 import HowFree from "./pages/HowFree";
-import NavBar from "../Navbar/Navbar";
+import NavBar from "./Navbar/Navbar";
 import Team from "./pages/Team";
 import Footer from "./footer/Footer";
 import HowItWorks from "./pages/HowItWorks";
@@ -17,10 +17,16 @@ const App: React.FC = () => {
       <NavBar />
       <br />
       <Switch>
-        <Route path="/how-we-work" component={HowItWorks} />
-        <Route path="/transparency" component={HowFree} />
-        <Route path="/team" component={Team} />
-        <Route exact path="/mission" component={Mission} />
+        <Route
+          path={process.env.PUBLIC_URL + "/how-we-work"}
+          component={HowItWorks}
+        />
+        <Route
+          path={process.env.PUBLIC_URL + "/transparency"}
+          component={HowFree}
+        />
+        <Route path={process.env.PUBLIC_URL + "/team"} component={Team} />
+        <Route path={process.env.PUBLIC_URL + "/mission"} component={Mission} />
         <Route path="/" component={Landing} />
       </Switch>
       <Footer />
