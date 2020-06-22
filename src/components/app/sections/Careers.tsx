@@ -46,7 +46,7 @@ const Careers: React.FC = () => {
   ];
 
   return (
-    <div className="careers-wrapper">
+    <div className="careers-wrapper" id="careers">
       <div className="d-flex justify-content-center">
         <div className="careers-container d-flex flex-column justify-content-center">
           <div className="careers-text-container">

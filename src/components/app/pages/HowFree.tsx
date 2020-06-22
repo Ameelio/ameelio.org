@@ -1,5 +1,5 @@
 import React, { FunctionComponent } from "react";
-import Supporters from "../Supporters/Supporters";
+import Supporters from "../sections/Supporters";
 
 const HowFree: FunctionComponent = () => {
   return (

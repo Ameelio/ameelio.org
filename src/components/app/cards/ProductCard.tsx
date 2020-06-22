@@ -37,7 +37,7 @@ const ProductCard: FunctionComponent<ProductProps> = ({
         </button>
       )}
       {learnMoreLink && (
-        <a className="learn-more" href="#">
+        <a className="learn-more" href={learnMoreLink}>
           Learn More
         </a>
       )}

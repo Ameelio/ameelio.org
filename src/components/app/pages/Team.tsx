@@ -155,12 +155,12 @@ const Team: React.FC = () => {
     new Member(
       "Jordan Ashby",
       require("../../../assets/team/jordan.jpg"),
-      "Software Engineer"
+      "Outreach"
     ),
     new Member(
       "David Lilienfield",
       require("../../../assets/team/david.jpg"),
-      "Software Engineer"
+      "Corporate Development "
     ),
     new Member(
       "Adam Sarsony",

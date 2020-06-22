@@ -20,7 +20,7 @@ const WhyAmeelio: React.FC = () => {
             It exploits vulnerable families’ desire to remain connected while
             separated by incarceration. And current providers are primarily
             profiting from low-income families:{" "}
-            <span className="bg-darkblue white px-1">
+            <span className="bg-darkblue white px-1 font-weight-bold">
               one in three families with incarcerated loved ones are forced into
               debt
             </span>{" "}

@@ -123,14 +123,6 @@ h1 {
   }
 }
 
-.carousel-indicators li {
-  background-color: var(--main-primary-color);
-}
-
-.carousel-control-prev {
-  color: var(--main-primary-color);
-}
-
 .mw-90 {
   max-width: 90%;
 }
@@ -144,4 +136,17 @@ h1 {
 .default-px {
   padding-left: 10%;
   padding-right: 10%;
+}
+
+/* Override Bootstrap Classes */
+.carousel-indicators li {
+  background-color: var(--main-primary-color);
+}
+
+.carousel-control-prev {
+  color: var(--main-primary-color);
+}
+
+.nav-link {
+  margin-top: 20px;
 }

@@ -1,7 +1,7 @@
 import React from "react";
 import "./Navbar.css";
 
-import { Navbar, Nav } from "react-bootstrap";
+import { Navbar, Nav, NavDropdown } from "react-bootstrap";
 
 const NavBar: React.FC = () => {
   const nav_logo: any = "/logo.svg";
@@ -28,17 +28,20 @@ const NavBar: React.FC = () => {
           <Nav.Link href="/mission">Our Mission</Nav.Link>
           <Nav.Link href="/how-we-work">How it works</Nav.Link>
           <Nav.Link href="/transparency">How it is free</Nav.Link>
-          <Nav.Link href="/team">Team</Nav.Link>
-          {/* <Nav.Link href="/orgs">For Organizations</Nav.Link> */}
+          {/* <Nav.Link href="/team">Team</Nav.Link> */}
+          <NavDropdown title="Team" id="nav-dropdown">
+            <NavDropdown.Item href="/team">Team</NavDropdown.Item>
+            <NavDropdown.Item href="/#careers">Get Involved</NavDropdown.Item>
+          </NavDropdown>
+          <Nav.Link href="/#orgs">For Organizations</Nav.Link>
           <Nav.Link href="https://letters.ameelio.org/donate">Donate</Nav.Link>
-          {/* <Nav.Link href="/getinvolved">Get Involved</Nav.Link> */}
         </Nav>
         <div className="auth">
           <a className="login" href="https://letters.ameelio.org/login">
             Login
           </a>
           <a
-            className="signup ml-md-3"
+            className="signup ml-3"
             href="https://letters.ameelio.org/register"
           >
             <button>Sign Up</button>
