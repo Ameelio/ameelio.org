@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/ameelio.org/static/css/main.239ee3e8.chunk.css",
-    "main.js": "/ameelio.org/static/js/main.1ae89221.chunk.js",
-    "main.js.map": "/ameelio.org/static/js/main.1ae89221.chunk.js.map",
+    "main.css": "/ameelio.org/static/css/main.323677fd.chunk.css",
+    "main.js": "/ameelio.org/static/js/main.53e9c8d1.chunk.js",
+    "main.js.map": "/ameelio.org/static/js/main.53e9c8d1.chunk.js.map",
     "runtime-main.js": "/ameelio.org/static/js/runtime-main.8eec9867.js",
     "runtime-main.js.map": "/ameelio.org/static/js/runtime-main.8eec9867.js.map",
-    "static/js/2.0f506bf0.chunk.js": "/ameelio.org/static/js/2.0f506bf0.chunk.js",
-    "static/js/2.0f506bf0.chunk.js.map": "/ameelio.org/static/js/2.0f506bf0.chunk.js.map",
+    "static/js/2.a0c321ca.chunk.js": "/ameelio.org/static/js/2.a0c321ca.chunk.js",
+    "static/js/2.a0c321ca.chunk.js.map": "/ameelio.org/static/js/2.a0c321ca.chunk.js.map",
     "index.html": "/ameelio.org/index.html",
-    "precache-manifest.65bf36c43f0769b38051f92bff4bd3df.js": "/ameelio.org/precache-manifest.65bf36c43f0769b38051f92bff4bd3df.js",
+    "precache-manifest.d3a6323c39136e487eff20f690c5d06c.js": "/ameelio.org/precache-manifest.d3a6323c39136e487eff20f690c5d06c.js",
     "service-worker.js": "/ameelio.org/service-worker.js",
-    "static/css/main.239ee3e8.chunk.css.map": "/ameelio.org/static/css/main.239ee3e8.chunk.css.map",
-    "static/js/2.0f506bf0.chunk.js.LICENSE.txt": "/ameelio.org/static/js/2.0f506bf0.chunk.js.LICENSE.txt",
+    "static/css/main.323677fd.chunk.css.map": "/ameelio.org/static/css/main.323677fd.chunk.css.map",
+    "static/js/2.a0c321ca.chunk.js.LICENSE.txt": "/ameelio.org/static/js/2.a0c321ca.chunk.js.LICENSE.txt",
     "static/media/Anna-Jones-California.png": "/ameelio.org/static/media/Anna-Jones-California.d3eaa442.png",
     "static/media/Carolyn-Vargas-New-York.png": "/ameelio.org/static/media/Carolyn-Vargas-New-York.89bc75c6.png",
     "static/media/Cathy-Capalot-Kansas.png": "/ameelio.org/static/media/Cathy-Capalot-Kansas.2b2994c9.png",
@@ -72,8 +72,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.8eec9867.js",
-    "static/js/2.0f506bf0.chunk.js",
-    "static/css/main.239ee3e8.chunk.css",
-    "static/js/main.1ae89221.chunk.js"
+    "static/js/2.a0c321ca.chunk.js",
+    "static/css/main.323677fd.chunk.css",
+    "static/js/main.53e9c8d1.chunk.js"
   ]
 }
