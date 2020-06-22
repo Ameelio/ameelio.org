@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "5ce091cddec9ee9898e36742916ccc4c",
+    "revision": "bc4f6467f667529e2ed1f59284660ad5",
     "url": "/ameelio.org/index.html"
   },
   {
-    "revision": "ab8883b744dc1bdd0cb7",
+    "revision": "01e465711c2b372a1417",
     "url": "/ameelio.org/static/css/main.b97105f7.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/ameelio.org/static/js/2.0bb77633.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "ab8883b744dc1bdd0cb7",
-    "url": "/ameelio.org/static/js/main.89881ac5.chunk.js"
+    "revision": "01e465711c2b372a1417",
+    "url": "/ameelio.org/static/js/main.69b2d187.chunk.js"
   },
   {
     "revision": "29232c37fbdd5f709a3a",
