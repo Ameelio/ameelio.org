@@ -1,6 +1,5 @@
 import React from "react";
 import "./Products.css";
-import ProductCard from "../cards/ProductCard";
 import ProductList from "../products/ProductList";
 
 const Products: React.FC = () => {

@@ -29,6 +29,10 @@
   max-height: 15px;
 }
 
+.letter-counter {
+  border-bottom: 4px solid rgb(247, 247, 250);
+}
+
 @media (min-width: 768px) {
   .container {
     display: flex;

@@ -128,9 +128,13 @@ h1 {
 }
 
 .secondary-btn {
-  border: var(--main-primary-color) 1px solid;
-  color: var(--main-primary-color);
+  border: var(--main-primary-color) 1px solid !important;
+  color: var(--main-primary-color) !important;
   background-color: white;
+}
+
+.btn {
+  border-radius: 4px;
 }
 
 .default-px {

@@ -68,7 +68,7 @@ const Testimonials: React.FC = () => {
       <Carousel>
         {testimonials.map(function (testimonial, index) {
           return (
-            <Carousel.Item>
+            <Carousel.Item key={index}>
               <TestimonialCard key={index} testimonial={testimonial} />
             </Carousel.Item>
           );

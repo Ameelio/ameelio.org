@@ -34,7 +34,12 @@ const NavBar: React.FC = () => {
             <NavDropdown.Item href="/#careers">Get Involved</NavDropdown.Item>
           </NavDropdown>
           <Nav.Link href="/#orgs">For Organizations</Nav.Link>
-          <Nav.Link href="https://letters.ameelio.org/donate">Donate</Nav.Link>
+          <Nav.Link
+            className="btn secondary-btn"
+            href="https://letters.ameelio.org/donate"
+          >
+            Donate
+          </Nav.Link>
         </Nav>
         <div className="auth">
           <a className="login" href="https://letters.ameelio.org/login">

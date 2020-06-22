@@ -46,7 +46,13 @@ const Careers: React.FC = () => {
   ];
 
   return (
-    <div className="careers-wrapper" id="careers">
+    <div
+      className="careers-wrapper d-flex flex-column align-items-center py-5"
+      id="careers"
+    >
+      <span className="p1 font-weight-bold text-center py-3 text-center">
+        Want to get involved?
+      </span>
       <div className="d-flex justify-content-center">
         <div className="careers-container d-flex flex-column justify-content-center">
           <div className="careers-text-container">
