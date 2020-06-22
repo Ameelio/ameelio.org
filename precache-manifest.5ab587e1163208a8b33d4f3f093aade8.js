@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "6674f860fdf7482a47e3821ea6b4a2b3",
+    "revision": "5ce091cddec9ee9898e36742916ccc4c",
     "url": "/ameelio.org/index.html"
   },
   {
-    "revision": "a5669f6c7296b825092e",
-    "url": "/ameelio.org/static/css/main.11bd44be.chunk.css"
+    "revision": "ab8883b744dc1bdd0cb7",
+    "url": "/ameelio.org/static/css/main.b97105f7.chunk.css"
   },
   {
-    "revision": "af489aef6645c694efa8",
-    "url": "/ameelio.org/static/js/2.891f1981.chunk.js"
+    "revision": "8fa4d6bc3c83db912301",
+    "url": "/ameelio.org/static/js/2.0bb77633.chunk.js"
   },
   {
-    "revision": "3453b8997016469371284a28c0e873e2",
-    "url": "/ameelio.org/static/js/2.891f1981.chunk.js.LICENSE.txt"
+    "revision": "fdd30b2ab44ae896589b798d411d5c2c",
+    "url": "/ameelio.org/static/js/2.0bb77633.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "a5669f6c7296b825092e",
-    "url": "/ameelio.org/static/js/main.d48baff0.chunk.js"
+    "revision": "ab8883b744dc1bdd0cb7",
+    "url": "/ameelio.org/static/js/main.89881ac5.chunk.js"
   },
   {
     "revision": "29232c37fbdd5f709a3a",
@@ -92,8 +92,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/ameelio.org/static/media/alisa.6c9605e8.jpeg"
   },
   {
-    "revision": "3856831a9ea443e6e2269a38ce8b771e",
-    "url": "/ameelio.org/static/media/bi.3856831a.png"
+    "revision": "174d974f2e50811975d92fab9a6b34ca",
+    "url": "/ameelio.org/static/media/bi.174d974f.png"
   },
   {
     "revision": "7383531fa65e57a84a8cf6614ef274da",
