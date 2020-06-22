@@ -12,11 +12,16 @@ const GetStarted: React.FC = () => {
             Bring free videoconferencing to your facility
           </div>
           <div className="get-started-subtitle mt-3 p5">
-            Ameelio is working to launch the first videoconferencing pilot sites
-            in the US. If you're are a warden or sheriff interested in being one
-            of the pioneers, email us at team@ameelio.org.
+            Ameelio is working to launch the first video conferencing pilot
+            sites in the US. If you're are a warden or sheriff interested in
+            being one of the pioneers, email us at team@ameelio.org.
           </div>
-          <button className="get-started-button">Get Started</button>
+          <button
+            className="get-started-button"
+            onClick={() => window.open("https://calendly.com/ameelio")}
+          >
+            Schedule Demo
+          </button>
         </div>
       </div>
     </div>

@@ -83,7 +83,10 @@ const Careers: React.FC = () => {
               <div className="media-contact-description">
                 Interested in getting in touch?
               </div>
-              <button className="media-contact-button mt-3 mt-md-0">
+              <button
+                className="media-contact-button mt-3 mt-md-0"
+                onClick={() => window.open(`mailto:zo@ameelio.org`)}
+              >
                 Contact Us
               </button>
             </div>
