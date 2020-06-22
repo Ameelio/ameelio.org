@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/ameelio.org/precache-manifest.0a1cd441069d429cf13324b3e9521575.js"
+  "/ameelio.org/precache-manifest.1d61f51f815d767a7b375e106eb7d515.js"
 );
 
 self.addEventListener('message', (event) => {

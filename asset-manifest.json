@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/ameelio.org/static/css/main.65fdfdd7.chunk.css",
-    "main.js": "/ameelio.org/static/js/main.14bd4d35.chunk.js",
-    "main.js.map": "/ameelio.org/static/js/main.14bd4d35.chunk.js.map",
+    "main.js": "/ameelio.org/static/js/main.eb35feef.chunk.js",
+    "main.js.map": "/ameelio.org/static/js/main.eb35feef.chunk.js.map",
     "runtime-main.js": "/ameelio.org/static/js/runtime-main.8eec9867.js",
     "runtime-main.js.map": "/ameelio.org/static/js/runtime-main.8eec9867.js.map",
-    "static/js/2.1d4f90e0.chunk.js": "/ameelio.org/static/js/2.1d4f90e0.chunk.js",
-    "static/js/2.1d4f90e0.chunk.js.map": "/ameelio.org/static/js/2.1d4f90e0.chunk.js.map",
+    "static/js/2.0db3f1f4.chunk.js": "/ameelio.org/static/js/2.0db3f1f4.chunk.js",
+    "static/js/2.0db3f1f4.chunk.js.map": "/ameelio.org/static/js/2.0db3f1f4.chunk.js.map",
     "index.html": "/ameelio.org/index.html",
-    "precache-manifest.0a1cd441069d429cf13324b3e9521575.js": "/ameelio.org/precache-manifest.0a1cd441069d429cf13324b3e9521575.js",
+    "precache-manifest.1d61f51f815d767a7b375e106eb7d515.js": "/ameelio.org/precache-manifest.1d61f51f815d767a7b375e106eb7d515.js",
     "service-worker.js": "/ameelio.org/service-worker.js",
     "static/css/main.65fdfdd7.chunk.css.map": "/ameelio.org/static/css/main.65fdfdd7.chunk.css.map",
-    "static/js/2.1d4f90e0.chunk.js.LICENSE.txt": "/ameelio.org/static/js/2.1d4f90e0.chunk.js.LICENSE.txt",
+    "static/js/2.0db3f1f4.chunk.js.LICENSE.txt": "/ameelio.org/static/js/2.0db3f1f4.chunk.js.LICENSE.txt",
     "static/media/Anna-Jones-California.png": "/ameelio.org/static/media/Anna-Jones-California.d3eaa442.png",
     "static/media/Carolyn-Vargas-New-York.png": "/ameelio.org/static/media/Carolyn-Vargas-New-York.89bc75c6.png",
     "static/media/Cathy-Capalot-Kansas.png": "/ameelio.org/static/media/Cathy-Capalot-Kansas.2b2994c9.png",
@@ -49,6 +49,7 @@
     "static/media/letters.svg": "/ameelio.org/static/media/letters.a0421db4.svg",
     "static/media/letters_for_organizations.png": "/ameelio.org/static/media/letters_for_organizations.a1c6d50b.png",
     "static/media/liz.jpg": "/ameelio.org/static/media/liz.784fac07.jpg",
+    "static/media/logo.svg": "/ameelio.org/static/media/logo.dfd0363d.svg",
     "static/media/maincard_background.png": "/ameelio.org/static/media/maincard_background.195441f5.png",
     "static/media/maincard_illustration.png": "/ameelio.org/static/media/maincard_illustration.98acc237.png",
     "static/media/markito.jpeg": "/ameelio.org/static/media/markito.8301e50f.jpeg",
@@ -71,8 +72,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.8eec9867.js",
-    "static/js/2.1d4f90e0.chunk.js",
+    "static/js/2.0db3f1f4.chunk.js",
     "static/css/main.65fdfdd7.chunk.css",
-    "static/js/main.14bd4d35.chunk.js"
+    "static/js/main.eb35feef.chunk.js"
   ]
 }
