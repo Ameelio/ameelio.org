@@ -9,8 +9,8 @@ const LettersForFamilies: React.FC = () => {
         <div className="d-flex flex-column align-items-center align-items-md-start justify-content-evenly text-center text-md-left">
           <div className="p1 font-weight-bolder">Letters for families</div>
           <div className="lff-subtitle mt-3 p4">
-            Share physical memories and new experiences with your loved ones
-            inside. Your letters are personal keepsakes that they will cherish.
+            Lift your loved one’s spirits by sharing a piece of your life with
+            them. Your letters are keepsakes that they will hold onto.
           </div>
           <br></br>
           <br></br>

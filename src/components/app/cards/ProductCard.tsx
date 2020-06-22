@@ -20,14 +20,14 @@ const ProductCard: FunctionComponent<ProductProps> = ({
   learnMoreLink,
 }) => {
   return (
-    <div className="products-card-wrapper ml-lg-5">
+    <div className="products-card-wrapper ml-lg-5 mt-3 mt-md-0">
       <div className="products-card-title">{name}</div>
       <Image
         src={image}
         className="product-card-illustration mb-3"
         alt="Product picture"
       />
-      <div className="products-card-body my-3">{description}</div>
+      <div className="products-card-body my-4">{description}</div>
       {ctaLink && (
         <button
           onClick={() => window.open(ctaLink)}

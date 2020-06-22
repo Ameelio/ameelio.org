@@ -28,8 +28,10 @@ const TestimonialCard = (props: TestimonialProps) => {
           {props.testimonial.quote}
         </span>
       </div>
-      <div className="d-flex flex-row text-left align-items-md-center mt-3">
-        <span className="quote-author-text ">- {props.testimonial.name}</span>
+      <div className="d-flex flex-column flex-md-row text-left align-items-center mt-3">
+        <span className="quote-author-text text-break">
+          - {props.testimonial.name}
+        </span>
         <Image
           className="quote-author-image ml-3"
           src={props.testimonial.img}

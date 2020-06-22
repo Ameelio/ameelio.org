@@ -2,6 +2,7 @@ import React, { FunctionComponent } from "react";
 import "./Navbar.css";
 
 import { Navbar, Nav, NavDropdown } from "react-bootstrap";
+import { Link } from "react-router-dom";
 
 const NavBar: FunctionComponent = () => {
   const nav_logo: string = require("../../../assets/logo.svg");
@@ -14,27 +15,39 @@ const NavBar: FunctionComponent = () => {
       variant="light"
       sticky="top"
     >
-      <Navbar.Brand href="/">
-        <img
-          src={nav_logo}
-          width="150px"
-          // height="15%"
-          className="d-inline-block align-top"
-          alt="Ameelio logo"
-        />
+      <Navbar.Brand>
+        <Link to="/">
+          <img
+            src={nav_logo}
+            width="150px"
+            className="d-inline-block align-top"
+            alt="Ameelio logo"
+          />
+        </Link>
       </Navbar.Brand>
       <Navbar.Toggle aria-controls="responsive-navbar-nav" />
       <Navbar.Collapse id="responsive-navbar-nav">
         <Nav className="mr-auto">
-          <Nav.Link href="/mission">Our Mission</Nav.Link>
-          <Nav.Link href="/how-we-work">How it works</Nav.Link>
-          <Nav.Link href="/transparency">How it is free</Nav.Link>
-          {/* <Nav.Link href="/team">Team</Nav.Link> */}
+          <Nav.Link>
+            <Link to="/mission">Our Mission</Link>
+          </Nav.Link>
+          <Nav.Link>
+            <Link to={{ pathname: "/how-we-work" }}>How it works</Link>
+          </Nav.Link>
+          <Nav.Link>
+            <Link to={{ pathname: "/transparency" }}>How it is free</Link>
+          </Nav.Link>
           <NavDropdown title="Team" id="nav-dropdown">
-            <NavDropdown.Item href="/team">Team</NavDropdown.Item>
-            <NavDropdown.Item href="/#careers">Get Involved</NavDropdown.Item>
+            <NavDropdown.Item>
+              <Link to={{ pathname: "/team" }}>Team</Link>
+            </NavDropdown.Item>
+            <NavDropdown.Item>
+              <Link to={{ pathname: "#careers" }}>Get Involved</Link>
+            </NavDropdown.Item>
           </NavDropdown>
-          <Nav.Link href="/#orgs">For Organizations</Nav.Link>
+          <Nav.Link>
+            <Link to={{ pathname: "#orgs" }}>For Organizations</Link>
+          </Nav.Link>
           <Nav.Link
             className="btn secondary-btn"
             href="https://letters.ameelio.org/donate"

@@ -105,7 +105,7 @@ const Team: React.FC = () => {
     new Member(
       "Alex Waibel",
       require("../../../assets/team/alex.png"),
-      "Fundraising"
+      "Technical Team Lead"
     ),
     new Member(
       "Mark Pekala",

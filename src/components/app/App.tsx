@@ -9,7 +9,7 @@ import Team from "./pages/Team";
 import Footer from "./footer/Footer";
 import HowItWorks from "./pages/HowItWorks";
 
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import { HashRouter as Router, Route, Switch } from "react-router-dom";
 
 const App: React.FC = () => {
   return (
@@ -17,16 +17,10 @@ const App: React.FC = () => {
       <NavBar />
       <br />
       <Switch>
-        <Route
-          path={process.env.PUBLIC_URL + "/how-we-work"}
-          component={HowItWorks}
-        />
-        <Route
-          path={process.env.PUBLIC_URL + "/transparency"}
-          component={HowFree}
-        />
-        <Route path={process.env.PUBLIC_URL + "/team"} component={Team} />
-        <Route path={process.env.PUBLIC_URL + "/mission"} component={Mission} />
+        <Route path="/how-we-work" component={HowItWorks} />
+        <Route path="/transparency" component={HowFree} />
+        <Route path="/team" component={Team} />
+        <Route path="/mission" component={Mission} />
         <Route path="/" component={Landing} />
       </Switch>
       <Footer />

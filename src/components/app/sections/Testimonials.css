@@ -5,11 +5,13 @@
 }
 
 .quote-author-text {
-  font-size: 22px;
+  font-size: 18px;
 }
 
 .quote-author-image {
-  max-width: 100px;
+  width: 100px;
+  height: 100px;
+  flex-shrink: 0;
 }
 
 .quote-symbol {

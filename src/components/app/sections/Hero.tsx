@@ -2,9 +2,10 @@ import React, { Component } from "react";
 import "./Hero.css";
 import Typical from "react-typical";
 import Image from "react-bootstrap/Image";
+import { numberWithCommas } from "../../../utils/utils";
 
 type LetterCounter = {
-  letters: number;
+  letters: string;
 };
 
 export default class Hero extends Component<{}, LetterCounter> {
@@ -16,7 +17,9 @@ export default class Hero extends Component<{}, LetterCounter> {
     var dif_seconds = dif / 1000;
 
     this.setState({
-      letters: Math.round(20316 + dif_seconds * increment_seconds),
+      letters: numberWithCommas(
+        Math.round(20316 + dif_seconds * increment_seconds)
+      ),
     });
   }
   componentWillMount() {

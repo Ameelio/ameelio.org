@@ -41,8 +41,13 @@ li,
 a {
   font-size: 16px;
   font-weight: 400;
-  color: #2d3748;
+  color: rgb(133, 138, 143);
   text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+  color: var(--main-primary-color);
 }
 
 .navbar {
@@ -140,6 +145,11 @@ h1 {
 .default-px {
   padding-left: 10%;
   padding-right: 10%;
+}
+
+.video {
+  width: 750px;
+  max-width: 90%;
 }
 
 /* Override Bootstrap Classes */

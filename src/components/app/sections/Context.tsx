@@ -30,7 +30,7 @@ const Context: React.FC = () => {
               locked up over 100 miles from their families
             </div>
             <br></br>
-            <div className="context-category-footer">PPI</div>
+            <div className="context-category-footer mb-3 mb-md-0">PPI</div>
           </div>
           <div className="context-body-2-col">
             <div className="rectangle-small"></div>
@@ -41,7 +41,7 @@ const Context: React.FC = () => {
               for a 15 minute phone call to a loved one outside
             </div>
             <br></br>
-            <div className="context-category-footer">PPI</div>
+            <div className="context-category-footer mb-3 mb-md-0">PPI</div>
           </div>
           <div className="context-body-2-col">
             <div className="rectangle-small"></div>
@@ -52,7 +52,9 @@ const Context: React.FC = () => {
               families with incarcerated loved ones unable to meet basic needs
             </div>
             <br></br>
-            <div className="context-category-footer">Ella Baker</div>
+            <div className="context-category-footer mb-3 mb-md-0">
+              Ella Baker
+            </div>
           </div>
         </div>
         <div className="context-footer">
