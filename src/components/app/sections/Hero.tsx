@@ -3,6 +3,8 @@ import "./Hero.css";
 import Typical from "react-typical";
 import Image from "react-bootstrap/Image";
 import { numberWithCommas } from "../../../utils/utils";
+import { PLACEMENT, LINKS, BUTTON_TYPES } from "../../../utils/constants";
+import { trackButtonClick } from "../../../utils/analytics";
 
 type LetterCounter = {
   letters: string;
@@ -31,6 +33,11 @@ export default class Hero extends Component<{}, LetterCounter> {
     setInterval(() => this.tick(), 360000);
   }
 
+  handleClick() {
+    trackButtonClick(BUTTON_TYPES.SIGNUP, PLACEMENT.HERO);
+    window.location.assign(LINKS.SIGNUP);
+  }
+
   render() {
     return (
       <div className="mx-md-5 px-md-5 py-3 mt-3 d-flex flex-lg-row flex-column  w-100 justify-content-center align-items-center align-items-md-start">
@@ -50,14 +57,12 @@ export default class Hero extends Component<{}, LetterCounter> {
             You shouldn't have to decide between paying for basic needs and
             staying connected to your loved ones.
           </div>
-          <a
-            className="signup w-100"
-            href="https://letters.ameelio.org/register"
+          <button
+            className="mt-3 w-100 letters-button"
+            onClick={this.handleClick.bind(this)}
           >
-            <button className="mt-3 w-100 letters-button">
-              Send Free Letters
-            </button>
-          </a>
+            Send Free Letters
+          </button>
           <span className="font-weight-bold blue letter-counter mt-4">
             Ameelio's community has sent over {this.state.letters} letters
           </span>

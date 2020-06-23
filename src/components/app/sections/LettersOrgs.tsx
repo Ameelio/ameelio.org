@@ -1,8 +1,19 @@
-import React from "react";
+import React, { useState, useEffect, FunctionComponent } from "react";
 import "./LettersOrgs.css";
+import { PLACEMENT, LINKS, BUTTON_TYPES } from "../../../utils/constants";
+import { trackButtonClick } from "../../../utils/analytics";
 
-const LettersForOrgs: React.FC = () => {
+const LettersForOrgs: FunctionComponent = () => {
   const preview: any = require("../../../assets/letters_for_organizations.png");
+  const [clicked, setClicked] = useState(false);
+
+  useEffect(() => {
+    if (clicked) {
+      trackButtonClick(BUTTON_TYPES.ORGS_DEMO, PLACEMENT.SECTION);
+      window.open(LINKS.ORGS_DEMO, "_self");
+    }
+  });
+
   return (
     <div className="lfo-wrapper py-5" id="orgs">
       <div className="lfo-container">
@@ -14,14 +25,7 @@ const LettersForOrgs: React.FC = () => {
           your contacts, and ease collaboration and visibility within your
           organization.
         </div>
-        <button
-          onClick={() =>
-            window.open(
-              "https://calendly.com/emma-gray-ameelio/letters-for-organizations-information-session"
-            )
-          }
-          className="lfo-button"
-        >
+        <button onClick={() => setClicked(true)} className="lfo-button">
           Schedule a Demo
         </button>
         <img className="lfo-preview" src={preview} alt="" />
