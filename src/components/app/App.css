@@ -163,4 +163,10 @@ h1 {
 
 .nav-link {
   margin-top: 20px;
+  padding: 0.5em 0;
+}
+
+.dropdown-item.active,
+.dropdown-item:active {
+  background-color: var(--main-primary-color);
 }

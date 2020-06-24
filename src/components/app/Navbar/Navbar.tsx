@@ -5,6 +5,7 @@ import { Navbar, Nav, NavDropdown } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import { trackNav, trackButtonClick } from "../../../utils/analytics";
 import { PLACEMENT, LINKS, BUTTON_TYPES } from "../../../utils/constants";
+import { isMobile } from "react-device-detect";
 
 const NavBar: FunctionComponent = () => {
   const nav_logo: string = require("../../../assets/logo.svg");
@@ -12,7 +13,15 @@ const NavBar: FunctionComponent = () => {
     { path: "mission", name: "Our Mission", key: "mission" },
     { path: "how-we-work", name: "How it works", key: "walkthrough" },
     { path: "transparency", name: "How it is free", key: "transparency" },
+  ];
+
+  const NAV_DROPDOWN_ITEMS: Array<{
+    path: string;
+    name: string;
+    key: string;
+  }> = [
     { path: "team", name: "Team", key: "team" },
+    { path: "ambassadors", name: "Ambassadors", key: "ambassadors" },
     { path: "get-involved", name: "Get Involved", key: "career" },
   ];
 
@@ -32,7 +41,7 @@ const NavBar: FunctionComponent = () => {
       window.open(LINKS.DONATION, "_self");
     }
   });
-
+  const donate_className = isMobile ? "" : "btn secondary-btn";
   return (
     <Navbar
       collapseOnSelect
@@ -65,22 +74,38 @@ const NavBar: FunctionComponent = () => {
               {item.name}
             </Nav.Link>
           ))}
+
+          <NavDropdown title="Team" id="basic-nav-dropdown">
+            {NAV_DROPDOWN_ITEMS.map((item) => (
+              <NavDropdown.Item
+                as={Link}
+                to={item.path}
+                eventKey={item.name}
+                key={item.key}
+                onClick={() => trackNav(item.key)}
+              >
+                {item.name}
+              </NavDropdown.Item>
+            ))}
+          </NavDropdown>
+
           <Nav.Link
-            className="btn secondary-btn mr-5"
+            className={donate_className}
             onClick={() => setDonateClicked(true)}
           >
             Donate
           </Nav.Link>
+          {isMobile ? <NavDropdown.Divider /> : <div></div>}
         </Nav>
-        <div className="auth">
-          <a
-            className="login"
-            onClick={() => setLoginClicked(true)}
-            href="https://letters.ameelio.org/login"
-          >
+
+        <div className="d-flex flex-column flex-md-row">
+          <Nav.Link className="login" onClick={() => setLoginClicked(true)}>
             Login
-          </a>
-          <button className="ml-3 mr-5" onClick={() => setSignupClicked(true)}>
+          </Nav.Link>
+          <button
+            className="signup-button ml-md-3 mr-5"
+            onClick={() => setSignupClicked(true)}
+          >
             Sign Up
           </button>
         </div>

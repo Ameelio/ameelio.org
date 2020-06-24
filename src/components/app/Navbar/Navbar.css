@@ -35,16 +35,6 @@ header {
 .nav-links li a:hover {
   color: #818991;
 }
-
-.login {
-  transition: all 0.3s ease 0s;
-}
-
-.login:hover {
-  color: #818991;
-}
-
-.auth {
-  margin-left: auto;
+.signup-button {
   margin-top: 20px;
 }
