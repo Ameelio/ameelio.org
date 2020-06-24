@@ -104,23 +104,23 @@ h1 {
 
 @media (min-width: 768px) {
   h1 {
-    font-size: 52px;
-  }
-
-  .p1 {
-    font-size: 52px;
-  }
-
-  .p2 {
     font-size: 48px;
   }
 
+  .p1 {
+    font-size: 48px;
+  }
+
+  .p2 {
+    font-size: 36px;
+  }
+
   .p3 {
-    font-size: 32px;
+    font-size: 24px;
   }
 
   .p4 {
-    font-size: 24px;
+    font-size: 18px;
   }
 
   .p5 {

@@ -18,29 +18,29 @@ const HowFree: FunctionComponent = () => {
       </span>
 
       <span className="text-break mb-3">
-        These include leading foundations like the Robin Hood Foundation, the
-        Mozilla Foundation, and Fast Forward Accelerator. They also include
-        individual donors like Tarell McCraney (Oscar-winning writer of
-        Moonlight).
+        Among our early supporters are Robin Hood Foundation, the Mozilla
+        Foundation, and Fast Forward Accelerator. Donors like Tarell McCraney
+        (Oscar-winning writer of Moonlight) have contributed key funds that have
+        allowed us to keep offering free letters to all our users.
       </span>
       <span>
-        To be a more effective, sustainable, and impactful nonprofit, we believe
-        it's important to generate earned revenue. That’s why we seek
-        alternative sources of revenue for our services through criminal justice
-        organizations and, in the future, lawyers.
+        Sustainability is critical to our mission, so we believe that it's
+        important to generate earned revenue. That’s why we are building paid
+        products for mission-aligned partners, like criminal justice
+        organizations and lawyers, who are willing and able to pay.
       </span>
 
       <div className="mt-5 d-flex flex-column">
         <span className="p2 font-weight-bold mb-3">Who owns Ameelio?</span>
         <span className="mb3">
-          Ameelio is a non-profit. This means that the American people own
-          Ameelio. You own Ameelio just as much as any one of us does.
+          Ameelio is a nonprofit. Ending the exploitation of families impacted
+          by incarceration is central to our mission, so we are committed to
+          re-investing all of our profits into our products. All our funds are
+          directed towards building better communications options and serving
+          more families.
         </span>
-
-        <span className="mb-3">Best,</span>
-        <span className="mb-3">Ameelio Team</span>
       </div>
-      <Supporters />
+      {/* <Supporters /> */}
     </div>
   );
 };

@@ -18,6 +18,7 @@ const NavBar: FunctionComponent = () => {
 
   const [signup_clicked, setSignupClicked] = useState(false);
   const [login_clicked, setLoginClicked] = useState(false);
+  const [donate_clicked, setDonateClicked] = useState(false);
 
   useEffect(() => {
     if (signup_clicked) {
@@ -26,6 +27,9 @@ const NavBar: FunctionComponent = () => {
     } else if (login_clicked) {
       trackButtonClick(BUTTON_TYPES.LOGIN, PLACEMENT.NAV);
       window.open(LINKS.LOGIN, "_self");
+    } else if (donate_clicked) {
+      trackButtonClick(BUTTON_TYPES.DONATE, PLACEMENT.NAV);
+      window.open(LINKS.DONATION, "_self");
     }
   });
 
@@ -61,6 +65,12 @@ const NavBar: FunctionComponent = () => {
               {item.name}
             </Nav.Link>
           ))}
+          <Nav.Link
+            className="btn secondary-btn mr-5"
+            onClick={() => setSignupClicked(true)}
+          >
+            Donate
+          </Nav.Link>
         </Nav>
         <div className="auth">
           <a
@@ -70,12 +80,9 @@ const NavBar: FunctionComponent = () => {
           >
             Login
           </a>
-          <a
-            className="signup ml-3"
-            href="https://letters.ameelio.org/register"
-          >
-            <button onClick={() => setSignupClicked(true)}>Sign Up</button>
-          </a>
+          <button className="ml-3 mr-5" onClick={() => setSignupClicked(true)}>
+            Sign Up
+          </button>
         </div>
       </Navbar.Collapse>
     </Navbar>

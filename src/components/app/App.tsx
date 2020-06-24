@@ -10,12 +10,13 @@ import Footer from "./footer/Footer";
 import HowItWorks from "./pages/HowItWorks";
 
 import { HashRouter as Router, Route, Switch } from "react-router-dom";
-import { trackPageOpen } from "../../utils/analytics";
+import { trackPageOpen, load } from "../../utils/analytics";
 
 const App: React.FC = () => {
   useEffect(() => {
+    load();
     trackPageOpen();
-  });
+  }, []);
 
   return (
     <Router>
