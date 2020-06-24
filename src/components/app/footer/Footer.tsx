@@ -38,9 +38,12 @@ const Footer = () => {
           <span className="ml-3">GitHub</span>
         </a>
       </div>
-      <div className="ml-auto pr-md-5 pt-5">
+      <div className="ml-auto d-flex flex-column pr-md-5 pt-5">
         <h3 className="text-md-right copyright-title">Ameelio</h3>
-        <span className="copyright">
+        <span className="text-md-right p5 white">
+          Contact us at team@ameelio.org
+        </span>
+        <span className="copyright mt-3">
           © 2020 Ameelio. Ameelio Inc, EIN 84-1800611, is a registered nonprofit
           501(c)(3) organization.
         </span>
