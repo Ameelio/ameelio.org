@@ -67,7 +67,7 @@ const NavBar: FunctionComponent = () => {
           ))}
           <Nav.Link
             className="btn secondary-btn mr-5"
-            onClick={() => setSignupClicked(true)}
+            onClick={() => setDonateClicked(true)}
           >
             Donate
           </Nav.Link>
