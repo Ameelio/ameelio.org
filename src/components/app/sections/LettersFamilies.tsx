@@ -29,7 +29,7 @@ const LettersForFamilies: FunctionComponent = () => {
             2. Write a message &amp; attach a photo
           </div>
           <div className="lff-list p4">
-            3. We'll print &amp; mail if for you, for free!
+            3. We'll print &amp; mail it for you, for free
           </div>
           <button className="lff-button my-3" onClick={() => setClicked(true)}>
             Get Started

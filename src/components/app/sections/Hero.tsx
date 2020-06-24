@@ -52,12 +52,12 @@ export default class Hero extends Component<{}, LetterCounter> {
               />
             </div>
             <span className="p1 font-weight-bold">
-              to your imprisoned <br /> loved one
+              to your incarcerated <br /> loved ones
             </span>
           </div>
           <div className="p5 subtitle mt-1">
-            You shouldn't have to decide between paying for basic needs and
-            staying connected to your loved ones.
+            Staying connected to your loved ones and paying for basic needs
+            should never be a tradeoff. That's why we're a <b>nonprofit</b>.
           </div>
           <button
             className="mt-3 w-100 letters-button"
