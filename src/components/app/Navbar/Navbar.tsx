@@ -20,7 +20,7 @@ const NavBar: FunctionComponent = () => {
     name: string;
     key: string;
   }> = [
-    { path: "team", name: "Team", key: "team" },
+    // { path: "team", name: "Team", key: "team" },
     { path: "ambassadors", name: "Ambassadors", key: "ambassadors" },
     { path: "get-involved", name: "Get Involved", key: "career" },
   ];
