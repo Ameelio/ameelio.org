@@ -42,7 +42,7 @@ const HowItWorks: FunctionComponent = () => {
   ];
   return (
     <div>
-      <div className="d-flex flex-column">
+      <div className="d-flex flex-column p-3">
         <span className="p1 font-weight-bold text-center">
           How Ameelio Works
         </span>

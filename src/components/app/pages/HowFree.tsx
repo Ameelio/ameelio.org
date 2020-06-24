@@ -3,7 +3,7 @@ import Supporters from "../sections/Supporters";
 
 const HowFree: FunctionComponent = () => {
   return (
-    <div className="d-flex flex-column text-align-center  justify-content-center mw-100 default-px">
+    <div className="d-flex flex-column text-align-center  justify-content-center mw-100 default-px py-5">
       <span className="p2 font-weight-bold">How is Ameelio Free?</span>
       <span className="text-break mb-3">
         We are the only nonprofit prison telecommunications provider in the U.S.
@@ -40,7 +40,7 @@ const HowFree: FunctionComponent = () => {
           more families.
         </span>
       </div>
-      {/* <Supporters /> */}
+      <Supporters />
     </div>
   );
 };

@@ -5,7 +5,7 @@ import "./Supporters.css";
 const Supporters: FunctionComponent = () => {
   return (
     <div className="py-5">
-      <span className="p2">Our Supporters</span>
+      <span className="p2 font-weight-bold mb-5">Who Supports Ameelio?</span>
       <div className="d-flex flex-column flex-md-row mt-5">
         <Image
           className="supporter-logo"
