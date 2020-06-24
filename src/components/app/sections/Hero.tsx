@@ -57,7 +57,7 @@ export default class Hero extends Component<{}, LetterCounter> {
           </div>
           <div className="p5 subtitle mt-1">
             Staying connected to your loved ones and paying for basic needs
-            should never be a tradeoff. That's why we're a <b>nonprofit</b>.
+            shouldn't be a tradeoff. That's why we're a <b>nonprofit</b>.
           </div>
           <button
             className="mt-3 w-100 letters-button"
