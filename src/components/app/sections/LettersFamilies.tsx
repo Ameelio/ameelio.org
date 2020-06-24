@@ -4,7 +4,7 @@ import { PLACEMENT, LINKS, BUTTON_TYPES } from "../../../utils/constants";
 import { trackButtonClick } from "../../../utils/analytics";
 
 const LettersForFamilies: FunctionComponent = () => {
-  const mobile: any = require("../../../assets/mockups/mobile.svg");
+  const mobile: any = require("../../../assets/mockups/mobile.png");
   const [clicked, setClicked] = useState(false);
 
   useEffect(() => {
@@ -22,8 +22,6 @@ const LettersForFamilies: FunctionComponent = () => {
             Lift your loved one’s spirits by sharing a piece of your life with
             them. Your letters are keepsakes that they will hold onto.
           </div>
-          <br></br>
-          <br></br>
           <div className="lff-list p4">
             1. Locate your incarcerated loved one
           </div>

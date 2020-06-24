@@ -19,7 +19,7 @@
 .illustration {
   position: relative;
   z-index: 2;
-  height: 300px;
+  height: 350px;
 }
 
 .media-container {
@@ -48,6 +48,7 @@
     position: relative;
     z-index: 2;
     height: 100%;
+    margin-top: 80px !important;
   }
 
   .letters-button {

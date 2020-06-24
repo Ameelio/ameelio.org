@@ -46,12 +46,14 @@ export default class Hero extends Component<{}, LetterCounter> {
             <div className="d-flex flex-column ">
               <span className="p1 font-weight-bold">Send free&nbsp;</span>
               <Typical
-                steps={["letters", 3000, "photos", 2500, "postcards", 2500]}
+                steps={["letters", 3000, "photos", 2500]}
                 loop={Infinity}
                 wrapper="h1"
               />
             </div>
-            <span className="p1 font-weight-bold">to your loved one</span>
+            <span className="p1 font-weight-bold">
+              to your imprisoned <br /> loved one
+            </span>
           </div>
           <div className="p5 subtitle mt-1">
             You shouldn't have to decide between paying for basic needs and
@@ -71,28 +73,28 @@ export default class Hero extends Component<{}, LetterCounter> {
               <Image
                 src={require("../../../assets/media/fc.png")}
                 alt="Fast Company Article"
-                className="media-article ml-3 ml-md-0"
+                className="media-article ml-md-0"
               />
             </a>
             <a href="https://www.fastcompany.com/90514321/this-app-bypasses-the-absurdly-high-cost-of-making-phone-calls-to-prison-by-converting-texts-to-snail-mail?partner=rss&utm_source=rss&utm_medium=feed&utm_campaign=rss+fastcompany&utm_content=rss">
               <Image
                 src={require("../../../assets/media/wapo.png")}
                 alt="Washington Post Article"
-                className="media-article ml-3"
+                className="media-article ml-4 ml-md-3"
               />
             </a>
             <a href="https://techcrunch.com/2020/05/14/ameelio-wants-to-take-on-for-profit-prison-calling-rackets-after-starting-with-free-letters-to-inmates/">
               <Image
                 src={require("../../../assets/media/tc.png")}
                 alt="Techcrunch Article"
-                className="media-article ml-3"
+                className="media-article ml-md-3"
               />
             </a>
             <a href="https://www.businessinsider.com/how-to-use-app-talk-family-prison-ameelio-2020-6">
               <Image
                 src={require("../../../assets/media/bi.png")}
                 alt="Business Insider Article"
-                className="media-article ml-3"
+                className="media-article  ml-4 ml-md-3"
               />
             </a>
           </div>
