@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/ameelio.org/static/css/main.b97105f7.chunk.css",
-    "main.js": "/ameelio.org/static/js/main.16aae2f2.chunk.js",
-    "main.js.map": "/ameelio.org/static/js/main.16aae2f2.chunk.js.map",
+    "main.css": "/ameelio.org/static/css/main.d7ea70ad.chunk.css",
+    "main.js": "/ameelio.org/static/js/main.6905b624.chunk.js",
+    "main.js.map": "/ameelio.org/static/js/main.6905b624.chunk.js.map",
     "runtime-main.js": "/ameelio.org/static/js/runtime-main.8eec9867.js",
     "runtime-main.js.map": "/ameelio.org/static/js/runtime-main.8eec9867.js.map",
-    "static/js/2.41ed447c.chunk.js": "/ameelio.org/static/js/2.41ed447c.chunk.js",
-    "static/js/2.41ed447c.chunk.js.map": "/ameelio.org/static/js/2.41ed447c.chunk.js.map",
+    "static/js/2.e8720e80.chunk.js": "/ameelio.org/static/js/2.e8720e80.chunk.js",
+    "static/js/2.e8720e80.chunk.js.map": "/ameelio.org/static/js/2.e8720e80.chunk.js.map",
     "index.html": "/ameelio.org/index.html",
-    "precache-manifest.5f41e7aa439834da152116fa47599bce.js": "/ameelio.org/precache-manifest.5f41e7aa439834da152116fa47599bce.js",
+    "precache-manifest.37f97db03cd3a4ee3c4c197dd397d457.js": "/ameelio.org/precache-manifest.37f97db03cd3a4ee3c4c197dd397d457.js",
     "service-worker.js": "/ameelio.org/service-worker.js",
-    "static/css/main.b97105f7.chunk.css.map": "/ameelio.org/static/css/main.b97105f7.chunk.css.map",
-    "static/js/2.41ed447c.chunk.js.LICENSE.txt": "/ameelio.org/static/js/2.41ed447c.chunk.js.LICENSE.txt",
+    "static/css/main.d7ea70ad.chunk.css.map": "/ameelio.org/static/css/main.d7ea70ad.chunk.css.map",
+    "static/js/2.e8720e80.chunk.js.LICENSE.txt": "/ameelio.org/static/js/2.e8720e80.chunk.js.LICENSE.txt",
     "static/media/Anna-Jones-California.png": "/ameelio.org/static/media/Anna-Jones-California.d3eaa442.png",
     "static/media/Carolyn-Vargas-New-York.png": "/ameelio.org/static/media/Carolyn-Vargas-New-York.89bc75c6.png",
     "static/media/Cathy-Capalot-Kansas.png": "/ameelio.org/static/media/Cathy-Capalot-Kansas.2b2994c9.png",
@@ -36,7 +36,6 @@
     "static/media/connect.svg": "/ameelio.org/static/media/connect.6916dc3b.svg",
     "static/media/david.jpg": "/ameelio.org/static/media/david.fac346d3.jpg",
     "static/media/emma.png": "/ameelio.org/static/media/emma.783ce736.png",
-    "static/media/ffw.png": "/ameelio.org/static/media/ffw.c8639a68.png",
     "static/media/gabe.jpeg": "/ameelio.org/static/media/gabe.1483805b.jpeg",
     "static/media/isis.jpeg": "/ameelio.org/static/media/isis.934eb2c2.jpeg",
     "static/media/ivy.jpeg": "/ameelio.org/static/media/ivy.b2191a0f.jpeg",
@@ -55,7 +54,6 @@
     "static/media/markito.jpeg": "/ameelio.org/static/media/markito.8301e50f.jpeg",
     "static/media/meher.jpg": "/ameelio.org/static/media/meher.563eeb61.jpg",
     "static/media/mobile.svg": "/ameelio.org/static/media/mobile.ccd9c0cf.svg",
-    "static/media/mozilla.png": "/ameelio.org/static/media/mozilla.ffbbea36.png",
     "static/media/nikhil.jpg": "/ameelio.org/static/media/nikhil.f03887c7.jpg",
     "static/media/olivia.png": "/ameelio.org/static/media/olivia.cd61a378.png",
     "static/media/owen.jpg": "/ameelio.org/static/media/owen.cb5bd99a.jpg",
@@ -72,8 +70,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.8eec9867.js",
-    "static/js/2.41ed447c.chunk.js",
-    "static/css/main.b97105f7.chunk.css",
-    "static/js/main.16aae2f2.chunk.js"
+    "static/js/2.e8720e80.chunk.js",
+    "static/css/main.d7ea70ad.chunk.css",
+    "static/js/main.6905b624.chunk.js"
   ]
 }
