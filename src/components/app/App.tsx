@@ -16,6 +16,7 @@ import { trackPageOpen, load } from "../../utils/analytics";
 
 const App: React.FC = () => {
   useEffect(() => {
+    console.log(process.env.REACT_APP_SEGMENT_KEY);
     load();
     trackPageOpen();
   }, []);
