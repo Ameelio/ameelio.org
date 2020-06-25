@@ -56,7 +56,7 @@ const Careers: React.FC = () => {
       <div className="d-flex justify-content-center">
         <div className="careers-container d-flex flex-column justify-content-center">
           <div className="careers-text-container">
-            <div className="careers-main-title">Full-time positions</div>
+            <div className="careers-main-title">Full-time Positions</div>
             <div className="gray-underline"></div>
             {full_time.map(function (job, index) {
               return (
@@ -78,7 +78,7 @@ const Careers: React.FC = () => {
                 />
               );
             })}
-            <div className="careers-main-title">Media inquiries</div>
+            <div className="careers-main-title">Media Inquiries</div>
             <div className="media-contact-container d-flex flex-column flex-md-row  align-items-md-center">
               <div className="media-contact-description">
                 Interested in getting in touch?

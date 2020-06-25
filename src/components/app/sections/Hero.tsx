@@ -43,7 +43,7 @@ export default class Hero extends Component<{}, LetterCounter> {
       <div className="mx-md-5 px-md-5 py-3 mt-3 d-flex flex-lg-row flex-column  w-100 justify-content-center align-items-center align-items-md-start">
         <div className="mx-5 d-flex flex-column align-items-lg-start">
           <div className="d-flex flex-column">
-            <div className="d-flex flex-column ">
+            <div className="d-flex flex-column flex-md-row ">
               <span className="p1 font-weight-bold">Send free&nbsp;</span>
               <Typical
                 steps={["letters", 3000, "photos", 2500]}

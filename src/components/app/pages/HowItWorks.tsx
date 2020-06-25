@@ -47,7 +47,7 @@ const HowItWorks: FunctionComponent = () => {
           How Ameelio Works
         </span>
         <span className="font-weight-bold text-center text-break p4">
-          A step-by-step walkthrough to send your first letter
+          You’re steps away from sending your first letter
         </span>
       </div>
       <TutorialList steps={STEPS} />

@@ -46,7 +46,7 @@ const Products: React.FC = () => {
     <div className="w-100">
       <div className="d-flex flex-column align-items-center products-wrapper w-100 pt-5">
         <span className="p2">What we're doing</span>
-        <span className="p4">
+        <span className="p4 text-center">
           We are the nation’s first free prison communications platform.
         </span>
         <ProductList products={PRODUCTS} />

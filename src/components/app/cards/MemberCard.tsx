@@ -11,14 +11,14 @@ interface MemberProps {
 const MemberCard = (props: MemberProps) => {
   return (
     <div className="d-flex flex-column ml-md-5 mb-md-5 mb-3">
-      <Image
+      {/* <Image
         src={props.image}
         alt="Team member"
         roundedCircle
         className="profile-picture"
-      />
-      <h3 className="text-center">{props.name}</h3>
-      <span className="text-center p5">{props.caption}</span>
+      /> */}
+      <span className="p3">{props.name}</span>
+      <span className="p5">{props.caption}</span>
     </div>
   );
 };

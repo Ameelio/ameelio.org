@@ -11,8 +11,8 @@ const NavBar: FunctionComponent = () => {
   const nav_logo: string = require("../../../assets/logo.svg");
   const NAV_ITEMS: Array<{ path: string; name: string; key: string }> = [
     { path: "mission", name: "Our Mission", key: "mission" },
-    { path: "how-we-work", name: "How it works", key: "walkthrough" },
-    { path: "transparency", name: "How it is free", key: "transparency" },
+    { path: "how-we-work", name: "How We Work", key: "walkthrough" },
+    { path: "transparency", name: "How Are We Free", key: "transparency" },
   ];
 
   const NAV_DROPDOWN_ITEMS: Array<{

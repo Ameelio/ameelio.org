@@ -17,7 +17,7 @@ const LettersForFamilies: FunctionComponent = () => {
     <div className="">
       <div className="d-flex p-md-5 p-3 flex-column flex-md-row justify-content-center  align-items-center ">
         <div className="d-flex flex-column align-items-center align-items-md-start justify-content-evenly text-center text-md-left">
-          <div className="p1 font-weight-bolder">Letters for families</div>
+          <div className="p1 font-weight-bolder">Letters for Families</div>
           <div className="lff-subtitle mt-3 p4">
             Lift your loved one’s spirits by sharing a piece of your life with
             them. Your letters are keepsakes that they will hold onto.

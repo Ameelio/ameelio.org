@@ -9,7 +9,7 @@ const GetStarted: React.FC = () => {
         <img src={map} className="country-map" alt="" />
         <div className="get-started-right-container d-flex flex-column align-items-center align-items-md-start justify-content-evenly text-center text-md-left">
           <div className="p2 font-weight-bolder">
-            Bring free video conferencing to your facility
+            Connect: Bring Free Video Conferencing to Your Facility
           </div>
           <div className="get-started-subtitle mt-3 p5">
             Ameelio is working to launch the first video conferencing pilot
