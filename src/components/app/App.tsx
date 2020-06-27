@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import "./App.css";
 
-import Landing from "./pages/Landing";
+import Landing from "./pages/landing";
 import Mission from "./pages/Mission";
 import HowFree from "./pages/HowFree";
 import NavBar from "./Navbar/Navbar";
