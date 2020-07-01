@@ -12,6 +12,10 @@ export const trackNav = (page) => {
   window.analytics.track("Click on Menu Item", { page: page });
 };
 
+export const page = () => {
+  window.analytics.page();
+};
+
 export const load = () => {
   if (process.env.NODE_ENV === "production") {
     console.log("prod");

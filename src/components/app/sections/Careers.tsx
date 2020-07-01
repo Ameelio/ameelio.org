@@ -18,22 +18,18 @@ const Careers: React.FC = () => {
   const full_time = [
     new Job(
       "Full-Stack Developers (Contract, 6-months)",
-      "We're looking for senior developers that are motivated to help us create the first free videoconferencing platform in the United States."
+      "We're looking for senior developers that are motivated to help us create the nation's first free prison videoconferencing platform."
     ),
-    // new Job(
-    //   "Senior UX Researcher (Contract, 6-months)",
-    //   "We're looking for a senior UX researcher to help us lead generative and evaluative research."
-    // ),
-    // new Job(
-    //   "Grant Writer (Contract, 5-months)",
-    //   "We're looking for a seasoned grant writer to help write grants for foundations, government programs and accelerators."
-    // ),
   ];
 
   const volunteer = [
     new Job(
-      "Fundraising Specialist",
-      "We're looking for a fundraising specialist to assist us in new fundraising initiatives and execute existing ones."
+      "UX Copywriter",
+      "We need someone to work closely with our designers and developers to write concise UX copy, and curate a unique voice for Ameelio products."
+    ),
+    new Job(
+      "Local Outreach Coordinators",
+      "Motivated individuals interested in helping us introduce our products to more loved ones of incarcerated people across the country."
     ),
     new Job(
       "Developers",
@@ -42,6 +38,14 @@ const Careers: React.FC = () => {
     new Job(
       "Growth Hackers",
       "We're looking for a team of growth hackers to help us solve user acquisition and retention."
+    ),
+    new Job(
+      "UX Researcher",
+      "We're looking for a UX researcher to help us lead generative and evaluative research."
+    ),
+    new Job(
+      "Product Designer",
+      "We need someone to work closely with our designers and developers to write concise UX copy, and curate a unique voice for Ameelio products."
     ),
   ];
 
@@ -64,6 +68,7 @@ const Careers: React.FC = () => {
                   key={index}
                   title={job.title}
                   description={job.description}
+                  type="full-time"
                 />
               );
             })}
@@ -75,6 +80,7 @@ const Careers: React.FC = () => {
                   key={index}
                   title={job.title}
                   description={job.description}
+                  type="volunteer"
                 />
               );
             })}

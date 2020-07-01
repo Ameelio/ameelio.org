@@ -12,12 +12,13 @@ import Ambassadors from "./pages/Ambassadors";
 import GetInvolved from "./pages/GetInvolved";
 
 import { HashRouter as Router, Route, Switch } from "react-router-dom";
-import { trackPageOpen, load } from "../../utils/analytics";
+import { trackPageOpen, load, page } from "../../utils/analytics";
 
 const App: React.FC = () => {
   useEffect(() => {
     load();
     trackPageOpen();
+    page();
   }, []);
 
   return (
