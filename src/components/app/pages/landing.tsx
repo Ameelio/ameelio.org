@@ -6,6 +6,7 @@ import LettersForFamilies from "../sections/LettersFamilies";
 import LettersForOrgs from "../sections/LettersOrgs";
 import GetStarted from "../sections/GetStarted";
 import Careers from "../sections/Careers";
+import GuidesByState from "../sections/GuidesByState";
 
 const Landing: React.FC = () => {
   return (
@@ -17,6 +18,7 @@ const Landing: React.FC = () => {
       <LettersForOrgs />
       <GetStarted />
       <Careers />
+      <GuidesByState />
     </div>
   );
 };
