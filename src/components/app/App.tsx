@@ -14,6 +14,7 @@ import StateMailingGuide from "./pages/StateMailingGuide";
 import { HashRouter as Router, Route, Switch } from "react-router-dom";
 import { trackPageOpen, load, page } from "../../utils/analytics";
 import { US_STATES } from "../../utils/us_states";
+import FacilityGuide from "./pages/FacilityGuide";
 
 const App: React.FC = () => {
   useEffect(() => {
@@ -37,7 +38,15 @@ const App: React.FC = () => {
           <Route
             key={item.abbreviation}
             path={`/${item.abbreviation}`}
+            exact
             component={StateMailingGuide}
+          />
+        ))}
+        {US_STATES.map((item) => (
+          <Route
+            key={item.abbreviation}
+            path={`/${item.abbreviation}/:facilityName`}
+            component={FacilityGuide}
           />
         ))}
         <Route path="/" component={Landing} />
