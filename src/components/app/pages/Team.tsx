@@ -26,6 +26,8 @@ class Ambassador {
 }
 
 const Team: React.FC = () => {
+  const board_members = [];
+
   const members = [
     new Member(
       "Zo Orchingwa",
@@ -57,131 +59,126 @@ const Team: React.FC = () => {
       require("../../../assets/team/lara.jpeg"),
       "Fundraising & Software Engineer"
     ),
-    new Member(
-      "Anthony Perez",
-      require("../../../assets/team/tony.jpeg"),
-      "Software Engineer"
-    ),
-    new Member(
-      "Nikhil Dharmaraj",
-      require("../../../assets/team/nikhil.jpg"),
-      "Software Engineer"
-    ),
-    new Member(
-      "Kiran Chokshi",
-      require("../../../assets/team/tony.jpeg"),
-      "Financial Manager"
-    ),
-    new Member(
-      "Jacob Kovacs",
-      require("../../../assets/team/jacob.jpg"),
-      "Legal Researcher"
-    ),
-    new Member(
-      "Meher Hans",
-      require("../../../assets/team/meher.jpg"),
-      "Graphic Designer"
-    ),
-    new Member(
-      "Kevin Zhang",
-      require("../../../assets/team/kev.jpg"),
-      "Produdct Designer"
-    ),
-    new Member(
-      "Alara Değirmenci",
-      require("../../../assets/team/alara.png"),
-      "Designer"
-    ),
-    new Member(
-      "Isis Decrem",
-      require("../../../assets/team/isis.jpeg"),
-      "Social Media Strategist"
-    ),
-    new Member(
-      "Bohan Lou",
-      require("../../../assets/team/bohan.jpg"),
-      "Fundraising"
-    ),
-    new Member(
-      "Alex Waibel",
-      require("../../../assets/team/alex.png"),
-      "Technical Team Lead"
-    ),
-    new Member(
-      "Mark Pekala",
-      require("../../../assets/team/markito.jpeg"),
-      "Software Engineer"
-    ),
-    new Member(
-      "Ivy Hjornevik",
-      require("../../../assets/team/ivy.jpeg"),
-      "Data Scientist"
-    ),
-    new Member(
-      "Olivia Kramer",
-      require("../../../assets/team/olivia.png"),
-      "Software Engineer"
-    ),
-    new Member(
-      "Alisa Chokshi",
-      require("../../../assets/team/alisa.jpeg"),
-      "Growth & Customer Success"
-    ),
-    new Member(
-      "Elizabeth Levin",
-      require("../../../assets/team/liz.jpg"),
-      "Legal Research & Policy"
-    ),
-    new Member(
-      "Owen Niles",
-      require("../../../assets/team/owen.jpg"),
-      "Software Engineer"
-    ),
+    // new Member(
+    //   "Anthony Perez",
+    //   require("../../../assets/team/tony.jpeg"),
+    //   "Software Engineer"
+    // ),
+    // new Member(
+    //   "Nikhil Dharmaraj",
+    //   require("../../../assets/team/nikhil.jpg"),
+    //   "Software Engineer"
+    // ),
+    // new Member(
+    //   "Kiran Chokshi",
+    //   require("../../../assets/team/tony.jpeg"),
+    //   "Financial Manager"
+    // ),
+    // new Member(
+    //   "Jacob Kovacs",
+    //   require("../../../assets/team/jacob.jpg"),
+    //   "Legal Researcher"
+    // ),
+    // new Member(
+    //   "Meher Hans",
+    //   require("../../../assets/team/meher.jpg"),
+    //   "Graphic Designer"
+    // ),
+    // new Member(
+    //   "Kevin Zhang",
+    //   require("../../../assets/team/kev.jpg"),
+    //   "Produdct Designer"
+    // ),
+    // new Member(
+    //   "Alara Değirmenci",
+    //   require("../../../assets/team/alara.png"),
+    //   "Designer"
+    // ),
+    // new Member(
+    //   "Isis Decrem",
+    //   require("../../../assets/team/isis.jpeg"),
+    //   "Social Media Strategist"
+    // ),
+    // new Member(
+    //   "Bohan Lou",
+    //   require("../../../assets/team/bohan.jpg"),
+    //   "Fundraising"
+    // ),
+    // new Member(
+    //   "Alex Waibel",
+    //   require("../../../assets/team/alex.png"),
+    //   "Technical Team Lead"
+    // ),
+    // new Member(
+    //   "Mark Pekala",
+    //   require("../../../assets/team/markito.jpeg"),
+    //   "Software Engineer"
+    // ),
+    // new Member(
+    //   "Olivia Kramer",
+    //   require("../../../assets/team/olivia.png"),
+    //   "Software Engineer"
+    // ),
+    // new Member(
+    //   "Alisa Chokshi",
+    //   require("../../../assets/team/alisa.jpeg"),
+    //   "Growth & Customer Success"
+    // ),
+    // new Member(
+    //   "Elizabeth Levin",
+    //   require("../../../assets/team/liz.jpg"),
+    //   "Legal Research & Policy"
+    // ),
+    // new Member(
+    //   "Owen Niles",
+    //   require("../../../assets/team/owen.jpg"),
+    //   "Software Engineer"
+    // ),
     // new Member(
     //   "Sarah Yoon",
     //   require("../../../assets/team/sarah.jpg"),
     //   "Software Engineer"
     // ),
-    new Member(
-      "Joyce Wu",
-      require("../../../assets/team/joyce.jpg"),
-      "Software Engineer"
-    ),
-    new Member(
-      "Xiu Chen",
-      require("../../../assets/team/xiu.png"),
-      "Software Engineer"
-    ),
-    new Member(
-      "Jordan Ashby",
-      require("../../../assets/team/jordan.jpg"),
-      "Outreach"
-    ),
-    new Member(
-      "David Lilienfield",
-      require("../../../assets/team/david.jpg"),
-      "Corporate Development "
-    ),
-    new Member(
-      "Adam Sarsony",
-      require("../../../assets/team/adam.jpg"),
-      "Software Engineer"
-    ),
-    new Member(
-      "Rachel Troy",
-      require("../../../assets/team/rachel.png"),
-      "Fundraising"
-    ),
-    new Member(
-      "Sophia Dai",
-      require("../../../assets/team/sophia.jpg"),
-      "Software Engineer"
-    ),
-    new Member(
-      "Christopher Raiford",
-      require("../../../assets/team/chris.png"),
-      "Fundraising"
-    ),
+    // new Member(
+    //   "Joyce Wu",
+    //   require("../../../assets/team/joyce.jpg"),
+    //   "Software Engineer"
+    // ),
+    // new Member(
+    //   "Xiu Chen",
+    //   require("../../../assets/team/xiu.png"),
+    //   "Software Engineer"
+    // ),
+    // new Member(
+    //   "Jordan Ashby",
+    //   require("../../../assets/team/jordan.jpg"),
+    //   "Outreach"
+    // ),
+    // new Member(
+    //   "David Lilienfield",
+    //   require("../../../assets/team/david.jpg"),
+    //   "Corporate Development "
+    // ),
+    // new Member(
+    //   "Adam Sarsony",
+    //   require("../../../assets/team/adam.jpg"),
+    //   "Software Engineer"
+    // ),
+    // new Member(
+    //   "Rachel Troy",
+    //   require("../../../assets/team/rachel.png"),
+    //   "Fundraising"
+    // ),
+    // new Member(
+    //   "Sophia Dai",
+    //   require("../../../assets/team/sophia.jpg"),
+    //   "Software Engineer"
+    // ),
+    // new Member(
+    //   "Christopher Raiford",
+    //   require("../../../assets/team/chris.png"),
+    //   "Fundraising"
+    // ),
   ];
 
   return (
