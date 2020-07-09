@@ -26,7 +26,7 @@ const GuidesCatalogue: FunctionComponent<GuidesCatalogueProps> = ({
   });
 
   return (
-    <div className="d-flex flex-row default-px">
+    <div className="d-flex flex-row default-px py-5">
       <span className="font-weight-bold p3">
         Mailing
         <br /> Guides by State

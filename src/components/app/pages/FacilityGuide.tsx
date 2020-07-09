@@ -2,6 +2,7 @@ import React, { FunctionComponent, useEffect, useState } from "react";
 import { RouteComponentProps } from "react-router-dom";
 // import "./FacilityGuide.css";
 import { getGuideData } from "../../../utils/utils";
+import Spinner from "react-bootstrap/Spinner";
 
 export interface FacilityItem {
   state: string;
@@ -12,8 +13,6 @@ export interface FacilityItem {
   mailing: string;
   route: string;
 }
-
-interface FacilityGuideProps extends RouteComponentProps<FacilityItem> {}
 
 const FacilityGuide = ({
   location,
@@ -32,44 +31,38 @@ const FacilityGuide = ({
     if (!facility) {
       fetchData();
     }
-  }, [facility, route]); // passing an empty array as second argument triggers the callback in useEffect only after the initial render thus replicating `componentDidMount` lifecycle behaviour
+  }, [facility, route]);
 
-  // For this use case, dangerouslySetInnerHTML seems safe given that we are the only ones controlling the data source passed down to
+  // For this use case, dangerouslySetInnerHTML seems safe given that we are the only with edit access to the markup being passed down
   // The flag is primarily to alert users of the vulnearbility to XSS scripting
   // Source: https://stackoverflow.com/questions/46832912/is-dangerouslysetinnerhtml-the-only-way-to-render-html-from-an-api-in-react
   return (
-    <div className="d-flex flex-column align-items-center">
+    <div className="d-flex flex-column align-items-center py-5">
       {facility ? (
         <div>
           {" "}
+          <p className="lightgray">{facility.state}</p>
           <h1
-            className="text-center"
-            dangerouslySetInnerHTML={{ __html: facility!.facility }}
+            dangerouslySetInnerHTML={{ __html: facility.facility }}
+            className="mb-5"
           />
-          <section>
+          <section className="mb-3">
             <h2>Physical Address</h2>
-            <p
-              className="text-center"
-              dangerouslySetInnerHTML={{ __html: facility!.address }}
-            />
+            <p dangerouslySetInnerHTML={{ __html: facility.address }} />
           </section>
-          <section>
+          <section className="mb-3">
             <h2>Telephone</h2>
-            <p
-              className="text-center"
-              dangerouslySetInnerHTML={{ __html: facility!.telephone }}
-            />
+            <p dangerouslySetInnerHTML={{ __html: facility.telephone }} />
           </section>
-          <section>
+          <section className="mb-3">
             <h2>Mailing Address</h2>
-            <div
-              className="text-center"
-              dangerouslySetInnerHTML={{ __html: facility!.mailing }}
-            />
+            <div dangerouslySetInnerHTML={{ __html: facility.mailing }} />
           </section>
         </div>
       ) : (
-        <div />
+        <div className="vh-100">
+          <Spinner animation="border" />
+        </div>
       )}
     </div>
   );

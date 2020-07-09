@@ -1,15 +1,13 @@
 import React, { Component } from "react";
-import FacilityGuide, { FacilityItem } from "./FacilityGuide";
+import { FacilityItem } from "./FacilityGuide";
 import { RouteComponentProps } from "react-router-dom";
 import { getGuideData, getStateName } from "../../../utils/utils";
-import { Link, withRouter, useRouteMatch } from "react-router-dom";
-import GuideCatalogue from "../sections/GuidesCatalogue";
+import { Link, withRouter } from "react-router-dom";
 import _ from "lodash";
 
 interface FacilityItems extends Array<FacilityItem> {}
 
 type StateMailingGuideState = {
-  // region: string,
   facilities: FacilityItems;
   region: string;
 };
@@ -41,9 +39,7 @@ class StateMailingGuide extends Component<
   render() {
     const { url } = this.props.match;
 
-    console.log(this.state.facilities);
     const links = this.state.facilities.map((item) => (
-      // to={{ pathname: `${url}/${item.route}`, state: { foo: 'bar'} }}
       <Link
         key={item.route}
         className="blue"

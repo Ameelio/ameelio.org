@@ -34,7 +34,6 @@ export async function getGuideData(keyword: string, type: GuideFilter) {
     }
     rows.push(rowObject);
   }
-  console.log(rows);
   switch (type) {
     case "state":
       rows = rows.filter((row) => row.state === getStateName(keyword));
@@ -44,7 +43,6 @@ export async function getGuideData(keyword: string, type: GuideFilter) {
       break;
   }
 
-  console.log(rows);
   return rows;
 }
 
