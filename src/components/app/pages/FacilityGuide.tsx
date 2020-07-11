@@ -3,6 +3,9 @@ import { RouteComponentProps } from "react-router-dom";
 // import "./FacilityGuide.css";
 import { getGuideData } from "../../../utils/utils";
 import Spinner from "react-bootstrap/Spinner";
+import Facepile from "../facepile/Facepile";
+import SummaryCard from "../cards/SummaryCard";
+import AuthorCard from "../cards/AuthorCard";
 
 export interface FacilityItem {
   state: string;
@@ -44,8 +47,14 @@ const FacilityGuide = ({
           <p className="lightgray">{facility.state}</p>
           <h1
             dangerouslySetInnerHTML={{ __html: facility.facility }}
-            className="mb-5"
+            className=""
           />
+          <Facepile />
+          <hr />
+          <AuthorCard />
+          <div className="mt-5">
+            <SummaryCard locality={facility.facility} />
+          </div>
           <section className="mb-3">
             <h2>Physical Address</h2>
             <p dangerouslySetInnerHTML={{ __html: facility.address }} />

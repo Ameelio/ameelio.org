@@ -1,0 +1,10 @@
+.facepile-img {
+  height: 25px;
+  width: 25px;
+  object-fit: cover;
+  margin-right: -0.5rem;
+}
+
+.facepile-caption {
+  font-size: 13px;
+}
