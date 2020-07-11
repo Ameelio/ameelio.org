@@ -5,6 +5,8 @@
   --main-primary-dark: #042c7a;
   --main-cta-color: #4884f8;
   --main-lightblue-color: #ebf8ff;
+  --main-grey: #656a6f;
+  --main-lightgrey: #d0d0d4;
   --main-black: #232624;
 }
 
@@ -69,8 +71,15 @@ a:hover {
   background-color: var(--main-primary-dark);
 }
 
+.lightgrey {
+  color: var(--main-lightgrey);
+}
 .blue {
   color: var(--main-primary-color);
+}
+
+.grey {
+  color: var(--main-grey);
 }
 
 .bg-lightblue {
@@ -100,6 +109,14 @@ h1 {
 
 .p5 {
   font-size: 16px;
+}
+
+.p6 {
+  font-size: 14px;
+}
+
+.p7 {
+  font-size: 13px;
 }
 
 @media (min-width: 768px) {
@@ -132,6 +149,13 @@ h1 {
   max-width: 90%;
 }
 
+.w-33 {
+  max-width: 33%;
+}
+
+.top-2 {
+  top: 2em;
+}
 .secondary-btn {
   border: var(--main-primary-color) 1px solid !important;
   color: var(--main-primary-color) !important;

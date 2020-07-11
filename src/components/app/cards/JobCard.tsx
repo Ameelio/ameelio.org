@@ -1,12 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "./JobCard.css";
 
-interface JobProps {
-  title: string;
-  description: string;
-  type: string;
-}
-
 const JobCard = ({ title, description, type }) => {
   const applyLink =
     type === "volunteer"
