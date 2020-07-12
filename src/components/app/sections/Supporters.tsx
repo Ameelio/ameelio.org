@@ -20,6 +20,24 @@ const Supporters: FunctionComponent = () => {
           src={require("../../../assets/supporters/ffw.png")}
         />
       </div>
+      <div className="d-flex flex-column flex-lg-row flex-wrap">
+        <Image
+          className="supporter-logo mt-5"
+          src={require("../../../assets/law_firms/wilson.jpg")}
+        />
+        <Image
+          className="supporter-logo ml-md-5 mt-5"
+          src={require("../../../assets/law_firms/cooley.png")}
+        />
+        <Image
+          className="supporter-logo ml-md-5 mt-5"
+          src={require("../../../assets/law_firms/fish.jpg")}
+        />
+        <Image
+          className="supporter-logo ml-md-5 mt-5"
+          src={require("../../../assets/law_firms/wiggins.jpg")}
+        />
+      </div>
     </div>
   );
 };

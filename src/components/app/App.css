@@ -5,6 +5,7 @@
   --main-primary-dark: #042c7a;
   --main-cta-color: #4884f8;
   --main-lightblue-color: #ebf8ff;
+  --main-darkblue: #00284c;
   --main-black: #232624;
 }
 
@@ -67,6 +68,10 @@ a:hover {
 
 .bg-darkblue {
   background-color: var(--main-primary-dark);
+}
+
+.darkblue {
+  color: var(--main-darkblue);
 }
 
 .blue {

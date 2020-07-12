@@ -83,29 +83,30 @@ const Ambassadors: React.FC = () => {
   ];
 
   return (
-    <div>
-      <div className="d-flex flex-column align-items-center py-5 px-5 text-center">
-        <h1 className="text-center font-weight-bold">Ameelio Ambassadors</h1>
-        <span>We are mothers, wives, and sisters of the incarcerated.</span>
-        <span>
-          We fight to connect others to their loved ones for free because of the
-          impact it has had on our lives.
-        </span>
+    <section className="d-flex flex-column">
+      <h1 className="text-center font-weight-bold darkblue">
+        Ameelio Ambassadors
+      </h1>
+      <span>We are mothers, wives, and sisters of the incarcerated.</span>
+      <span>
+        We fight to connect others to their loved ones for free because of the
+        impact it has had on our lives.
+      </span>
 
-        <div className="d-flex flex-wrap w-100 pt-5 justify-content-center">
-          {ambassadors.map(function (member, index) {
-            return (
-              <MemberCard
-                key={index}
-                name={member.name}
-                caption={member.city}
-                image={member.img}
-              />
-            );
-          })}
-        </div>
+      <div className="d-flex flex-wrap w-100 pt-5 justify-content-center">
+        {ambassadors.map(function (member, index) {
+          return (
+            <MemberCard
+              key={index}
+              name={member.name}
+              caption={member.city}
+              displayImage={false}
+              image={member.img}
+            />
+          );
+        })}
       </div>
-    </div>
+    </section>
   );
 };
 

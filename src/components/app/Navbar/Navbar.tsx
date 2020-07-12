@@ -13,16 +13,7 @@ const NavBar: FunctionComponent = () => {
     { path: "mission", name: "Our Mission", key: "mission" },
     { path: "how-we-work", name: "How We Work", key: "walkthrough" },
     { path: "transparency", name: "How Are We Free", key: "transparency" },
-  ];
-
-  const NAV_DROPDOWN_ITEMS: Array<{
-    path: string;
-    name: string;
-    key: string;
-  }> = [
-    // { path: "team", name: "Team", key: "team" },
-    { path: "ambassadors", name: "Ambassadors", key: "ambassadors" },
-    { path: "get-involved", name: "Get Involved", key: "career" },
+    { path: "team", name: "Team", key: "team" },
   ];
 
   const [signup_clicked, setSignupClicked] = useState(false);
@@ -74,20 +65,6 @@ const NavBar: FunctionComponent = () => {
               {item.name}
             </Nav.Link>
           ))}
-
-          <NavDropdown title="Team" id="basic-nav-dropdown">
-            {NAV_DROPDOWN_ITEMS.map((item) => (
-              <NavDropdown.Item
-                as={Link}
-                to={item.path}
-                eventKey={item.name}
-                key={item.key}
-                onClick={() => trackNav(item.key)}
-              >
-                {item.name}
-              </NavDropdown.Item>
-            ))}
-          </NavDropdown>
 
           <Nav.Link
             className={donate_className}
