@@ -24,28 +24,20 @@ const Careers: React.FC = () => {
 
   const volunteer = [
     new Job(
-      "UX Copywriter",
-      "We need someone to work closely with our designers and developers to write concise UX copy, and curate a unique voice for Ameelio products."
-    ),
-    new Job(
-      "Local Outreach Coordinators",
-      "Motivated individuals interested in helping us introduce our products to more loved ones of incarcerated people across the country."
-    ),
-    new Job(
       "Developers",
       "We're looking for developers that can help us make better, faster, and smarter code."
     ),
     new Job(
       "Growth Hackers",
-      "We're looking for a team of growth hackers to help us solve user acquisition and retention."
-    ),
-    new Job(
-      "UX Researcher",
-      "We're looking for a UX researcher to help us lead generative and evaluative research."
+      "We're looking for growth hackers to help us expand user acquisition and improve retention."
     ),
     new Job(
       "Product Designer",
-      "We need someone to work closely with our designers and developers to write concise UX copy, and curate a unique voice for Ameelio products."
+      "We're looking for product designers to help us create beautiful products that people love to use."
+    ),
+    new Job(
+      "Writers",
+      "We're looking for writers to help us communicate our work to users, donors, and more. Any background in criminal justice and/or journalism is preferred."
     ),
   ];
 
@@ -73,6 +65,10 @@ const Careers: React.FC = () => {
               );
             })}
             <div className="careers-main-title">Volunteer positions</div>
+            <div className="careers-subtitle">
+              Right now, we're only looking for volunteers able to commit 20+
+              hours per week.
+            </div>
             <div className="gray-underline"></div>
             {volunteer.map(function (job, index) {
               return (

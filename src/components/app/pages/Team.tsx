@@ -86,8 +86,8 @@ const Team: React.FC = () => {
           <h1 className="font-weight-bold darkblue">Our Founding Team</h1>
           <span>We are lawyers, engineers, students and designers.</span>
           <span>
-            But most importanty we are people that believe that everyone
-            impacted by incarceration should be able stay in touch with their
+            But most importantly, we are people who believe that everyone
+            impacted by incarceration should be able to stay in touch with their
             loved ones.
           </span>
 
