@@ -87,10 +87,9 @@ const Ambassadors: React.FC = () => {
       <h1 className="text-center font-weight-bold darkblue">
         Ameelio Ambassadors
       </h1>
-      <span>We are mothers, wives, and sisters of the incarcerated.</span>
+      <span>We are parents, siblings, friends, and wives of the incarcerated.</span>
       <span>
-        We fight to connect others to their loved ones for free because of the
-        impact it has had on our lives.
+        We fight to connect others to their loved ones for free because of the impact Ameelio has had on our lives.
       </span>
 
       <div className="d-flex flex-wrap w-100 pt-5 justify-content-center">
