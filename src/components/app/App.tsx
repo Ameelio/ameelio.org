@@ -10,9 +10,14 @@ import Footer from "./footer/Footer";
 import HowItWorks from "./pages/HowItWorks";
 import Ambassadors from "./pages/Ambassadors";
 import GetInvolved from "./pages/GetInvolved";
-
+import ReactPixel from "react-facebook-pixel";
 import { HashRouter as Router, Route, Switch } from "react-router-dom";
 import { trackPageOpen, load, page } from "../../utils/analytics";
+
+if (process.env.REACT_APP_PIXEL_KEY) {
+  ReactPixel.init(process.env.REACT_APP_PIXEL_KEY);
+  ReactPixel.pageView();
+}
 
 const App: React.FC = () => {
   useEffect(() => {
