@@ -12,15 +12,17 @@ type LetterCounter = {
 
 export default class Hero extends Component<{}, LetterCounter> {
   tick() {
-    const increment_seconds = 0.003968253968;
-    const startDate = new Date(2020, 5, 21, 0, 0, 0, 0);
+    const weekly_letters = 2162;
+    const increment_seconds = weekly_letters / 604800;
+    const startDate = new Date(2020, 6, 26, 0, 0, 0, 0);
     const today = new Date();
+
     const dif = today.getTime() - startDate.getTime();
     var dif_seconds = dif / 1000;
 
     this.setState({
       letters: numberWithCommas(
-        Math.round(20316 + dif_seconds * increment_seconds)
+        Math.round(31089 + dif_seconds * increment_seconds)
       ),
     });
   }

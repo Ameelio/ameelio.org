@@ -42,7 +42,11 @@ const Team: React.FC = () => {
   const board_members = [
     new Board("Adryann Glenn", "Founder", "Align Community"),
     new Board("Angel Steger", "Director of Product Design", "Facebook"),
-    new Board("Jan Jedrzejowicz", "Senior Product Manager", "Google Telephone"),
+    new Board(
+      "Jan Jedrzejowicz",
+      "Senior Product Manager",
+      "Google Communication"
+    ),
     new Board("Shane Rogers", "Attorney", "Covington"),
   ];
 
@@ -57,16 +61,16 @@ const Team: React.FC = () => {
       require("../../../assets/team/gabe.jpeg"),
       "Co-Founder"
     ),
-    // new Member(
-    //   "Jesse Horne",
-    //   require("../../../assets/team/jesse.jpeg"),
-    //   "Engineering"
-    // ),
     new Member(
       "Emma Gray",
       require("../../../assets/team/emma.jpg"),
       "Partnerships & Outreach"
     ),
+    // new Member(
+    //   "Jesse Horne",
+    //   require("../../../assets/team/jesse.png"),
+    //   "Engineering"
+    // ),
     new Member(
       "Jenny Lee",
       require("../../../assets/team/jenny.JPG"),
@@ -84,7 +88,10 @@ const Team: React.FC = () => {
       <div className="d-flex flex-column align-items-center py-5 px-5 text-center">
         <section className="d-flex flex-column align-items-center">
           <h1 className="font-weight-bold darkblue">Our Founding Team</h1>
-          <span>We are lawyers, engineers, students and designers.</span>
+          <span>
+            We are engineers, data scientists, lawyers, designers, and
+            researchers.
+          </span>
           <span>
             But most importantly, we are people who believe that everyone
             impacted by incarceration should be able to stay in touch with their
@@ -106,9 +113,9 @@ const Team: React.FC = () => {
           </div>
         </section>
         <Ambassadors />
-        {/* <section>
-        <h1 className="font-weight-bold darkblue">Our Board</h1>
-        <div className="d-flex flex-wrap align-items-center w-100 pt-5 justify-content-center">
+        <section>
+          {/* <h1 className="font-weight-bold darkblue">Our Board</h1> */}
+          {/* <div className="d-flex flex-wrap align-items-center w-100 pt-5 justify-content-center">
             {board_members.map(function (member, index) {
               return (
                 <BoardCard
@@ -119,8 +126,8 @@ const Team: React.FC = () => {
                 />
               );
             })}
-          </div>
-        </section> */}
+          </div> */}
+        </section>
       </div>
     </div>
   );
