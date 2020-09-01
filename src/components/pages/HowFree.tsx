@@ -34,9 +34,9 @@ const HowFree: FunctionComponent = () => {
         <span className="p2 font-weight-bold mb-3">Who owns Ameelio?</span>
         <span className="mb3">
           Ameelio is a nonprofit. Ending the exploitation of families impacted
-          by incarceration is central to our mission, so we reinvest all revenue into our products. All our funds are
-          directed towards building better communications options and serving
-          more families.
+          by incarceration is central to our mission, so we reinvest all revenue
+          into our products. All our funds are directed towards building better
+          communications options and serving more families.
         </span>
       </div>
       <Supporters />

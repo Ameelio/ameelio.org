@@ -12,7 +12,7 @@ import Ambassadors from "./pages/Ambassadors";
 import GetInvolved from "./pages/GetInvolved";
 import ReactPixel from "react-facebook-pixel";
 import { HashRouter as Router, Route, Switch } from "react-router-dom";
-import { trackPageOpen, load, page } from "../../utils/analytics";
+import { trackPageOpen, load, page } from "../utils/analytics";
 
 if (process.env.REACT_APP_PIXEL_KEY) {
   ReactPixel.init(process.env.REACT_APP_PIXEL_KEY);

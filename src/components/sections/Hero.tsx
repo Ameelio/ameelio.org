@@ -2,9 +2,9 @@ import React, { Component } from "react";
 import "./Hero.css";
 import Typical from "react-typical";
 import Image from "react-bootstrap/Image";
-import { numberWithCommas } from "../../../utils/utils";
-import { PLACEMENT, LINKS, BUTTON_TYPES } from "../../../utils/constants";
-import { trackButtonClick } from "../../../utils/analytics";
+import { numberWithCommas } from "src/utils/utils";
+import { PLACEMENT, LINKS, BUTTON_TYPES } from "src/utils/constants";
+import { trackButtonClick } from "src/utils/analytics";
 
 type LetterCounter = {
   letters: string;
@@ -48,7 +48,18 @@ export default class Hero extends Component<{}, LetterCounter> {
             <div className="d-flex flex-column flex-md-row ">
               <span className="p1 font-weight-bold">Send free&nbsp;</span>
               <Typical
-                steps={["letters", 3000, "photos", 2500]}
+                steps={[
+                  "letters",
+                  2500,
+                  "photos",
+                  2500,
+                  "postcards",
+                  2500,
+                  "games",
+                  2500,
+                  "art",
+                  2500,
+                ]}
                 loop={Infinity}
                 wrapper="h1"
               />
@@ -73,28 +84,28 @@ export default class Hero extends Component<{}, LetterCounter> {
           <div className="d-flex flex-row mt-3 position-relative media-container flex-wrap">
             <a href="https://www.fastcompany.com/90514321/this-app-bypasses-the-absurdly-high-cost-of-making-phone-calls-to-prison-by-converting-texts-to-snail-mail?partner=rss&utm_source=rss&utm_medium=feed&utm_campaign=rss+fastcompany&utm_content=rss">
               <Image
-                src={require("../../../assets/media/fc.png")}
+                src={require("src/assets/media/fc.png")}
                 alt="Fast Company Article"
                 className="media-article ml-md-0"
               />
             </a>
             <a href="https://www.fastcompany.com/90514321/this-app-bypasses-the-absurdly-high-cost-of-making-phone-calls-to-prison-by-converting-texts-to-snail-mail?partner=rss&utm_source=rss&utm_medium=feed&utm_campaign=rss+fastcompany&utm_content=rss">
               <Image
-                src={require("../../../assets/media/wapo.png")}
+                src={require("src/assets/media/wapo.png")}
                 alt="Washington Post Article"
                 className="media-article ml-4 ml-md-3"
               />
             </a>
             <a href="https://techcrunch.com/2020/05/14/ameelio-wants-to-take-on-for-profit-prison-calling-rackets-after-starting-with-free-letters-to-inmates/">
               <Image
-                src={require("../../../assets/media/tc.png")}
+                src={require("src/assets/media/tc.png")}
                 alt="Techcrunch Article"
                 className="media-article ml-md-3"
               />
             </a>
             <a href="https://www.businessinsider.com/how-to-use-app-talk-family-prison-ameelio-2020-6">
               <Image
-                src={require("../../../assets/media/bi.png")}
+                src={require("src/assets/media/bi.png")}
                 alt="Business Insider Article"
                 className="media-article  ml-4 ml-md-3"
               />
@@ -104,7 +115,7 @@ export default class Hero extends Component<{}, LetterCounter> {
         <div className="mt-5">
           <img
             className="illustration ml-md-5 mt-4 mt-md-5"
-            src={require("../../../assets/maincard_illustration.png")}
+            src={require("src/assets/maincard_illustration.png")}
             alt=""
           />
         </div>

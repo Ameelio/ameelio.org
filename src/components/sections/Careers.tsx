@@ -1,6 +1,6 @@
 import React from "react";
 import "./Careers.css";
-import JobCard from "../cards/JobCard";
+import JobCard from "src/components/cards/JobCard";
 
 class Job {
   title: string;
@@ -13,7 +13,7 @@ class Job {
 }
 
 const Careers: React.FC = () => {
-  const background: any = require("../../../assets/positions_background.png");
+  const background: any = require("src/assets/positions_background.png");
 
   const full_time = [
     new Job(

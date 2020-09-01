@@ -2,7 +2,7 @@ import React from "react";
 import "./GetStarted.css";
 
 const GetStarted: React.FC = () => {
-  const map: any = require("../../../assets/united_states.png");
+  const map: any = require("../../assets/united_states.png");
   return (
     <div className="">
       <div className="d-flex p-md-5 p-3 flex-column flex-md-row justify-content-around align-items-center">

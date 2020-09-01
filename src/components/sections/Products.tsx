@@ -6,7 +6,7 @@ const Products: React.FC = () => {
   const PRODUCTS = [
     {
       name: "Letters for Families",
-      image: require("../../../assets/products/letters.svg"),
+      image: require("src/assets/products/letters.svg"),
       description:
         "Send free letters & photos to your incarcerated loved ones. We service all correctional and immigrant detention facilities in the United States.",
       cta: "Sign Up",
@@ -14,7 +14,7 @@ const Products: React.FC = () => {
     },
     {
       name: "Letters for Organizations",
-      image: require("../../../assets/products/trends.svg"),
+      image: require("src/assets/products/trends.svg"),
       description:
         "Your electronic courier is here. We'll handle your bulk mail, organize your contacts, and ease collaboration and visibility within your organization.",
       cta: "Request Demo",
@@ -23,7 +23,7 @@ const Products: React.FC = () => {
     },
     {
       name: "Contacts for Organizations",
-      image: require("../../../assets/products/trends.svg"),
+      image: require("src/assets/products/trends.svg"),
       description:
         "Connect incarcerated people nearing release with a network of local organizations providing educational, employment, health, and social resources.",
       cta: "Request Demo",
@@ -35,7 +35,7 @@ const Products: React.FC = () => {
   const FUTURE_PRODUCTS = [
     {
       name: "Connect Videoconferencing",
-      image: require("../../../assets/products/connect.svg"),
+      image: require("src/assets/products/connect.svg"),
       description:
         "The closest substitute for in-person contact. We’re building a secure platform to connect incarcerated people with their loved ones, their lawyers, and remote telehealth, educational, and religious services – all for free.",
       cta: "Request Demo",

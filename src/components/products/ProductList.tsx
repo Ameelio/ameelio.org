@@ -1,5 +1,5 @@
 import React, { FunctionComponent } from "react";
-import ProductCard from "../cards/ProductCard";
+import ProductCard from "src/components/cards/ProductCard";
 import "./ProductList.css";
 
 interface ProductListProps {

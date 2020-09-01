@@ -3,12 +3,12 @@ import "./Navbar.css";
 
 import { Navbar, Nav, NavDropdown } from "react-bootstrap";
 import { Link } from "react-router-dom";
-import { trackNav, trackButtonClick } from "../../../utils/analytics";
-import { PLACEMENT, LINKS, BUTTON_TYPES } from "../../../utils/constants";
+import { trackNav, trackButtonClick } from "src/utils/analytics";
+import { PLACEMENT, LINKS, BUTTON_TYPES } from "src/utils/constants";
+import { ReactComponent as Logo } from "src/assets/logo.svg";
 import { isMobile } from "react-device-detect";
 
 const NavBar: FunctionComponent = () => {
-  const nav_logo: string = require("../../../assets/logo.svg");
   const NAV_ITEMS: Array<{ path: string; name: string; key: string }> = [
     { path: "mission", name: "Our Mission", key: "mission" },
     { path: "how-we-work", name: "How We Work", key: "walkthrough" },
@@ -43,12 +43,7 @@ const NavBar: FunctionComponent = () => {
     >
       <Navbar.Brand>
         <Link to="/">
-          <img
-            src={nav_logo}
-            width="150px"
-            className="d-inline-block align-top"
-            alt="Ameelio logo"
-          />
+          <Logo />
         </Link>
       </Navbar.Brand>
       <Navbar.Toggle aria-controls="responsive-navbar-nav" />

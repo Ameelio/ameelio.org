@@ -3,8 +3,8 @@ import "./Context.css";
 
 const Context: React.FC = () => {
   // const country_map: any = require("../../assets/united_states.png");
-  const quote_left: any = require("../../../assets/quote-left.png");
-  const quote_right: any = require("../../../assets/quote-right.png");
+  const quote_left: any = require("src/assets/quote-left.png");
+  const quote_right: any = require("src/assets/quote-right.png");
   return (
     <div className="context-wrapper">
       <div className="context-container">

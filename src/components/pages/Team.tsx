@@ -1,7 +1,8 @@
 import React from "react";
-import MemberCard from "../cards/MemberCard";
-import BoardCard from "../cards/BoardCard";
-import Ambassadors from "../pages/Ambassadors";
+import MemberCard from "src/components/cards/MemberCard";
+import BoardCard from "src/components/cards/BoardCard";
+import Ambassadors from "src/components/pages/Ambassadors";
+
 class Member {
   name: string;
   img: string;
@@ -53,32 +54,32 @@ const Team: React.FC = () => {
   const members = [
     new Member(
       "Zo Orchingwa",
-      require("../../../assets/team/zo.png"),
+      require("../../assets/team/zo.png"),
       "Co-Founder"
     ),
     new Member(
       "Gabe Saruhashi",
-      require("../../../assets/team/gabe.jpeg"),
+      require("../../assets/team/gabe.jpeg"),
       "Co-Founder"
     ),
     new Member(
       "Emma Gray",
-      require("../../../assets/team/emma.jpg"),
+      require("../../assets/team/emma.jpg"),
       "Partnerships & Outreach"
     ),
     // new Member(
     //   "Jesse Horne",
-    //   require("../../../assets/team/jesse.png"),
+    //   require("../../assets/team/jesse.png"),
     //   "Engineering"
     // ),
     new Member(
       "Jenny Lee",
-      require("../../../assets/team/jenny.JPG"),
+      require("../../assets/team/jenny.JPG"),
       "Social Media"
     ),
     new Member(
       "Lara Schull",
-      require("../../../assets/team/lara.jpg"),
+      require("../../assets/team/lara.jpg"),
       "Communications & Engineering"
     ),
   ];

@@ -2,11 +2,13 @@
 
 :root {
   --main-primary-color: #4884f8;
-  --main-primary-dark: #042c7a;
+  --main-primary-dark: #0a207b;
   --main-cta-color: #4884f8;
-  --main-lightblue-color: #ebf8ff;
+  --main-lightblue-color: #e5f1fe;
+  --main-gray-500: #7a7a7a;
   --main-darkblue: #00284c;
   --main-black: #232624;
+  --pink-500: #ff7171;
 }
 
 html {
@@ -51,6 +53,10 @@ a:hover {
   color: var(--main-primary-color);
 }
 
+.pink-500 {
+  color: var(--pink-500);
+}
+
 .navbar {
   box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 10px 0px;
 }
@@ -62,8 +68,16 @@ a:hover {
   color: white;
 }
 
+.gray-500 {
+  color: var(--main-gray-500);
+}
+
 .bg-blue {
   background-color: var(--main-primary-color);
+}
+
+.dark {
+  color: var(--main-primary-dark);
 }
 
 .bg-darkblue {
@@ -174,4 +188,10 @@ h1 {
 .dropdown-item.active,
 .dropdown-item:active {
   background-color: var(--main-primary-color);
+}
+
+.small-img {
+  width: 42px;
+  height: 42px;
+  object-fit: cover;
 }
