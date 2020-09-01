@@ -15,7 +15,7 @@ const TestimonialCard = ({ name, img, quote }: Testimonial) => {
       <span className="quote-symbol pink-500 font-weight-bold">“</span>
       <span className="quote-text font-weight-light mb-3">{quote}</span>
 
-      <Image className="small-img" src={img} alt="Testimonial" rounded />
+      <Image className="small-img" src={img} alt="Testimonial" roundedCircle />
       <span className="text-break gray-500">{name}</span>
     </div>
   );
@@ -27,7 +27,7 @@ const Testimonials: React.FC = () => {
       name: "Shari Copeland",
       img: require("../../assets/testimonials/shari.png"),
       quote:
-        "This is the most amazing blessing I could have received . It costs so much money for phone calls and I have to sacrifice one or more basic needs to pay .",
+        "This is the most amazing blessing. It costs so much money for phone calls and I have to sacrifice one or more basic needs to pay .",
     },
     {
       name: "Trish Cooper",
@@ -40,6 +40,12 @@ const Testimonials: React.FC = () => {
       img: require("../../assets/testimonials/carol.png"),
       quote:
         "I am totally blind. Before hearing about you and your organization. I was only able to talk with my son and nephew on the phone, and mail cards.",
+    },
+    {
+      name: "Kimberly Hernandez",
+      img: require("../../assets/testimonials/kimberly.jpg"),
+      quote:
+        "Your organization is an answer to so many prayers. I believe you came to me as an answer. I really do.",
     },
   ];
 

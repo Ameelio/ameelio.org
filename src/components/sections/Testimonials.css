@@ -12,8 +12,8 @@
 }
 
 .testimonial-card {
-  max-height: 300px;
-  max-width: 500px;
+  height: 400px;
+  width: 300px;
   border-radius: 8px;
   margin-bottom: 64px;
 }
@@ -24,7 +24,7 @@
 
 @media (min-width: 768px) {
   .testimonial-card {
-    height: 250px;
+    height: 275px;
     width: 360px;
   }
 
