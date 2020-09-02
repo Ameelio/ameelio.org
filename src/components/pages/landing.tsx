@@ -6,6 +6,8 @@ import HowItWorks from "../sections/HowItWorks";
 import LettersForOrgs from "../sections/LettersOrgs";
 import GetStarted from "../sections/GetStarted";
 import Careers from "../sections/Careers";
+import GlassCase from "src/components/sections/GlassCase";
+import StarBackground from "src/components/backgrounds/StarBackground";
 
 const Landing: React.FC = () => {
   return (
@@ -13,6 +15,8 @@ const Landing: React.FC = () => {
       <Hero />
       <MainCardBackground />
       <Testimonials />
+      <StarBackground />
+      <GlassCase />
       <HowItWorks />
       <LettersForOrgs />
       <GetStarted />

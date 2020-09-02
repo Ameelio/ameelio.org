@@ -1,5 +1,5 @@
-.testimonial-bg {
-  background: linear-gradient(180deg, #2579dc 0%, #044693 100%);
+.testimonials-container {
+  background: linear-gradient(180deg, #102e75 0%, #061e56 100%);
 }
 
 .quote-symbol {
@@ -19,13 +19,13 @@
 }
 
 .quote-text {
-  margin-top: -25px;
+  margin-top: -45px;
 }
 
 @media (min-width: 768px) {
   .testimonial-card {
-    height: 275px;
-    width: 360px;
+    height: 200px;
+    width: 600px;
   }
 
   .quote-symbol {

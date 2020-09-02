@@ -2,6 +2,7 @@ import React from "react";
 import "./Testimonials.css";
 import Carousel from "react-bootstrap/Carousel";
 import Image from "react-bootstrap/Image";
+import Stars from "src/assets/Hero/Stars.svg";
 
 interface Testimonial {
   name: string;
@@ -11,12 +12,19 @@ interface Testimonial {
 
 const TestimonialCard = ({ name, img, quote }: Testimonial) => {
   return (
-    <div className="d-flex flex-column align-items-center testimonial-card px-3 bg-white mx-auto">
+    <div className="d-flex flex-column align-items-center testimonial-card px-3 pb-3 bg-white mx-auto">
       <span className="quote-symbol pink-500 font-weight-bold">“</span>
-      <span className="quote-text font-weight-light mb-3">{quote}</span>
+      <span className="quote-text mb-3">{quote}</span>
 
-      <Image className="small-img" src={img} alt="Testimonial" roundedCircle />
-      <span className="text-break gray-500">{name}</span>
+      <div className="d-flex flex-row align-items-center">
+        <Image
+          className="small-img"
+          src={img}
+          alt="Testimonial"
+          roundedCircle
+        />
+        <span className="text-break gray-500 ml-3">{name}</span>
+      </div>
     </div>
   );
 };
@@ -50,7 +58,7 @@ const Testimonials: React.FC = () => {
   ];
 
   return (
-    <div className="testimonial-bg text-center">
+    <div className="testimonials-container text-center">
       <span className="font-weight-bold testimonial-title mb-3 white">
         Voices from our Community
       </span>

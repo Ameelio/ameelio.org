@@ -4,7 +4,7 @@
   --main-primary-color: #4884f8;
   --main-primary-dark: #0a207b;
   --main-cta-color: #4884f8;
-  --main-lightblue-color: #e5f1fe;
+  --main-lightblue-color: #f7fbff;
   --main-gray-500: #7a7a7a;
   --main-darkblue: #00284c;
   --main-black: #232624;
@@ -149,6 +149,10 @@ h1 {
 
 .mw-90 {
   max-width: 90%;
+}
+
+.hover-cursor:hover {
+  cursor: pointer;
 }
 
 .secondary-btn {

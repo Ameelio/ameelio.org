@@ -7,7 +7,7 @@ import Sample from "src/assets/HowItWorks/Sample.svg";
 //TODO here
 export default function HowItWorks(): ReactElement {
   return (
-    <div className="d-flex flex-column align-items-center w-100">
+    <section className="d-flex flex-column align-items-center w-100">
       <span className="dark font-weight-bold p2 my-3">How it works</span>
       <HowItWorksCard
         step={1}
@@ -30,6 +30,6 @@ export default function HowItWorks(): ReactElement {
         title="Make them feel connected"
         desc="Lift your loved one’s spirits by sharing a piece of your daily life with them."
       />
-    </div>
+    </section>
   );
 }

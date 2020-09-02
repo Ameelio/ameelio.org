@@ -3,8 +3,14 @@ import "./Hero.css";
 import Typical from "react-typical";
 import Image from "react-bootstrap/Image";
 import { numberWithCommas } from "src/utils/utils";
-import { PLACEMENT, LINKS, BUTTON_TYPES } from "src/utils/constants";
+import {
+  PLACEMENT,
+  LINKS,
+  BUTTON_TYPES,
+  APP_STORES,
+} from "src/utils/constants";
 import { trackButtonClick } from "src/utils/analytics";
+import AppStoreButton from "src/components/buttons/AppStoreButton";
 
 type LetterCounter = {
   letters: string;
@@ -46,7 +52,7 @@ export default class Hero extends Component<{}, LetterCounter> {
         <div className="mx-5 d-flex flex-column align-items-lg-start">
           <div className="d-flex flex-column">
             <div className="d-flex flex-column flex-md-row ">
-              <span className="p1 font-weight-bold">Send free&nbsp;</span>
+              <span className="p1 font-weight-bold dark">Send free&nbsp;</span>
               <Typical
                 steps={[
                   "letters",
@@ -64,7 +70,7 @@ export default class Hero extends Component<{}, LetterCounter> {
                 wrapper="h1"
               />
             </div>
-            <span className="p1 font-weight-bold">
+            <span className="p1 font-weight-bold dark">
               to your incarcerated <br /> loved ones
             </span>
           </div>
@@ -72,12 +78,21 @@ export default class Hero extends Component<{}, LetterCounter> {
             Staying connected to your loved ones and paying for basic needs
             shouldn't be a tradeoff. That's why we're a <b>nonprofit</b>.
           </div>
-          <button
-            className="mt-3 w-100 letters-button"
-            onClick={this.handleClick.bind(this)}
-          >
-            Send Free Letters
-          </button>
+          <div className="d-flex flex-row mt-3">
+            <div>
+              <AppStoreButton
+                placement={PLACEMENT.HERO}
+                type={APP_STORES.APPLE}
+              />
+            </div>
+            <div className="ml-3">
+              <AppStoreButton
+                placement={PLACEMENT.HERO}
+                type={APP_STORES.GOOGLE}
+              />
+            </div>
+          </div>
+
           <span className="font-weight-bold blue letter-counter mt-4">
             Ameelio's community has sent over {this.state.letters} letters
           </span>
@@ -116,7 +131,7 @@ export default class Hero extends Component<{}, LetterCounter> {
           <img
             className="illustration ml-md-5 mt-4 mt-md-5"
             src={require("src/assets/maincard_illustration.png")}
-            alt=""
+            alt="Illustration"
           />
         </div>
       </div>
