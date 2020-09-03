@@ -17,15 +17,17 @@ export default function GlassCase(): ReactElement {
     { name: "Fun", image: Game },
   ];
   return (
-    <section className="d-flex bg-lightblue flex-column align-items-center py-5">
-      <span className="dark p2 font-weight-bold">
-        Always stay close, no matter the distance.
-      </span>
-      <span>
-        In just a few taps, you can turn photos, letters and postcards into
-        lasting memories.
-      </span>
-      <div className="d-flex flex-row overflow-scroll w-100 justify-content-center">
+    <section className="d-flex blue-200-bg flex-column align-items-center py-5">
+      <div className="d-flex flex-column justify-content-center text-center px-3">
+        <span className="dark p2 font-weight-bold">
+          Always stay close, no matter the distance.
+        </span>
+        <span className="mt-3">
+          In just a few taps, you can turn photos, letters, and postcards into
+          lasting memories.
+        </span>
+      </div>
+      <div className="d-flex flex-row overflow-scroll w-100 justify-content-center mt-5">
         {CARDS.map((card) => (
           <GlassCaseCard name={card.name} image={card.image} />
         ))}

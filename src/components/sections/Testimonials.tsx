@@ -2,7 +2,6 @@ import React from "react";
 import "./Testimonials.css";
 import Carousel from "react-bootstrap/Carousel";
 import Image from "react-bootstrap/Image";
-import Stars from "src/assets/Hero/Stars.svg";
 
 interface Testimonial {
   name: string;

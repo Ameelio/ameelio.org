@@ -12,22 +12,22 @@ export default function HowItWorks(): ReactElement {
       <HowItWorksCard
         step={1}
         asset={LocateLovedOne}
-        title="Locate your loved one"
-        desc="Use our locator tool to find . Select their facility, and we’ll auto-complete the mailing address."
+        title="Locate your loved one."
+        desc="Use our locator tool to select their facility, and we’ll fill in the mailing address."
       />
 
       <HowItWorksCard
         step={2}
         asset={SendContent}
-        title="Share something real"
-        desc="Whether it’s images, postcards, or games, send them for free. No hidden fees. No strings attached."
+        title="Share something real."
+        desc="Whether it’s images, postcards, or games, send them for free. We'll print and mail it for you."
         reverse
       />
 
       <HowItWorksCard
         step={3}
         asset={Sample}
-        title="Make them feel connected"
+        title="Make them feel connected."
         desc="Lift your loved one’s spirits by sharing a piece of your daily life with them."
       />
     </section>

@@ -30,7 +30,7 @@ export default function HowItWorksCard({
         className={`d-flex flex-row step-value-prop-container align-items-center ${marginImage2Content}`}
       >
         <div className="d-flex flex-column ml-3 align-items-center align-items-md-start">
-          <span className="bg-lightblue step px-3 p3 font-weight-bold dark mb-1">
+          <span className="blue-200-bg step px-3 p3 font-weight-bold dark mb-1">
             {step}
           </span>
           <span className="dark p3 overflow-auto font-weight-bold text-center text-md-left mb-2">

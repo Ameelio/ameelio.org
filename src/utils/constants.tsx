@@ -1,3 +1,7 @@
+import Family from "src/assets/WhyAmeelio/Family.svg";
+import Globe from "src/assets/WhyAmeelio/Globe.svg";
+import Mailbox from "src/assets/WhyAmeelio/Mailbox.svg";
+
 export enum PLACEMENT {
   NAV = "navbar",
   HERO = "hero",
@@ -29,3 +33,9 @@ export enum APP_STORES {
   APPLE = "App Store",
   GOOGLE = "Google Play",
 }
+
+export const IMPACT_METRICS = [
+  { image: Family, metric: ">10,000", label: "Families served" },
+  { image: Mailbox, metric: ">40,000", label: "Letters sent" },
+  { image: Globe, metric: ">11,000", label: "Incarcerated people reached" },
+];
