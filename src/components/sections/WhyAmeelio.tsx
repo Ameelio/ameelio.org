@@ -16,7 +16,6 @@ const WhyAmeelio: React.FC = () => {
         profits.
       </span>
       <Impact />
-      <br />
       <span>
         The{" "}
         <span className="bg-darkblue white px-1 font-weight-bold">

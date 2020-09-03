@@ -5,8 +5,9 @@ import { Navbar, Nav, NavDropdown } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import { trackNav, trackButtonClick } from "src/utils/analytics";
 import { PLACEMENT, LINKS, BUTTON_TYPES } from "src/utils/constants";
-import { ReactComponent as Logo } from "src/assets/logo.svg";
+import Logo from "src/assets/logo.svg";
 import { isMobile } from "react-device-detect";
+import Image from "react-bootstrap/Image";
 
 const NavBar: FunctionComponent = () => {
   const NAV_ITEMS: Array<{ path: string; name: string; key: string }> = [
@@ -43,7 +44,7 @@ const NavBar: FunctionComponent = () => {
     >
       <Navbar.Brand>
         <Link to="/">
-          <Logo />
+          <Image src={Logo} />
         </Link>
       </Navbar.Brand>
       <Navbar.Toggle aria-controls="responsive-navbar-nav" />

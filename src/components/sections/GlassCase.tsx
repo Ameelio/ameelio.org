@@ -27,7 +27,7 @@ export default function GlassCase(): ReactElement {
           lasting memories.
         </span>
       </div>
-      <div className="d-flex flex-row overflow-scroll w-100 justify-content-center mt-5">
+      <div className="d-flex flex-row overflow-hidden w-100 justify-content-center mt-5">
         {CARDS.map((card) => (
           <GlassCaseCard name={card.name} image={card.image} />
         ))}

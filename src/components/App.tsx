@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import "./App.css";
+import "./App.scss";
 
 import Landing from "./pages/landing";
 import Mission from "./pages/Mission";
@@ -14,6 +14,9 @@ import ReactPixel from "react-facebook-pixel";
 import { HashRouter as Router, Route, Switch } from "react-router-dom";
 import { trackPageOpen, load, page } from "../utils/analytics";
 
+import AOS from "aos";
+import "aos/dist/aos.css"; // You can also use <link> for styles
+
 if (process.env.REACT_APP_PIXEL_KEY) {
   ReactPixel.init(process.env.REACT_APP_PIXEL_KEY);
   ReactPixel.pageView();
@@ -21,6 +24,7 @@ if (process.env.REACT_APP_PIXEL_KEY) {
 
 const App: React.FC = () => {
   useEffect(() => {
+    AOS.init();
     load();
     trackPageOpen();
     page();

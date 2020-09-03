@@ -3,13 +3,8 @@ import "./Hero.css";
 import Typical from "react-typical";
 import Image from "react-bootstrap/Image";
 import { numberWithCommas } from "src/utils/utils";
-import {
-  PLACEMENT,
-  LINKS,
-  BUTTON_TYPES,
-  APP_STORES,
-} from "src/utils/constants";
-import { trackButtonClick } from "src/utils/analytics";
+import { PLACEMENT, APP_STORES } from "src/utils/constants";
+import Mockup from "src/assets/Hero/Mockup.svg";
 import AppStoreButton from "src/components/buttons/AppStoreButton";
 
 type LetterCounter = {
@@ -41,36 +36,31 @@ export default class Hero extends Component<{}, LetterCounter> {
     setInterval(() => this.tick(), 360000);
   }
 
-  handleClick() {
-    trackButtonClick(BUTTON_TYPES.SIGNUP, PLACEMENT.HERO);
-    window.location.assign(LINKS.SIGNUP);
-  }
-
   render() {
     return (
-      <div className="mx-md-5 px-md-5 py-3 mt-3 d-flex flex-lg-row flex-column  w-100 justify-content-center align-items-center align-items-md-start">
+      <div className="mx-md-5 mx-1 px-md-5 mb-4 py-3 pb-5 d-flex flex-lg-row flex-column  w-100 justify-content-center align-items-center align-items-md-start">
         <div className="mx-5 d-flex flex-column align-items-lg-start">
           <div className="d-flex flex-column">
             <div className="d-flex flex-column flex-md-row ">
-              <span className="p1 font-weight-bold dark">Send free&nbsp;</span>
+              <span className="p1 font-weight-bold">Send free&nbsp;</span>
               <Typical
                 steps={[
                   "letters",
-                  2500,
+                  3000,
                   "photos",
-                  2500,
+                  3000,
                   "postcards",
-                  2500,
+                  3500,
                   "games",
-                  2500,
+                  3000,
                   "art",
-                  2500,
+                  3000,
                 ]}
                 loop={Infinity}
                 wrapper="h1"
               />
             </div>
-            <span className="p1 font-weight-bold dark">
+            <span className="p1 font-weight-bold">
               to your incarcerated <br /> loved ones
             </span>
           </div>
@@ -94,7 +84,8 @@ export default class Hero extends Component<{}, LetterCounter> {
           </div>
 
           <span className="font-weight-bold blue letter-counter mt-4">
-            Ameelio's community has sent over {this.state.letters} letters
+            Ameelio's community has sent over {this.state.letters} letters,
+            cards & photos
           </span>
           <div className="d-flex flex-row mt-3 position-relative media-container flex-wrap">
             <a href="https://www.fastcompany.com/90514321/this-app-bypasses-the-absurdly-high-cost-of-making-phone-calls-to-prison-by-converting-texts-to-snail-mail?partner=rss&utm_source=rss&utm_medium=feed&utm_campaign=rss+fastcompany&utm_content=rss">
@@ -127,13 +118,11 @@ export default class Hero extends Component<{}, LetterCounter> {
             </a>
           </div>
         </div>
-        <div className="mt-5">
-          <img
-            className="illustration ml-md-5 mt-4 mt-md-5"
-            src={require("src/assets/maincard_illustration.png")}
-            alt="Illustration"
-          />
-        </div>
+        <Image
+          src={Mockup}
+          className="main-illustration mt-5 mt-md-0"
+          alt={"Image of letter, postcard and mobile app"}
+        />
       </div>
     );
   }

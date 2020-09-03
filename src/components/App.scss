@@ -1,0 +1,210 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap");
+@import "./scss/custom.scss";
+
+:root {
+  --main-blue-200: #f7fbff;
+  --blue-400: #8da1d1;
+  --blue-500: #4884f8;
+  --blue-600: #0a207b;
+  --blue-700: #00284c;
+  --gray-500: #7a7a7a;
+  --black-500: #232624;
+  --pink-500: #ff7171;
+}
+
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  color: var(--black-500);
+}
+
+button {
+  padding: 9px 25px;
+  font-weight: 700;
+  background-color: var(--blue-500);
+  color: #ffffff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+}
+
+button:hover {
+  background-color: #b5ceff;
+}
+
+li,
+a {
+  font-size: 16px;
+  font-weight: 400;
+  color: rgb(133, 138, 143);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+  color: var(--blue-500);
+}
+
+.blue-400 {
+  color: var(--blue-400);
+}
+
+.pink-500 {
+  color: var(--pink-500);
+}
+
+.navbar {
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 10px 0px;
+}
+.bg-light {
+  background-color: white !important;
+}
+
+.white {
+  color: white;
+}
+
+.gray-500 {
+  color: var(--gray-500);
+}
+
+.bg-blue {
+  background-color: var(--blue-500);
+}
+
+.dark {
+  color: var(--blue-600);
+}
+
+.bg-darkblue {
+  background-color: var(--blue-600);
+}
+
+.darkblue {
+  color: var(--blue-700);
+}
+
+.blue {
+  color: var(--blue-500);
+}
+
+.blue-200-bg {
+  background-color: var(--main-blue-200);
+}
+
+.p1 {
+  font-size: 40px;
+}
+h1 {
+  font-size: 40px;
+  margin-bottom: 0 !important;
+  line-height: 1.5 !important;
+}
+
+.p2 {
+  font-size: 32px;
+}
+
+.p3 {
+  font-size: 24px;
+}
+
+.p4 {
+  font-size: 18px;
+}
+
+.p5 {
+  font-size: 16px;
+}
+
+@media (min-width: 768px) {
+  h1 {
+    font-size: 48px;
+  }
+
+  .p1 {
+    font-size: 48px;
+  }
+
+  .p2 {
+    font-size: 36px;
+  }
+
+  .p3 {
+    font-size: 24px;
+  }
+
+  .p4 {
+    font-size: 18px;
+  }
+
+  .p5 {
+    font-size: 16px;
+  }
+}
+
+.mw-90 {
+  max-width: 90%;
+}
+
+.hover-cursor:hover {
+  cursor: pointer;
+}
+
+.secondary-btn {
+  border: var(--blue-500) 1px solid !important;
+  color: var(--blue-500) !important;
+  background-color: white;
+}
+
+.btn {
+  border-radius: 4px;
+}
+
+.default-px {
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+.video {
+  width: 750px;
+  max-width: 90%;
+}
+
+/* Override Bootstrap Classes */
+.carousel-indicators li {
+  background-color: var(--blue-500);
+}
+
+.carousel-control-prev {
+  color: var(--blue-500);
+}
+
+.nav-link {
+  margin-top: 20px;
+  padding: 0.5em 0;
+}
+
+.dropdown-item.active,
+.dropdown-item:active {
+  background-color: var(--blue-500);
+}
+
+.small-img {
+  width: 42px;
+  height: 42px;
+  object-fit: cover;
+}
+
+.mission-page span {
+  max-width: 600px;
+}

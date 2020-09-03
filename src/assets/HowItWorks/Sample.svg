@@ -1,23 +1,23 @@
-<svg width="426" height="315" viewBox="0 0 426 315" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-<ellipse opacity="0.6" rx="85.0174" ry="85.157" transform="matrix(0.989326 0.145716 -0.148244 0.988951 225.503 137.761)" fill="#DDEDFC"/>
+<svg width="304" height="289" viewBox="0 0 304 289" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<ellipse opacity="0.6" rx="85.0174" ry="85.157" transform="matrix(0.989326 0.145716 -0.148244 0.988951 192.503 123.761)" fill="#DDEDFC"/>
 <g filter="url(#filter0_d)">
-<mask id="mask0" mask-type="alpha" maskUnits="userSpaceOnUse" x="20" y="16" width="214" height="275">
-<path d="M205.373 16.8607L22.7776 35.705C21.197 35.8682 20.0191 37.2354 20.0916 38.8227L23.494 113.301L28.0552 154.409L27.8083 184.148L34.124 287.863C34.228 289.571 35.7382 290.848 37.4401 290.667L230.382 270.077C231.975 269.907 233.152 268.514 233.055 266.915L222.284 90.0413L208.63 19.2794C208.335 17.7512 206.921 16.701 205.373 16.8607Z" fill="black"/>
+<mask id="mask0" mask-type="alpha" maskUnits="userSpaceOnUse" x="20" y="16" width="194" height="249">
+<path d="M188.325 16.8066L23.326 33.835C21.7454 33.9981 20.5675 35.3654 20.64 36.9527L23.7122 104.201L27.8468 141.465L27.6229 168.423L33.3301 262.144C33.4341 263.852 34.9443 265.129 36.6462 264.948L210.985 246.343C212.578 246.173 213.755 244.781 213.658 243.181L203.911 83.1167L191.582 19.2253C191.288 17.6972 189.873 16.6469 188.325 16.8066Z" fill="black"/>
 </mask>
 <g mask="url(#mask0)">
-<rect width="208.933" height="376.419" rx="3" transform="matrix(0.998215 -0.0597271 0.0607825 0.998151 11.7904 -45.1119)" fill="url(#pattern0)"/>
+<rect width="189.393" height="341.215" rx="3" transform="matrix(0.998215 -0.0597271 0.0607825 0.998151 13.1031 -39.3965)" fill="url(#pattern0)"/>
 </g>
 </g>
 <g filter="url(#filter1_d)">
-<mask id="mask1" mask-type="alpha" maskUnits="userSpaceOnUse" x="182" y="115" width="224" height="167">
-<path d="M403.609 137.379L205.119 115.489C204.047 115.37 203.072 116.123 202.916 117.19L182.81 254.205C182.647 255.316 183.43 256.341 184.545 256.476L389.708 281.237C390.825 281.371 391.836 280.559 391.943 279.438L405.377 139.553C405.481 138.467 404.694 137.499 403.609 137.379Z" fill="black"/>
+<mask id="mask1" mask-type="alpha" maskUnits="userSpaceOnUse" x="131" y="148" width="153" height="114">
+<path d="M282.147 163.24L147.12 148.348C146.048 148.23 145.073 148.982 144.917 150.049L131.297 242.861C131.134 243.972 131.918 244.997 133.032 245.132L272.579 261.974C273.697 262.109 274.707 261.296 274.815 260.175L283.915 165.413C284.019 164.327 283.233 163.359 282.147 163.24Z" fill="black"/>
 </mask>
 <g mask="url(#mask1)">
-<rect width="197.238" height="246.713" rx="2" transform="matrix(0.133277 -0.991079 0.991383 0.130995 159.794 270.913)" fill="url(#pattern1)"/>
+<rect width="135.384" height="169.344" rx="2" transform="matrix(0.133277 -0.991079 0.991383 0.130995 115.406 254.965)" fill="url(#pattern1)"/>
 </g>
 </g>
 <defs>
-<filter id="filter0_d" x="0.0884552" y="0.844681" width="252.972" height="313.839" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<filter id="filter0_d" x="0.636863" y="0.790588" width="233.027" height="288.174" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
 <feFlood flood-opacity="0" result="BackgroundImageFix"/>
 <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/>
 <feOffset dy="4"/>
@@ -27,9 +27,9 @@
 <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape"/>
 </filter>
 <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
-<use xlink:href="#image0" transform="translate(0 -0.00438209) scale(0.00280899 0.00155914)"/>
+<use xlink:href="#image0" transform="translate(0 -0.00438207) scale(0.00280899 0.00155914)"/>
 </pattern>
-<filter id="filter1_d" x="162.788" y="99.4763" width="262.598" height="205.775" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<filter id="filter1_d" x="111.276" y="132.336" width="192.649" height="153.653" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
 <feFlood flood-opacity="0" result="BackgroundImageFix"/>
 <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/>
 <feOffset dy="4"/>

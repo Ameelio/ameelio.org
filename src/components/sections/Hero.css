@@ -10,17 +10,6 @@
   line-height: 25px;
 }
 
-.letters-button {
-  padding: 15px 50px;
-  font-size: 18px;
-}
-
-.illustration {
-  position: relative;
-  z-index: 2;
-  height: 350px;
-}
-
 .media-container {
   z-index: 999;
 }
@@ -32,25 +21,12 @@
   border-bottom: 4px solid rgb(247, 247, 250);
 }
 
-@media (min-width: 768px) {
-  .container {
-    display: flex;
-    justify-content: flex-start;
-    padding: 50px 300px;
-  }
+.main-illustration {
+  max-width: 90%;
+}
 
+@media (min-width: 768px) {
   .media-article {
     max-height: 20px;
-  }
-
-  .illustration {
-    position: relative;
-    z-index: 2;
-    height: 100%;
-    margin-top: 100px !important;
-  }
-
-  .letters-button {
-    max-width: 75%;
   }
 }

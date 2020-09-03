@@ -1,14 +1,15 @@
 import React, { ReactElement } from "react";
 import HowItWorksCard from "src/components/cards/HowItWorksCard";
 import LocateLovedOne from "src/assets/HowItWorks/LocateLovedOne.svg";
-import SendContent from "src/assets/HowItWorks/SendContent.svg";
+import SendContent from "src/assets/HowItWorks/SendContent.png";
 import Sample from "src/assets/HowItWorks/Sample.svg";
+import DownloadButton from "src/components/buttons/DownloadButton";
 
 //TODO here
 export default function HowItWorks(): ReactElement {
   return (
-    <section className="d-flex flex-column align-items-center w-100">
-      <span className="dark font-weight-bold p2 my-3">How it works</span>
+    <section className="d-flex flex-column align-items-center w-100 py-5">
+      <span className="dark font-weight-bold p2">How it works</span>
       <HowItWorksCard
         step={1}
         asset={LocateLovedOne}
@@ -30,6 +31,7 @@ export default function HowItWorks(): ReactElement {
         title="Make them feel connected."
         desc="Lift your loved one’s spirits by sharing a piece of your daily life with them."
       />
+      <DownloadButton />
     </section>
   );
 }

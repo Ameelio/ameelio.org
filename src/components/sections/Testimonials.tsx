@@ -11,8 +11,8 @@ interface Testimonial {
 
 const TestimonialCard = ({ name, img, quote }: Testimonial) => {
   return (
-    <div className="d-flex flex-column align-items-center testimonial-card px-3 pb-3 bg-white mx-auto">
-      <span className="quote-symbol pink-500 font-weight-bold">“</span>
+    <div className="d-flex flex-column align-items-center testimonial-card px-5 pb-3 bg-white mx-auto">
+      <span className="quote-symbol pink-500 font-weight-bold mb-1">“</span>
       <span className="quote-text mb-3">{quote}</span>
 
       <div className="d-flex flex-row align-items-center">
@@ -58,10 +58,10 @@ const Testimonials: React.FC = () => {
 
   return (
     <div className="testimonials-container text-center">
-      <span className="font-weight-bold testimonial-title mb-3 white">
+      <span className="font-weight-bold testimonial-title mb-5 white">
         Voices from our Community
       </span>
-      <div className="mt-3">
+      <div className="mt-5">
         <Carousel>
           {testimonials.map(function (testimonial, index) {
             return (

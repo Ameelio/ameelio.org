@@ -10,9 +10,7 @@ const Mission: React.FC = () => {
 
   return (
     <div className="d-flex flex-column justify-content-center align-items-center mission-page">
-      <h1 className="text-center font-weight-bold bg-darkblue white rounded px-3 py-1">
-        Our Mission
-      </h1>
+      <h1 className="text-center font-weight-bold">Our Mission</h1>
       <div className="d-flex flex-column text-center default-px mt-3">
         <span className="mb-5 p4 text-break">
           We’re here to decouple incarceration and profit, and combat mass
@@ -30,7 +28,10 @@ const Mission: React.FC = () => {
         </span>
       </div>
 
-      <ResponsiveEmbed className="rounded my-3 video" aspectRatio={aspectRatio}>
+      <ResponsiveEmbed
+        className="rounded mb-3 mt-5 video"
+        aspectRatio={aspectRatio}
+      >
         <iframe
           title="video"
           className="embed-responsive-item"
