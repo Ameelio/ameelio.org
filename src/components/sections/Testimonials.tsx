@@ -48,12 +48,12 @@ const Testimonials: React.FC = () => {
       quote:
         "I am totally blind. Before hearing about you and your organization. I was only able to talk with my son and nephew on the phone, and mail cards.",
     },
-    {
-      name: "Kimberly Hernandez",
-      img: require("../../assets/testimonials/kimberly.jpg"),
-      quote:
-        "Your organization is an answer to so many prayers. I believe you came to me as an answer. I really do.",
-    },
+    // {
+    //   name: "Kimberly Hernandez",
+    //   img: require("../../assets/testimonials/kimberly.jpg"),
+    //   quote:
+    //     "Your organization is an answer to so many prayers. I believe you came to me as an answer. I really do.",
+    // },
   ];
 
   return (

@@ -27,7 +27,6 @@ export default function HowItWorksCard({
   return (
     <div
       data-aos={fadeEffect}
-      data-aos-duration="2000"
       className={`d-flex ${reverseLayout} justify-content-center mb-5 mb-md-1 align-items-center`}
     >
       <div

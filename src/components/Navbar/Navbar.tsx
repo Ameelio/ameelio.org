@@ -44,7 +44,7 @@ const NavBar: FunctionComponent = () => {
     >
       <Navbar.Brand>
         <Link to="/">
-          <Image src={Logo} />
+          <Image src={Logo} width="150" />
         </Link>
       </Navbar.Brand>
       <Navbar.Toggle aria-controls="responsive-navbar-nav" />
