@@ -1,12 +1,16 @@
 import React from "react";
 import "./Products.css";
 import ProductList from "../products/ProductList";
+import LettersMockup from "src/assets/Products/LettersMockup.png";
+import ConnectMockup from "src/assets/Products/ConnectMockup.png";
+import OrgsMockup from "src/assets/Products/OrgsMockup.png";
+import TrendsIllustration from "src/assets/Products/trends.png";
 
 const Products: React.FC = () => {
   const PRODUCTS = [
     {
       name: "Letters for Families",
-      image: require("src/assets/products/letters.svg"),
+      image: LettersMockup,
       description:
         "Send free letters & photos to your incarcerated loved ones. We service all correctional and immigrant detention facilities in the United States.",
       cta: "Sign Up",
@@ -14,7 +18,7 @@ const Products: React.FC = () => {
     },
     {
       name: "Letters for Organizations",
-      image: require("src/assets/products/trends.svg"),
+      image: OrgsMockup,
       description:
         "Your electronic courier is here. We'll handle your bulk mail, organize your contacts, and ease collaboration and visibility within your organization.",
       cta: "Request Demo",
@@ -23,7 +27,7 @@ const Products: React.FC = () => {
     },
     {
       name: "Contacts for Organizations",
-      image: require("src/assets/products/trends.svg"),
+      image: TrendsIllustration,
       description:
         "Connect incarcerated people nearing release with a network of local organizations providing educational, employment, health, and social resources.",
       cta: "Request Demo",
@@ -35,7 +39,7 @@ const Products: React.FC = () => {
   const FUTURE_PRODUCTS = [
     {
       name: "Connect Videoconferencing",
-      image: require("src/assets/products/connect.svg"),
+      image: ConnectMockup,
       description:
         "The closest substitute for in-person contact. We’re building a secure platform to connect incarcerated people with their loved ones, their lawyers, and remote telehealth, educational, and religious services – all for free.",
       cta: "Request Demo",

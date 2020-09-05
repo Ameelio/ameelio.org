@@ -9,3 +9,8 @@ interface TeamMember extends Member {}
 interface BoardMember extends Member {
   company: string;
 }
+
+interface Supporter {
+  name: string;
+  image?: string;
+}

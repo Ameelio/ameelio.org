@@ -1,11 +1,14 @@
 import Family from "src/assets/WhyAmeelio/Family.svg";
 import Globe from "src/assets/WhyAmeelio/Globe.svg";
 import Mailbox from "src/assets/WhyAmeelio/Mailbox.svg";
+
+// Team
 import Zo from "src/assets/Team/Zo.png";
 import Gabe from "src/assets/Team/Gabe.png";
 import Emma from "src/assets/Team/Emma.png";
 import Lara from "src/assets/Team/Lara.png";
 import Jenny from "src/assets/Team/Jenny.png";
+// Board
 import Angel from "src/assets/Board/Angel.png";
 import Bart from "src/assets/Board/Bart.png";
 import Jan from "src/assets/Board/Jan.png";
@@ -14,6 +17,18 @@ import Alyssa from "src/assets/Board/Alyssa.png";
 import Jay from "src/assets/Board/Jay.png";
 import Bijan from "src/assets/Board/Bijan.png";
 import Adryann from "src/assets/Board/Adryann.png";
+
+// Supporters
+import Mozilla from "src/assets/supporters/mozilla.png";
+import Robinhood from "src/assets/supporters/robinhood.png";
+import FastForward from "src/assets/supporters/ffw.png";
+import SchmidtFuture from "src/assets/supporters/SchmidtFuture.png";
+
+// Law Firms
+import Wilson from "src/assets/law_firms/wilson.jpg";
+import Cooley from "src/assets/law_firms/cooley.png";
+import Fish from "src/assets/law_firms/fish.jpg";
+import Wiggins from "src/assets/law_firms/wiggins.jpg";
 
 export enum PLACEMENT {
   NAV = "navbar",
@@ -129,4 +144,18 @@ export const MEMBERS: TeamMember[] = [
     img: Jenny,
     title: "Social Media",
   },
+];
+
+export const FOUNDATIONS: Supporter[] = [
+  { name: "Schmidt Future", image: SchmidtFuture },
+  { name: "Robinhood Foundation", image: Robinhood },
+  { name: "Mozilla Foundation", image: Mozilla },
+  { name: "Fast Forward", image: FastForward },
+];
+
+export const LAW_FIRMS: Supporter[] = [
+  { name: "Wilson Sonsini", image: Wilson },
+  { name: "Wiggins and Dana", image: Wiggins },
+  { name: "Cooley", image: Cooley },
+  { name: "Fish", image: Fish },
 ];

@@ -15,7 +15,7 @@ export default function MemberCard({
     <div className="d-flex flex-column ml-md-5 mb-3 align-items-center member-card">
       <Image src={member.img} alt="Team member" className="profile-picture" />
 
-      <span className=" font-weight-bold">{member.name}</span>
+      <span className=" font-weight-bold mt-2">{member.name}</span>
       <span className="">{member.title}</span>
       {boardMember && (
         <span className="p5">{(member as BoardMember).company}</span>

@@ -1,8 +1,8 @@
-import React, { FunctionComponent } from "react";
+import React, { ReactElement } from "react";
 import ProductCard from "src/components/cards/ProductCard";
 import "./ProductList.css";
 
-interface ProductListProps {
+interface Props {
   products: Array<{
     name: string;
     image: string;
@@ -11,7 +11,7 @@ interface ProductListProps {
     ctaLink: string;
   }>;
 }
-const ProductList: FunctionComponent<ProductListProps> = ({ products }) => {
+export default function ProductList({ products }: Props): ReactElement {
   return (
     <div className="products-container flex-lg-row align-items-center">
       {products.map(function (product, index) {
@@ -28,6 +28,4 @@ const ProductList: FunctionComponent<ProductListProps> = ({ products }) => {
       })}
     </div>
   );
-};
-
-export default ProductList;
+}

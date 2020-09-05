@@ -21,6 +21,7 @@ const HowFree: FunctionComponent = () => {
           <AuthorCard
             images={[Lara, Liz]}
             name="Lara Schull & Elizabeth Levin"
+            lastUpdatedAt="July 9, 2020"
           />
           <hr className="mb-3" />
 
@@ -80,7 +81,7 @@ const HowFree: FunctionComponent = () => {
               alt="Ameelio raises $48,000 through Kickstarter"
             />
             <span className="mt-3">
-              Ameelio raises $4800 to keep funding free letters for families
+              Ameelio raises $48,727 to keep funding free letters for families
               impacted by incarceration.
             </span>
           </div>

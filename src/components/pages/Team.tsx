@@ -27,15 +27,16 @@ export default function Team(): ReactElement {
         </section>
         <section>
           <h2 className="font-weight-bold pb-5">Our board of advisors</h2>
-          <span className="font-weight-light p3">TECH</span>
-          <div className="d-flex flex-wrap  w-100 mt-3 justify-content-center">
-            {TECH_BOARD.map(function (member, index) {
+          <span className="font-semibold p3">Criminal Justice</span>
+          <div className="d-flex flex-wrap w-100 mt-3 justify-content-center">
+            {JUSTICE_BOARD.map(function (member, index) {
               return <MemberCard key={index} member={member} boardMember />;
             })}
           </div>
-          <span className="font-weight-light p3 mt-5">CRIMINAL JUSTICE</span>
-          <div className="d-flex flex-wrap w-100 mt-3 justify-content-center">
-            {JUSTICE_BOARD.map(function (member, index) {
+
+          <span className="p3 font-semibold mt-5">Tech</span>
+          <div className="d-flex flex-wrap  w-100 mt-3 justify-content-center">
+            {TECH_BOARD.map(function (member, index) {
               return <MemberCard key={index} member={member} boardMember />;
             })}
           </div>
