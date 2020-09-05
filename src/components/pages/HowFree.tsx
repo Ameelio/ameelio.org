@@ -10,13 +10,14 @@ import Kickstarter from "src/assets/HowFree/Kickstarter.png";
 import TeamBI from "src/assets/HowFree/TeamBI.jpeg";
 
 import CtaCard from "src/components/cards/CtaCard";
+import { BUTTON_TYPES } from "src/utils/constants";
 
 const HowFree: FunctionComponent = () => {
   return (
     <div className="d-flex flex-column text-align-center  justify-content-center mw-100 default-px py-5">
       <h1 className="font-weight-bold mb-5">How is Ameelio Free?</h1>
       <div className="d-flex flex-column flex-md-row">
-        <div className="d-flex flex-column mr-5">
+        <div className="d-flex flex-column mr-md-5">
           <SummaryCard desc="Dear community, transparency is one of our nonprofit’s core values. That’s why it’s important to us that you know how Ameelio stays free and who owns Ameelio." />
           <AuthorCard
             images={[Lara, Liz]}
@@ -120,7 +121,7 @@ const HowFree: FunctionComponent = () => {
             </span>
           </div>
         </div>
-        <CtaCard />
+        <CtaCard type={BUTTON_TYPES.DONATE} />
       </div>
       <Supporters />
     </div>

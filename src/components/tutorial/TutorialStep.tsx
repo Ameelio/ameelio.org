@@ -12,7 +12,7 @@ const TutorialStep: FunctionComponent<TutorialStepProps> = ({
   body,
 }) => {
   return (
-    <div className="d-flex flex-row mt-4 p-3">
+    <div className="d-flex flex-row mt-4 ">
       <span className="blue d-flex align-items-center justify-content-center tutorial-item flex-shrink-0">
         {step}
       </span>

@@ -9,7 +9,10 @@ import {
 } from "src/utils/constants";
 import { trackButtonClick } from "src/utils/analytics";
 
-export default function DownloadButton(): ReactElement {
+interface Props {
+  isBlock?: boolean;
+}
+export default function DownloadButton({ isBlock }: Props): ReactElement {
   const genLink = () => {
     if (isAndroid) {
       return LINKS.GOOGLE_PLAY;
@@ -56,7 +59,7 @@ export default function DownloadButton(): ReactElement {
   // const gen
 
   return (
-    <Button size="lg" onClick={handleClick}>
+    <Button size="lg" block={isBlock} onClick={handleClick}>
       {genCTA()}
     </Button>
   );

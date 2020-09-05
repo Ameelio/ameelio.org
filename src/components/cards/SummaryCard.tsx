@@ -9,7 +9,7 @@ export default function SummaryCard({ desc }: Props): ReactElement {
   return (
     <div className="summary">
       <b>In a Nutshell</b>
-      <p>{desc}</p>
+      <p className="text-break">{desc}</p>
     </div>
   );
 }

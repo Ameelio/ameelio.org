@@ -1,7 +1,6 @@
 import React, { ReactElement } from "react";
 import Image from "react-bootstrap/Image";
 import "./Facepile.css";
-import { Link } from "react-router-dom";
 
 interface Props {
   images: string[];

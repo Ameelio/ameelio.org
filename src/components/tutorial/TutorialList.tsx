@@ -9,7 +9,7 @@ interface TutorialListProps {
 }
 const TutorialList: FunctionComponent<TutorialListProps> = ({ steps }) => {
   return (
-    <div className="tutorial-wrapper d-flex flex-column align-items-center justify-content-center py-5">
+    <div className="d-flex flex-column align-items-center justify-content-center py-3">
       {steps.map((step, index) => (
         <TutorialStep header={step.header} body={step.body} step={index + 1} />
       ))}
