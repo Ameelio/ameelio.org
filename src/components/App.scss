@@ -45,7 +45,7 @@ li,
 a {
   font-size: 16px;
   font-weight: 400;
-  color: rgb(133, 138, 143);
+  color: var(--blue-500);
   text-decoration: none;
 }
 
@@ -124,6 +124,14 @@ h1 {
 
 .p5 {
   font-size: 16px;
+}
+
+.p6 {
+  font-size: 14px;
+}
+
+.p7 {
+  font-size: 12px;
 }
 
 @media (min-width: 768px) {
@@ -205,6 +213,34 @@ h1 {
   object-fit: cover;
 }
 
-.mission-page span {
+.sub-page span {
   max-width: 600px;
+}
+
+.sub-page-media {
+  display: flex;
+  flex-direction: column;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  align-items: center;
+}
+
+.sub-page-media img {
+  width: 360px;
+  max-width: 100%;
+}
+
+.sub-page-media span {
+  font-size: 14px;
+  text-align: center;
+}
+
+.scrolling-wrapper-flexbox {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+
+  .card {
+    flex: 0 0 auto;
+  }
 }

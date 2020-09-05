@@ -23,6 +23,7 @@
 
 .main-illustration {
   max-width: 90%;
+  width: 450px;
 }
 
 @media (min-width: 768px) {

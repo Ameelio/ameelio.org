@@ -1,8 +1,8 @@
 import React, { ReactElement } from "react";
 import HowItWorksCard from "src/components/cards/HowItWorksCard";
-import LocateLovedOne from "src/assets/HowItWorks/LocateLovedOne.svg";
+import LocateLovedOne from "src/assets/HowItWorks/LocateLovedOne.png";
 import SendContent from "src/assets/HowItWorks/SendContent.png";
-import Sample from "src/assets/HowItWorks/Sample.svg";
+import Sample from "src/assets/HowItWorks/Sample.png";
 import DownloadButton from "src/components/buttons/DownloadButton";
 
 //TODO here

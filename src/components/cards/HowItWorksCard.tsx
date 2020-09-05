@@ -42,7 +42,7 @@ export default function HowItWorksCard({
           <span className="text-center text-md-left">{desc}</span>
         </div>
       </div>
-      <Image src={asset} className="mx-3 mx-md-0" />
+      <Image src={asset} className="mx-3 mx-md-0 how-it-works-image" />
     </div>
   );
 }

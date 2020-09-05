@@ -2,11 +2,11 @@ import React, { ReactElement } from "react";
 import GlassCaseCard, {
   GlassCaseCardProps,
 } from "src/components/cards/GlassCaseCard";
-import Inspiration from "src/assets/GlassCase/Inspirational.svg";
-import Cartoon from "src/assets/GlassCase/Cartoon.svg";
-import Scenery from "src/assets/GlassCase/Scenery.svg";
-import Special from "src/assets/GlassCase/Special.svg";
-import Game from "src/assets/GlassCase/Games.svg";
+import Inspiration from "src/assets/GlassCase/Inspirational.png";
+import Cartoon from "src/assets/GlassCase/Cartoon.png";
+import Scenery from "src/assets/GlassCase/Scenery.png";
+import Special from "src/assets/GlassCase/Special.png";
+import Game from "src/assets/GlassCase/Games.png";
 
 export default function GlassCase(): ReactElement {
   const CARDS: GlassCaseCardProps[] = [
@@ -27,7 +27,7 @@ export default function GlassCase(): ReactElement {
           lasting memories.
         </span>
       </div>
-      <div className="d-flex flex-row overflow-hidden w-100 justify-content-center mt-5">
+      <div className="d-flex flex-row w-100 justify-content-center mt-5 scrolling-wrapper-flexbox">
         {CARDS.map((card) => (
           <GlassCaseCard name={card.name} image={card.image} />
         ))}

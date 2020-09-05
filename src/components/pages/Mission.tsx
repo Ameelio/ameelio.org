@@ -9,7 +9,7 @@ const Mission: React.FC = () => {
   const aspectRatio = isMobile ? "4by3" : "16by9";
 
   return (
-    <div className="d-flex flex-column justify-content-center align-items-center mission-page">
+    <div className="d-flex flex-column justify-content-center align-items-center sub-page">
       <h1 className="text-center font-weight-bold">Our Mission</h1>
       <div className="d-flex flex-column text-center default-px mt-3">
         <span className="mb-5 p4 text-break">

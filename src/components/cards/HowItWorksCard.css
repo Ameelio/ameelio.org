@@ -1,3 +1,8 @@
 .step-value-prop-container {
   width: 350px;
 }
+
+.how-it-works-image {
+  max-width: 90%;
+  width: 300px;
+}

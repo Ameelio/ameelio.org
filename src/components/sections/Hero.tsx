@@ -4,7 +4,7 @@ import Typical from "react-typical";
 import Image from "react-bootstrap/Image";
 import { numberWithCommas } from "src/utils/utils";
 import { PLACEMENT, APP_STORES } from "src/utils/constants";
-import Mockup from "src/assets/Hero/Mockup.svg";
+import Mockup from "src/assets/Hero/Mockup.png";
 import AppStoreButton from "src/components/buttons/AppStoreButton";
 
 type LetterCounter = {
@@ -38,7 +38,7 @@ export default class Hero extends Component<{}, LetterCounter> {
 
   render() {
     return (
-      <div className="mx-md-5 mx-1 px-md-5 mb-4 py-3 pb-5 d-flex flex-lg-row flex-column  w-100 justify-content-center align-items-center align-items-md-start">
+      <div className="px-md-5 mb-md-5 mb-0 py-3  d-flex flex-lg-row flex-column  w-100 justify-content-center align-items-center align-items-md-start">
         <div className="mx-5 d-flex flex-column align-items-lg-start">
           <div className="d-flex flex-column">
             <div className="d-flex flex-column flex-md-row ">

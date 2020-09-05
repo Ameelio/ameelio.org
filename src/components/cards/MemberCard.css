@@ -1,6 +1,9 @@
 .profile-picture {
-  height: 350px;
-  width: 275px;
+  height: 160px;
+  width: 160px;
   object-fit: cover;
   border-radius: 25px;
+}
+.member-card {
+  max-width: 160px;
 }

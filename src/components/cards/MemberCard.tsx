@@ -1,31 +1,25 @@
-import React from "react";
+import React, { ReactElement } from "react";
 import Image from "react-bootstrap/Image";
 import "./MemberCard.css";
 
-interface MemberProps {
-  name: string;
-  caption: string;
-  displayImage: boolean;
-  image: string;
+interface Props {
+  member: BoardMember | TeamMember;
+  boardMember?: boolean;
 }
 
-const MemberCard = (props: MemberProps) => {
+export default function MemberCard({
+  member,
+  boardMember,
+}: Props): ReactElement {
   return (
-    <div className="d-flex flex-column ml-md-3 mb-md-5 mb-3">
-      {props.displayImage ? (
-        <Image
-          src={props.image}
-          alt="Team member"
-          className="profile-picture"
-        />
-      ) : (
-        <div />
-      )}
+    <div className="d-flex flex-column ml-md-5 mb-3 align-items-center member-card">
+      <Image src={member.img} alt="Team member" className="profile-picture" />
 
-      <span className="p4 font-weight-bold">{props.name}</span>
-      <span className="p5">{props.caption}</span>
+      <span className=" font-weight-bold">{member.name}</span>
+      <span className="">{member.title}</span>
+      {boardMember && (
+        <span className="p5">{(member as BoardMember).company}</span>
+      )}
     </div>
   );
-};
-
-export default MemberCard;
+}
