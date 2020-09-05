@@ -7,7 +7,19 @@ import Zo from "src/assets/Team/Zo.png";
 import Gabe from "src/assets/Team/Gabe.png";
 import Emma from "src/assets/Team/Emma.png";
 import Lara from "src/assets/Team/Lara.png";
+import Jesse from "src/assets/Team/Jesse.png";
 import Jenny from "src/assets/Team/Jenny.png";
+import Mark from "src/assets/Team/Mark.png";
+import Liz from "src/assets/Team/Liz.png";
+import Joyce from "src/assets/Team/Joyce.png";
+import Kiran from "src/assets/Team/Kiran.png";
+import Alisa from "src/assets/Team/Alisa.png";
+import Isis from "src/assets/Team/Isis.png";
+import Kevin from "src/assets/Team/Kevin.png";
+import Joy from "src/assets/Team/Joy.png";
+import Adam from "src/assets/Team/Adam.png";
+import Andrew from "src/assets/Team/Andrew.png";
+
 // Board
 import Angel from "src/assets/Board/Angel.png";
 import Bart from "src/assets/Board/Bart.png";
@@ -135,6 +147,11 @@ export const MEMBERS: TeamMember[] = [
   },
 
   {
+    name: "Jesse Horne",
+    img: Jesse,
+    title: "Engineering",
+  },
+  {
     name: "Lara Schull",
     img: Lara,
     title: "Engineering",
@@ -143,6 +160,56 @@ export const MEMBERS: TeamMember[] = [
     name: "Jenny Lee",
     img: Jenny,
     title: "Social Media",
+  },
+  {
+    name: "Mark Pekala",
+    img: Mark,
+    title: "Engineering",
+  },
+  {
+    name: "Joyce Wu",
+    img: Joyce,
+    title: "Engineering",
+  },
+  {
+    name: "Elizabeth Levin",
+    img: Liz,
+    title: "Policy & Legal",
+  },
+  {
+    name: "Kevin Zhang",
+    img: Kevin,
+    title: "Product",
+  },
+  {
+    name: "Andrew Lama",
+    img: Andrew,
+    title: "Policy",
+  },
+  {
+    name: "Kiran Chokshi",
+    img: Kiran,
+    title: "Finance",
+  },
+  {
+    name: "Isis Decrem",
+    img: Isis,
+    title: "Storytelling",
+  },
+  {
+    name: "Alisa Chokshi",
+    img: Alisa,
+    title: "Storytelling",
+  },
+  {
+    name: "Adam Sarsony",
+    img: Adam,
+    title: "Engineering",
+  },
+  {
+    name: "Joy Qiu",
+    img: Joy,
+    title: "Engineering",
   },
 ];
 

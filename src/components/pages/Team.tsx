@@ -7,7 +7,7 @@ export default function Team(): ReactElement {
     <div className="pb-5">
       <div className="d-flex flex-column align-items-center px-5 text-center sub-page">
         <section className="d-flex flex-column align-items-center pb-5">
-          <h2 className="font-weight-bold mb-4">Our founding team</h2>
+          <h2 className="font-weight-bold mb-4">Our team</h2>
           <span>
             We are engineers, data scientists, lawyers, designers, and
             researchers.

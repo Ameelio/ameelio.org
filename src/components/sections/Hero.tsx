@@ -118,11 +118,16 @@ export default class Hero extends Component<{}, LetterCounter> {
             </a>
           </div>
         </div>
-        <Image
-          src={Mockup}
-          className="main-illustration mt-5 mt-md-0"
-          alt={"Image of letter, postcard and mobile app"}
-        />
+        <div
+          className="main-illustration mt-5  mt-md-0 mb-md-5"
+          data-aos="zoom-out-down"
+        >
+          <Image
+            src={Mockup}
+            className="main-illustration"
+            alt={"Image of letter, postcard and mobile app"}
+          />
+        </div>
       </div>
     );
   }
