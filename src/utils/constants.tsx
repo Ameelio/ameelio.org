@@ -29,6 +29,7 @@ import Alyssa from "src/assets/Board/Alyssa.png";
 import Jay from "src/assets/Board/Jay.png";
 import Bijan from "src/assets/Board/Bijan.png";
 import Adryann from "src/assets/Board/Adryann.png";
+import Shon from "src/assets/Board/Shon.png";
 
 // Supporters
 import Mozilla from "src/assets/supporters/mozilla.png";
@@ -37,10 +38,15 @@ import FastForward from "src/assets/supporters/ffw.png";
 import SchmidtFuture from "src/assets/supporters/SchmidtFuture.png";
 
 // Law Firms
-import Wilson from "src/assets/law_firms/wilson.jpg";
-import Cooley from "src/assets/law_firms/cooley.png";
-import Fish from "src/assets/law_firms/fish.jpg";
-import Wiggins from "src/assets/law_firms/wiggins.jpg";
+import Wilson from "src/assets/LawFirms/Wilson.jpg";
+import Cooley from "src/assets/LawFirms/Cooley.png";
+import Fish from "src/assets/LawFirms/Fish.jpg";
+import Wiggins from "src/assets/LawFirms/Wiggins.jpg";
+import Williams from "src/assets/LawFirms/Williams.jpg";
+import Proskauer from "src/assets/LawFirms/Proskauer.png";
+import Morrison from "src/assets/LawFirms/Morrison.jpg";
+import Covington from "src/assets/LawFirms/Covington.jpg";
+import Orrick from "src/assets/LawFirms/Orrick.png";
 
 export enum PLACEMENT {
   NAV = "navbar",
@@ -127,6 +133,12 @@ export const JUSTICE_BOARD: BoardMember[] = [
     name: "Jay Holder",
     title: "Program Developer",
     company: "Columbia University Center for Justice",
+  },
+  {
+    img: Shon,
+    name: "Shon Hopwood",
+    title: "Associate Professor",
+    company: "Georgetown University Law Center",
   },
 ];
 
@@ -226,6 +238,11 @@ export const LAW_FIRMS: Supporter[] = [
   { name: "Wiggins and Dana", image: Wiggins },
   { name: "Cooley", image: Cooley },
   { name: "Fish & Richardson", image: Fish },
+  { name: "Orrick", image: Orrick },
+  { name: "Proskauer Rose", image: Proskauer },
+  { name: "Morrison & Foerster", image: Morrison },
+  { name: "Covington", image: Covington },
+  { name: "Williams & Connolly", image: Williams },
 ];
 
 // Step-by-step
