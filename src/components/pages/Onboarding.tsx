@@ -34,7 +34,7 @@ export default function Onboarding(): ReactElement {
   const [city, setCity] = useState<string>("");
   const [postal, setPostal] = useState<string>("");
 
-  const [step, setStep] = useState<number>(0);
+  const [step, setStep] = useState<number>(3);
   const [isLoading, setLoading] = useState<boolean>(false);
   const [errorMessage, setErrorMessage] = useState<string>("");
 
@@ -424,30 +424,30 @@ export default function Onboarding(): ReactElement {
         </div>
       )}
       {step > 1 && (
-        <div className="d-flex flex-column align-items-center w-100 py-5">
+        <div className="d-flex flex-column align-items-center w-100">
           <Image src={UserBanner} className="referral-page-banner" />
-          <div className="d-flex flex-column align-items-center bg-white rounded referral-page-card text-center mb-5 mw-100">
+          <div className="d-flex flex-column align-items-center bg-white rounded referral-page-card text-center mb-5">
             <div className="d-flex flex-column">
-              <span className="font-weight-medium p2 mw-100">Sucess!</span>
+              <span className="font-weight-medium p2 mw-100">Success!</span>
               <span className="mt-3">
                 {firstName}, you're one tap away from sending your first photo,
                 letter or postcard to your loved one.
               </span>
-              <div className="d-flex flex-column flex-md-row mt-3 justify-content-center">
+              <div className="d-flex flex-column flex-md-row mt-5 justify-content-center">
                 <div>
                   <AppStoreButton
                     placement={PLACEMENT.REFERRAL}
                     type={APP_STORES.APPLE}
                   />
                 </div>
-                <div className="ml-md-3 mt-3">
+                <div className="ml-md-3 mt-3 mt-md-0">
                   <AppStoreButton
                     placement={PLACEMENT.REFERRAL}
                     type={APP_STORES.GOOGLE}
                   />
                 </div>
               </div>
-              <Lottie options={defaultOptions} height="90%" width="90%" />
+              <Lottie options={defaultOptions} height="80%" width="80%" />
             </div>
           </div>
         </div>

@@ -10,6 +10,8 @@ import GenericModal from "src/components/modals/GenericModal";
 
 import { RouteComponentProps, useHistory } from "react-router-dom";
 import { fetchReferrerName } from "src/services/Api/index";
+import { trackButtonClick } from "src/utils/analytics";
+import { BUTTON_TYPES, PLACEMENT } from "src/utils/constants";
 
 type TParams = { id: string };
 
@@ -46,6 +48,7 @@ export default function Referral({
   };
 
   const handleClick = () => {
+    trackButtonClick(BUTTON_TYPES.SIGNUP, PLACEMENT.REFERRAL);
     history.push(`/signup`);
   };
 
