@@ -1,6 +1,6 @@
 import React, { ReactElement } from "react";
 import { isAndroid, isIOS } from "react-device-detect";
-import Button from "react-bootstrap/Button";
+import { Button } from "react-bootstrap";
 import {
   PLACEMENT,
   LINKS,
@@ -8,6 +8,7 @@ import {
   APP_STORES,
 } from "src/utils/constants";
 import { trackButtonClick } from "src/utils/analytics";
+import "./DownloadButton.css";
 
 interface Props {
   isBlock?: boolean;

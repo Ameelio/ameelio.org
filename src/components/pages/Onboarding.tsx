@@ -1,30 +1,41 @@
 import React, { ReactElement, useState } from "react";
-import { Form, Button, Col } from "react-bootstrap";
+import { Form, Button, Col, Image, ProgressBar } from "react-bootstrap";
 import "./Onboarding.css";
-import url from "url";
-import { getApiUrl, STATES } from "src/utils/utils";
+import AlertDismissible from "src/components/alerts/Alert";
 
-import { useHistory } from "react-router-dom";
+import Mailbox from "src/assets/Referral/Mailbox.json";
+
+import Lottie from "react-lottie";
+import UserBanner from "src/assets/HowFree/UsersBanner.png";
+import AppStoreButton from "src/components/buttons/AppStoreButton";
+import {
+  PLACEMENT,
+  APP_STORES,
+  REFERRAL_SOURCES,
+  STATES,
+} from "src/utils/constants";
+import { register } from "src/services/Api/index";
+import { registerSegment } from "src/utils/analytics";
 
 export default function Onboarding(): ReactElement {
-  const [step, setStep] = useState<number>(0);
   const [firstName, setFirstName] = useState<string>("");
   const [lastName, setLastName] = useState<string>("");
   const [email, setEmail] = useState<string>("");
+  const [referralSource, setReferralSource] = useState<string>("");
+  const [referredBy] = useState<string | null>(
+    localStorage.getItem("referrer_id")
+  );
   const [password, setPassword] = useState<string>("");
-
   const [passwordConfirmation, setPasswordConfirmation] = useState<string>("");
-
   const [address1, setAddress1] = useState<string>("");
   const [address2, setAddress2] = useState<string>("");
-  const [state, setState] = useState<string>(STATES[0]);
+  const [state, setState] = useState<string>("");
   const [city, setCity] = useState<string>("");
   const [postal, setPostal] = useState<string>("");
 
+  const [step, setStep] = useState<number>(0);
   const [isLoading, setLoading] = useState<boolean>(false);
   const [errorMessage, setErrorMessage] = useState<string>("");
-
-  const history = useHistory();
 
   const handleInputChange = (
     set: React.Dispatch<React.SetStateAction<string>>,
@@ -35,6 +46,15 @@ export default function Onboarding(): ReactElement {
     set(event.target.value);
   };
 
+  const defaultOptions = {
+    loop: true,
+    autoplay: true,
+    animationData: Mailbox,
+    rendererSettings: {
+      preserveAspectRatio: "xMidYMid slice",
+    },
+  };
+
   const isValidInput = (): boolean => {
     if (step === 0) {
       return !!(
@@ -42,9 +62,10 @@ export default function Onboarding(): ReactElement {
         lastName.length &&
         email.length &&
         password.length >= 8 &&
-        password === passwordConfirmation
+        password === passwordConfirmation &&
+        (referralSource.length || referredBy)
       );
-    } else {
+    } else if (step === 1) {
       return !!(
         address1.length &&
         city.length &&
@@ -52,62 +73,63 @@ export default function Onboarding(): ReactElement {
         /(^\d{5}$)|(^\d{5}-\d{4}$)/.test(postal)
       );
     }
+    return true;
   };
 
   const handleClick = async (event: React.MouseEvent) => {
+    event.preventDefault();
     if (step === 0) {
-      setStep(step + 1);
+      setStep((step) => step + 1);
     } else {
       setLoading(true);
-      const requestOptions: RequestInit = {
-        method: "POST",
-        headers: {
-          Accept: "application/json",
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({
-          email: email,
-          password: password,
-          password_confirmation: passwordConfirmation,
-          first_name: firstName,
-          last_name: lastName,
-          address_line_1: address1,
-          address_line_2: address2,
-          referred_by: localStorage.getItem("referrer_id"),
-          city: city,
-          state: state,
-          postal: postal,
-          country: "US",
-          referer: "Referral",
-        }),
+
+      const referrer = referredBy ? "Referral Invitation" : referralSource;
+      const userData: UserRegisterInfo = {
+        email,
+        password,
+        passwordConfirmation,
+        firstName,
+        lastName,
+        address1,
+        address2,
+        city,
+        state,
+        postal,
+        referrer,
+        referredBy,
       };
-      const response = await fetch(
-        url.resolve(getApiUrl(), "register"),
-        requestOptions
-      );
-      const body = await response.json();
-      if (body.status === "ERROR") {
-        setErrorMessage(
-          "There was a problem creating your account. Please try again with a different email."
-        );
-      } else {
-        history.push(`/`);
+      try {
+        await register(userData);
+        registerSegment(userData);
+        setLoading(false);
+        setStep((step) => step + 1);
+      } catch (err) {
+        if (err.data && err.data.email) {
+          setErrorMessage(`The email (${email}) has already been taken.`);
+        } else if (err.message === "timeout") {
+          setErrorMessage(
+            "Your request timed out! If this error keeps happening, please contact support."
+          );
+        } else {
+          setErrorMessage(
+            "Something went wrong and it's our fault! If this error happens again, please contact support."
+          );
+        }
+        setLoading(false);
       }
     }
+  };
+
+  const handleBackClick = () => {
+    setStep((step) => step - 1);
   };
 
   const genFunnelStep = (): JSX.Element => {
     if (step === 0) {
       return (
         <Form>
-          <div className="d-flex flex-column mb-5">
-            <span className="font-weight-bold p3 mb-1">
-              Staying connected with your loved ones should be free.
-            </span>
-            <span>
-              Ameelio is a nonprofit committed to providing free prison
-              communications.
-            </span>
+          <div className="d-flex flex-column mb-3">
+            <span className="font-weight-bold p3 mb-1">Getting started</span>
           </div>
           <Form.Row className="mb-3">
             <Col xs={6}>
@@ -143,6 +165,32 @@ export default function Onboarding(): ReactElement {
               />
             </Col>
           </Form.Row>
+          {!referredBy && (
+            <Form.Row>
+              <Col>
+                <Form.Group controlId="selectReferralSource">
+                  <Form.Control
+                    as="select"
+                    custom
+                    onChange={(e: React.ChangeEvent<HTMLSelectElement>) =>
+                      handleInputChange(setReferralSource, e)
+                    }
+                    placeholder="How did you learn about Ameelio?"
+                    value={referralSource}
+                  >
+                    <option value="" disabled>
+                      How did you learn about Ameelio?
+                    </option>
+                    {REFERRAL_SOURCES.map((source) => (
+                      <option key={source} value={source}>
+                        {source}
+                      </option>
+                    ))}
+                  </Form.Control>
+                </Form.Group>
+              </Col>
+            </Form.Row>
+          )}
           <Form.Row className="mb-3">
             <Col xs={12}>
               <Form.Control
@@ -152,7 +200,11 @@ export default function Onboarding(): ReactElement {
                 onChange={(e: React.ChangeEvent<HTMLInputElement>) =>
                   handleInputChange(setPassword, e)
                 }
+                isInvalid={!!(password.length && password.length < 8)}
               />
+              <Form.Control.Feedback type="invalid">
+                Password needs to be at least 8 character.
+              </Form.Control.Feedback>
             </Col>
           </Form.Row>
           <Form.Row className="mb-5">
@@ -187,14 +239,16 @@ export default function Onboarding(): ReactElement {
           )}
         </Form>
       );
-    } else {
+    } else if (step === 1) {
       return (
         <Form>
+          {errorMessage && <AlertDismissible message={errorMessage} />}
+
           <div className="d-flex flex-column mb-5">
-            <span className="font-weight-bold p3">Welcome {firstName}</span>
+            <span className="font-weight-bold p3">Welcome, {firstName}</span>
             <span>
-              Please provide the return address you'd like to use for your
-              mailed letters & postcards.
+              Please provide the <b>return address</b> you'd like to use for
+              your mailed letters & postcards.
             </span>
           </div>
 
@@ -242,7 +296,11 @@ export default function Onboarding(): ReactElement {
                     handleInputChange(setState, e)
                   }
                   placeholder="State"
+                  value={state}
                 >
+                  <option value="" disabled>
+                    State
+                  </option>
                   {STATES.map((state) => (
                     <option key={state} value={state}>
                       {state}
@@ -262,23 +320,35 @@ export default function Onboarding(): ReactElement {
               />
             </Col>
           </Form.Row>
-          {isValidInput() ? (
+          <Form.Row>
             <Button
               size="lg"
               disabled={isLoading}
-              variant="primary"
-              onClick={handleClick}
+              variant="light"
+              onClick={handleBackClick}
             >
-              {isLoading ? "Creating..." : "Create Account"}
+              {"Back"}
             </Button>
-          ) : (
-            <Button size="lg" variant="primary" disabled>
-              Create Account
-            </Button>
-          )}
+            {isValidInput() ? (
+              <Button
+                size="lg"
+                disabled={isLoading}
+                variant="primary"
+                onClick={handleClick}
+                className="ml-3"
+              >
+                {isLoading ? "Creating..." : "Create Account"}
+              </Button>
+            ) : (
+              <Button size="lg" variant="primary" disabled className="ml-3">
+                Create Account
+              </Button>
+            )}
+          </Form.Row>
         </Form>
       );
     }
+    return <div />;
   };
 
   const genInstructions = (): JSX.Element => {
@@ -294,7 +364,7 @@ export default function Onboarding(): ReactElement {
               Are these physical letters?
             </span>
             <span>
-              Yes, we print and mail letters, photos and postcards for you.
+              Yes! We print and mail letters, photos and postcards for you.
             </span>
           </div>
 
@@ -302,11 +372,18 @@ export default function Onboarding(): ReactElement {
             <span className="font-weight-bold mb-1">
               How long does it take for the letters & photos to arrive?
             </span>
-            <span>7-9 business days.</span>
+            <span>
+              7-9 business days. We've been experiencing some delays due to
+              COVID{" "}
+              <span role="img" aria-label="pensive face emoji">
+                😔
+              </span>
+              .
+            </span>
           </div>
         </div>
       );
-    } else {
+    } else if (step === 1) {
       return (
         <div className="d-flex flex-column">
           <div className="d-flex flex-column mb-5">
@@ -327,12 +404,53 @@ export default function Onboarding(): ReactElement {
         </div>
       );
     }
+    return <div />;
   };
 
   return (
-    <div className="d-flex flex-column flex-md-row">
-      <div className="default-px py-5">{genFunnelStep()}</div>
-      <div className="instruction-section p-5">{genInstructions()}</div>
+    <div className="w-100">
+      {step <= 1 && (
+        <div className="d-flex flex-column flex-md-row">
+          <div className="default-px  py-5 w-100">
+            <ProgressBar
+              className="mb-4"
+              now={(step + 1) * 34}
+              label={`Step ${step + 1}`}
+            />
+            {genFunnelStep()}
+          </div>
+          <div className="instruction-section p-5">{genInstructions()}</div>
+        </div>
+      )}
+      {step > 1 && (
+        <div className="d-flex flex-column align-items-center w-100 py-5">
+          <Image src={UserBanner} className="referral-page-banner" />
+          <div className="d-flex flex-column align-items-center bg-white rounded referral-page-card text-center mb-5 mw-100">
+            <div className="d-flex flex-column">
+              <span className="font-weight-medium p2 mw-100">Sucess!</span>
+              <span className="mt-3">
+                {firstName}, you're one tap away from sending your first photo,
+                letter or postcard to your loved one.
+              </span>
+              <div className="d-flex flex-row mt-3 justify-content-center">
+                <div>
+                  <AppStoreButton
+                    placement={PLACEMENT.REFERRAL}
+                    type={APP_STORES.APPLE}
+                  />
+                </div>
+                <div className="ml-3">
+                  <AppStoreButton
+                    placement={PLACEMENT.REFERRAL}
+                    type={APP_STORES.GOOGLE}
+                  />
+                </div>
+              </div>
+              <Lottie options={defaultOptions} height="90%" width="90%" />
+            </div>
+          </div>
+        </div>
+      )}
     </div>
   );
 }

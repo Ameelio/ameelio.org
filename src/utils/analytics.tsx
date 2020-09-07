@@ -34,3 +34,19 @@ export const load = () => {
     window.analytics.load(process.env.REACT_APP_SEGMENT_KEY_STAGING);
   }
 };
+
+export const registerSegment = (userData: UserRegisterInfo) => {
+  window.analytics.identify(userData.email, {
+    name: `${userData.firstName} ${userData.lastName}`,
+    email: userData.email,
+    postal: userData.postal,
+    city: userData.city,
+    state: userData.state,
+    referrer: userData.referrer,
+  });
+  window.analytics.track("Signup - Account Created", {
+    city: userData.city,
+    state: userData.state,
+    referrer: userData.referrer,
+  });
+};
