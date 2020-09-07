@@ -207,6 +207,12 @@ h1 {
   background-color: var(--blue-500);
 }
 
+.form-control:focus {
+  border: 2px solid var(--blue-500) !important;
+  box-shadow: none;
+}
+
+/* Utility Classes */
 .small-img {
   width: 42px;
   height: 42px;
@@ -243,6 +249,10 @@ h1 {
   .card {
     flex: 0 0 auto;
   }
+}
+
+.fit-cover {
+  object-fit: cover;
 }
 
 .font-hairline {

@@ -5,14 +5,14 @@ import Impact from "src/components/sections/Impact";
 const WhyAmeelio: React.FC = () => {
   return (
     <div className="d-flex flex-column align-items-center mw-100 py-5 default-px">
-      <span className="p2 font-weight-bold">Why we're here</span>
+      <span className="p2 font-weight-bold">Why We're Here</span>
       <span className="mt-3">
         We want to reconnect incarcerated people and their loved ones,{" "}
         <span className="bg-darkblue white px-1 font-weight-bold">
           for free
-        </span>{" "}
-        . Our vision is to disrupt the prison telecommunications industry by
-        outcompeting incumbents with services that prioritize users over
+        </span>
+        . Our vision is to disrupt the prison telecommunications industry,
+        outcompeting incumbents by providing services that prioritize users over
         profits.
       </span>
       <Impact />
@@ -37,7 +37,7 @@ const WhyAmeelio: React.FC = () => {
       </span>
       <br />
       <span>
-        There is strong evidence that sustaining contact during incarceration
+        There is strong evidence that sustained contact during incarceration
         improves post-release outcomes and reduces recidivism. We hope that in
         the long term, our services will significantly{" "}
         <span className="bg-darkblue white px-1 font-weight-bold">

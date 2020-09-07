@@ -20,8 +20,8 @@ const ProductCard: FunctionComponent<ProductProps> = ({
   learnMoreLink,
 }) => {
   return (
-    <div className="products-card-wrapper ml-lg-3 mr-lg-3 mt-3 mt-md-0">
-      <div className="products-card-title">{name}</div>
+    <div className="products-card-wrapper ml-lg-3 mr-lg-3 py-5">
+      <div className="products-card-title mb-3">{name}</div>
       <Image
         src={image}
         className="product-card-illustration mb-3"
@@ -31,13 +31,13 @@ const ProductCard: FunctionComponent<ProductProps> = ({
       {ctaLink && (
         <button
           onClick={() => window.open(ctaLink)}
-          className="products-signup-button"
+          className="products-signup-button mt-auto mb-3"
         >
           {cta}
         </button>
       )}
       {learnMoreLink && (
-        <a className="learn-more" href={learnMoreLink}>
+        <a className="learn-more mt-auto mb-5" href={learnMoreLink}>
           Learn More
         </a>
       )}

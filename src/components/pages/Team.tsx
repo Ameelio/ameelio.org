@@ -4,7 +4,7 @@ import { MEMBERS, TECH_BOARD, JUSTICE_BOARD } from "src/utils/constants";
 
 export default function Team(): ReactElement {
   return (
-    <div className="pb-5">
+    <div className="py-5">
       <div className="d-flex flex-column align-items-center px-5 text-center sub-page">
         <section className="d-flex flex-column align-items-center pb-5">
           <h2 className="font-weight-bold mb-4">Our team</h2>

@@ -31,13 +31,13 @@ export default function CtaCard({ type }: Props): ReactElement {
             <div className="d-flex flex-row mt-3">
               <Send className="blue flex-shrink-0" size={24} />
               <p className="ml-3">
-                We've helped more than <b>10,000</b> families send over{" "}
-                <b>40,000</b> letters.
+                Every week, we help more than <b>1,000</b> families send over{" "}
+                <b>3,000</b> letters.
               </p>
             </div>
             <div className="d-flex flex-row mt-3">
               <Truck className="blue flex-shrink-0" size={24} />
-              <p className="ml-3">We serve all facilities in the US.</p>
+              <p className="ml-3">We serve all facilities in the U.S.</p>
             </div>
             <div className="d-flex flex-row mt-3 mb-3">
               <Heart className="blue flex-shrink-0" size={24} />
@@ -50,26 +50,29 @@ export default function CtaCard({ type }: Props): ReactElement {
         return (
           <div className="cta-card-container">
             <span className="font-weight-bold p4">
-              Human connection should be free.
+              Staying connected to your loved ones should be free.
             </span>
 
             <div className="d-flex flex-row mt-3">
               <Send className="blue flex-shrink-0" size={24} />
               <p className="ml-3">
-                We've helped more than <b>10,000</b> families send over{" "}
-                <b>40,000</b> letters.
+                Every week, we help more than <b>1,000</b> families send over{" "}
+                <b>3,000</b> letters.
               </p>
             </div>
             <div className="d-flex flex-row mt-3">
               <Heart className="blue flex-shrink-0" size={24} />
               <p className="ml-3">
-                By giving us $3, we can fund a month worth of letters for an
-                entire family.
+                It takes only $3 to fund a month of free letters for an entire
+                family.
               </p>
             </div>
             <div className="d-flex flex-row mt-3">
               <Coffee className="blue flex-shrink-0" size={24} />
-              <p className="ml-3">The price of a coffee is all we need.</p>
+              <p className="ml-3">
+                The price of a coffee is all we need to make a difference in
+                another family's life.
+              </p>
             </div>
             <Button
               className="bg-blue"

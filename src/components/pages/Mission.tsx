@@ -34,7 +34,9 @@ const Mission: React.FC = () => {
           </span>{" "}
           has a family member who has experienced incarceration. When a loved
           one is imprisoned, staying in touch is vital. Yet prison
-          communications options remain prohibitively expensive.
+          communications options remain prohibitively expensive. Our free
+          communications alternatives will decouple prisons from profit and
+          build community.
         </span>
       </div>
 

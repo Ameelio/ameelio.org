@@ -174,7 +174,7 @@ export const MEMBERS: TeamMember[] = [
   {
     name: "Elizabeth Levin",
     img: Liz,
-    title: "Policy & Legal",
+    title: "Policy",
   },
   {
     name: "Kevin Zhang",
@@ -214,7 +214,7 @@ export const MEMBERS: TeamMember[] = [
 ];
 
 export const FOUNDATIONS: Supporter[] = [
-  { name: "Schmidt Future", image: SchmidtFuture },
+  { name: "Schmidt Futures", image: SchmidtFuture },
   { name: "Robinhood Foundation", image: Robinhood },
   { name: "Mozilla Foundation", image: Mozilla },
   { name: "Fast Forward", image: FastForward },
@@ -224,7 +224,7 @@ export const LAW_FIRMS: Supporter[] = [
   { name: "Wilson Sonsini", image: Wilson },
   { name: "Wiggins and Dana", image: Wiggins },
   { name: "Cooley", image: Cooley },
-  { name: "Fish", image: Fish },
+  { name: "Fish & Richardson", image: Fish },
 ];
 
 // Step-by-step

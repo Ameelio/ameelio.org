@@ -13,7 +13,7 @@ const GetStarted: React.FC = () => {
           </div>
           <div className="get-started-subtitle mt-3 p5">
             Ameelio is working to launch the first video conferencing pilot
-            sites in the US. If you are a warden or sheriff interested in being
+            sites in the U.S. If you are a warden or sheriff interested in being
             one of the pioneers, email us at team@ameelio.org.
           </div>
           <button

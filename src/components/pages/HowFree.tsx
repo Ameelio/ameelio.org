@@ -15,10 +15,10 @@ import { BUTTON_TYPES } from "src/utils/constants";
 const HowFree: FunctionComponent = () => {
   return (
     <div className="d-flex flex-column text-align-center  justify-content-center mw-100 default-px py-5">
-      <h1 className="font-weight-bold mb-5">How is Ameelio Free?</h1>
+      <h1 className="font-weight-bold mb-5">How Is Ameelio Free?</h1>
       <div className="d-flex flex-column flex-md-row">
         <div className="d-flex flex-column mr-md-5">
-          <SummaryCard desc="Dear community, transparency is one of our nonprofit’s core values. That’s why it’s important to us that you know how Ameelio stays free and who owns Ameelio." />
+          <SummaryCard desc="Transparency is one of our nonprofit’s core values. That’s why it’s important to us that you know how Ameelio stays free and who funds Ameelio." />
           <AuthorCard
             images={[Lara, Liz]}
             name="Lara Schull & Elizabeth Levin"
@@ -33,14 +33,14 @@ const HowFree: FunctionComponent = () => {
             providing free communications options to all families.
           </span>
           <span className="text-break mb-3">
-            Luckily, we’re not alone: our work is made possible by the
+            Luckily, we’re not alone; our work is made possible by the
             generosity of like-minded charitable foundations, individual donors,
             corporate partners, and users who choose to “tip” us for our
             services.
           </span>
 
           <span className="text-break mb-3">
-            Among our early supporters are{" "}
+            Our supporters include the{" "}
             <a
               target="_blank"
               rel="noopener noreferrer"
@@ -56,7 +56,15 @@ const HowFree: FunctionComponent = () => {
             >
               Mozilla Foundation
             </a>
-            , and Fast Forward Accelerator. Donors like{" "}
+            , and{" "}
+            <a
+              href="https://www.ffwd.org/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Fast Forward
+            </a>
+            . Donors like{" "}
             <a
               target="_blank"
               rel="noopener noreferrer"
@@ -64,14 +72,14 @@ const HowFree: FunctionComponent = () => {
             >
               Eric Schmidt
             </a>{" "}
-            (the former CEO of Google),{" "}
+            (the former CEO of Google) and{" "}
             <a
               target="_blank"
               rel="noopener noreferrer"
               href="https://en.wikipedia.org/wiki/Tarell_Alvin_McCraney"
             >
               Tarell McCraney
-            </a>
+            </a>{" "}
             (Oscar-winning writer of Moonlight) have contributed key funds that
             have allowed us to keep offering free letters to all our users.
           </span>
@@ -94,7 +102,7 @@ const HowFree: FunctionComponent = () => {
           </span>
 
           <div className="mt-5 d-flex flex-column">
-            <span className="p2 font-weight-bold mb-3">Who owns Ameelio?</span>
+            <span className="p2 font-weight-bold mb-3">Who Owns Ameelio?</span>
             <span className="mb3">
               Ameelio is a nonprofit. Ending the exploitation of families
               impacted by incarceration is central to our mission, so we
@@ -104,10 +112,7 @@ const HowFree: FunctionComponent = () => {
             </span>
           </div>
           <div className="sub-page-media">
-            <Image
-              src={TeamBI}
-              alt="Ameelio raises $48,000 through Kickstarter"
-            />
+            <Image src={TeamBI} alt="Members of the Ameelio team." />
             <span className="mt-3">
               Members of the Ameelio team featured on{" "}
               <a

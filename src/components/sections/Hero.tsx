@@ -38,7 +38,7 @@ export default class Hero extends Component<{}, LetterCounter> {
 
   render() {
     return (
-      <div className="px-md-5 mb-md-5 mb-0 py-3  d-flex flex-lg-row flex-column  w-100 justify-content-center align-items-center align-items-md-start">
+      <div className="px-md-5 mb-md-5 mb-0 pb-3 pt-5  d-flex flex-lg-row flex-column  w-100 justify-content-center align-items-center align-items-md-start">
         <div className="mx-5 d-flex flex-column align-items-lg-start">
           <div className="d-flex flex-column">
             <div className="d-flex flex-column flex-md-row ">
@@ -83,9 +83,10 @@ export default class Hero extends Component<{}, LetterCounter> {
             </div>
           </div>
 
-          <span className="font-weight-bold blue letter-counter mt-4">
-            Ameelio's community has sent over {this.state.letters} letters,
-            cards & photos
+          <span className="blue letter-counter mt-4">
+            Ameelio's community has sent over{" "}
+            <span className="font-weight-bold">{this.state.letters}</span>{" "}
+            letters, cards & photos.
           </span>
           <div className="d-flex flex-row mt-3 position-relative media-container flex-wrap">
             <a href="https://www.fastcompany.com/90514321/this-app-bypasses-the-absurdly-high-cost-of-making-phone-calls-to-prison-by-converting-texts-to-snail-mail?partner=rss&utm_source=rss&utm_medium=feed&utm_campaign=rss+fastcompany&utm_content=rss">

@@ -9,6 +9,9 @@ import Team from "./pages/Team";
 import Footer from "./footer/Footer";
 import HowItWorks from "./pages/HowItWorks";
 import GetInvolved from "./pages/GetInvolved";
+import ReferralPage from "./pages/ReferralPage";
+import Onboarding from "./pages/Onboarding";
+
 import ReactPixel from "react-facebook-pixel";
 import { HashRouter as Router, Route, Switch } from "react-router-dom";
 import { trackPageOpen, load, page } from "src/utils/analytics";
@@ -32,13 +35,14 @@ const App: React.FC = () => {
   return (
     <Router>
       <NavBar />
-      <br />
       <Switch>
         <Route path="/how-we-work" component={HowItWorks} />
         <Route path="/transparency" component={HowFree} />
         <Route path="/team" component={Team} />
         <Route path="/mission" component={Mission} />
         <Route path="/get-involved" component={GetInvolved} />
+        <Route path="/join/:id" component={ReferralPage} />
+        <Route exact path="/signup" component={Onboarding} />
         <Route path="/" component={Landing} />
       </Switch>
       <Footer />

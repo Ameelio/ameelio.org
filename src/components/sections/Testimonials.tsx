@@ -51,7 +51,7 @@ const Testimonials: React.FC = () => {
     // {
     //   name: "Kimberly Hernandez",
     //   img: require("../../assets/testimonials/kimberly.jpg"),
-    //   quote:
+    //   quote:c
     //     "Your organization is an answer to so many prayers. I believe you came to me as an answer. I really do.",
     // },
   ];
@@ -59,7 +59,7 @@ const Testimonials: React.FC = () => {
   return (
     <div className="testimonials-container text-center">
       <span className="font-weight-bold testimonial-title mb-5 white">
-        Voices from our Community
+        Voices from Our Community
       </span>
       <div className="mt-5">
         <Carousel>

@@ -62,7 +62,7 @@ const Context: React.FC = () => {
           <div className="context-footer-text p3">
             Research shows that close and positive family relationships during
             incarceration reduce recidivism ... and ease the harm to family
-            members separated from their loved ones. – US Dept. of Justice
+            members separated from their loved ones. – U.S. Dept. of Justice
           </div>
           <img
             className="context-footer-right-quote"
