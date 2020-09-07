@@ -9,8 +9,7 @@ import CardContentLoader from "src/components/loading/CardContentLoader";
 import GenericModal from "src/components/modals/GenericModal";
 
 import { RouteComponentProps, useHistory } from "react-router-dom";
-import url from "url";
-import { getApiUrl } from "src/utils/utils";
+import { fetchReferrerName } from "src/services/Api/index";
 
 type TParams = { id: string };
 
@@ -23,23 +22,16 @@ export default function Referral({
 
   const history = useHistory();
   useEffect(() => {
-    // Create an scoped async function in the hook
     async function fetchReferrer() {
       const { id } = match.params;
-      console.log(url.resolve(getApiUrl(), `referrer/${id}`));
-      const response = await fetch(url.resolve(getApiUrl(), `referrer/${id}`));
-      const json = await response.json();
-      const { status } = json;
-      if (status !== "OK") {
-        // show modal
-        setIsLoading(false);
-        setHasError(true);
-      } else {
-        const { name } = json.data;
+      try {
+        const name = await fetchReferrerName(id);
         localStorage.setItem("referrer_id", id);
         setReferrer(name);
-        setIsLoading(false);
+      } catch (e) {
+        setHasError(true);
       }
+      setIsLoading(false);
     }
     fetchReferrer();
   }, [match]);
@@ -69,7 +61,11 @@ export default function Referral({
             redirectPath={"/"}
           />
         )}
-        {isLoading && !hasError && <CardContentLoader />}
+        {isLoading && !hasError && (
+          <div className="mw-100">
+            <CardContentLoader className="w-100" />
+          </div>
+        )}
         {!isLoading && !hasError && (
           <div className="d-flex flex-column">
             <span className="font-weight-medium p2">Hi there!</span>

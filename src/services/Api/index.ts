@@ -31,3 +31,17 @@ export async function register(data: UserRegisterInfo): Promise<void> {
   const body = await response.json();
   if (body.status !== "OK" || body.exception) throw body;
 }
+
+export async function fetchReferrerName(referrerId: string): Promise<string> {
+  const response = await fetch(
+    url.resolve(getApiUrl(), `referrer/${referrerId}`)
+  );
+  const body = await response.json();
+
+  if (body.status !== "OK" || body.exception) throw body;
+
+  localStorage.setItem("referrer_id", referrerId);
+  const { name } = body.data;
+
+  return name;
+}

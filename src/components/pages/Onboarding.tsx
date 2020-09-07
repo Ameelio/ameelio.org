@@ -14,6 +14,7 @@ import {
   REFERRAL_SOURCES,
   STATES,
 } from "src/utils/constants";
+import { isValidUSZipCode } from "src/utils/utils";
 import { register } from "src/services/Api/index";
 import { registerSegment } from "src/utils/analytics";
 
@@ -70,7 +71,7 @@ export default function Onboarding(): ReactElement {
         address1.length &&
         city.length &&
         state &&
-        /(^\d{5}$)|(^\d{5}-\d{4}$)/.test(postal)
+        isValidUSZipCode(postal)
       );
     }
     return true;
@@ -312,7 +313,7 @@ export default function Onboarding(): ReactElement {
             <Col xs={6} md={3}>
               <Form.Control
                 type="text"
-                placeholder="Zip Code"
+                placeholder="Zip Code (e.g 06511)"
                 value={postal}
                 onChange={(e: React.ChangeEvent<HTMLInputElement>) =>
                   handleInputChange(setPostal, e)
@@ -432,14 +433,14 @@ export default function Onboarding(): ReactElement {
                 {firstName}, you're one tap away from sending your first photo,
                 letter or postcard to your loved one.
               </span>
-              <div className="d-flex flex-row mt-3 justify-content-center">
+              <div className="d-flex flex-column flex-md-row mt-3 justify-content-center">
                 <div>
                   <AppStoreButton
                     placement={PLACEMENT.REFERRAL}
                     type={APP_STORES.APPLE}
                   />
                 </div>
-                <div className="ml-3">
+                <div className="ml-md-3 mt-3">
                   <AppStoreButton
                     placement={PLACEMENT.REFERRAL}
                     type={APP_STORES.GOOGLE}

@@ -1,5 +1,6 @@
-import React, { FunctionComponent, useEffect, useState } from "react";
+import React, { ReactElement, useEffect, useState } from "react";
 import "./Navbar.css";
+import { RouteComponentProps } from "react-router-dom";
 
 import { Navbar, Nav, NavDropdown } from "react-bootstrap";
 import { Link } from "react-router-dom";
@@ -9,7 +10,10 @@ import Logo from "src/assets/logo.svg";
 import { isMobile } from "react-device-detect";
 import Image from "react-bootstrap/Image";
 
-const NavBar: FunctionComponent = () => {
+interface Props {
+  showMenuItems?: boolean;
+}
+export default function NavBar({ showMenuItems }: Props): ReactElement {
   const NAV_ITEMS: Array<{ path: string; name: string; key: string }> = [
     { path: "mission", name: "Our Mission", key: "mission" },
     { path: "how-we-work", name: "How We Work", key: "walkthrough" },
@@ -48,43 +52,43 @@ const NavBar: FunctionComponent = () => {
         </Link>
       </Navbar.Brand>
       <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-      <Navbar.Collapse id="responsive-navbar-nav">
-        <Nav className="mr-auto">
-          {NAV_ITEMS.map((item) => (
+      {showMenuItems && (
+        <Navbar.Collapse id="responsive-navbar-nav">
+          <Nav className="mr-auto">
+            {NAV_ITEMS.map((item) => (
+              <Nav.Link
+                as={Link}
+                to={item.path}
+                eventKey={item.name}
+                key={item.key}
+                onClick={() => trackNav(item.key)}
+              >
+                {item.name}
+              </Nav.Link>
+            ))}
+
             <Nav.Link
-              as={Link}
-              to={item.path}
-              eventKey={item.name}
-              key={item.key}
-              onClick={() => trackNav(item.key)}
+              className={donate_className}
+              onClick={() => setDonateClicked(true)}
             >
-              {item.name}
+              Donate
             </Nav.Link>
-          ))}
+            {isMobile ? <NavDropdown.Divider /> : <div></div>}
+          </Nav>
 
-          <Nav.Link
-            className={donate_className}
-            onClick={() => setDonateClicked(true)}
-          >
-            Donate
-          </Nav.Link>
-          {isMobile ? <NavDropdown.Divider /> : <div></div>}
-        </Nav>
-
-        <div className="d-flex flex-column flex-md-row">
-          <Nav.Link className="login" onClick={() => setLoginClicked(true)}>
-            Login
-          </Nav.Link>
-          <button
-            className="signup-button ml-md-3 mr-5"
-            onClick={() => setSignupClicked(true)}
-          >
-            Sign Up
-          </button>
-        </div>
-      </Navbar.Collapse>
+          <div className="d-flex flex-column flex-md-row">
+            <Nav.Link className="login" onClick={() => setLoginClicked(true)}>
+              Login
+            </Nav.Link>
+            <button
+              className="signup-button ml-md-3 mr-5"
+              onClick={() => setSignupClicked(true)}
+            >
+              Sign Up
+            </button>
+          </div>
+        </Navbar.Collapse>
+      )}
     </Navbar>
   );
-};
-
-export default NavBar;
+}
