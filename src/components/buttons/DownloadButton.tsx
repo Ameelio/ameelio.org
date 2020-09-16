@@ -57,7 +57,6 @@ export default function DownloadButton({ isBlock }: Props): ReactElement {
     logClickEvent();
     window.open(LINK, "_blank");
   };
-  // const gen
 
   return (
     <Button size="lg" block={isBlock} onClick={handleClick}>

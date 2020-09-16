@@ -4,8 +4,6 @@ interface Member {
   title: string;
 }
 
-interface TeamMember extends Member {}
-
 interface BoardMember extends Member {
   company: string;
 }

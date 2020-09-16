@@ -27,10 +27,8 @@ export const page = () => {
 
 export const load = () => {
   if (process.env.NODE_ENV === "production") {
-    console.log("prod");
     window.analytics.load(process.env.REACT_APP_SEGMENT_KEY_PROD);
   } else {
-    console.log("stage");
     window.analytics.load(process.env.REACT_APP_SEGMENT_KEY_STAGING);
   }
 };

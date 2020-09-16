@@ -1,17 +1,20 @@
 import React, { useEffect, ReactElement } from "react";
 import "./App.scss";
 
-import Landing from "src/pages/landing";
-import Mission from "src/pages/Mission";
-import HowFree from "src/pages/HowFree";
-import NavBar from "src/components/Navbar/Navbar";
-import Team from "src/pages/Team";
+import {
+  Landing,
+  Mission,
+  HowFree,
+  Team,
+  HowItWorks,
+  GetInvolved,
+  ReferralPage,
+  Onboarding,
+  LettersOrgs,
+} from "src/pages";
 import Footer from "src/components/Footer/Footer";
-import HowItWorks from "src/pages/HowItWorks";
-import GetInvolved from "src/pages/GetInvolved";
-import ReferralPage from "src/pages/ReferralPage";
-import Onboarding from "src/pages/Onboarding";
 
+import NavBar from "src/components/Navbar/Navbar";
 import ReactPixel from "react-facebook-pixel";
 import {
   HashRouter as Router,
@@ -25,7 +28,6 @@ import { RouteComponentProps } from "react-router";
 
 import AOS from "aos";
 import "aos/dist/aos.css";
-import LettersOrgs from "src/pages/LettersOrgs";
 
 if (process.env.REACT_APP_PIXEL_KEY) {
   ReactPixel.init(process.env.REACT_APP_PIXEL_KEY);
@@ -33,15 +35,12 @@ if (process.env.REACT_APP_PIXEL_KEY) {
 }
 
 const Main = withRouter(({ location }: RouteComponentProps) => {
-  console.log(location);
   return (
     <div>
       <NavBar
         showMenuItems={
-          !!(
-            location.pathname !== "/signup" &&
-            location.pathname.indexOf("/join") === -1
-          )
+          location.pathname !== "/signup" &&
+          location.pathname.indexOf("/join") === -1
         }
       />
       <Route exact path="/" component={Landing} />

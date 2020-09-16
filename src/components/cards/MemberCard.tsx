@@ -3,7 +3,7 @@ import Image from "react-bootstrap/Image";
 import "./MemberCard.css";
 
 interface Props {
-  member: BoardMember | TeamMember;
+  member: BoardMember | Member;
   boardMember?: boolean;
 }
 

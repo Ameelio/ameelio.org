@@ -5,14 +5,14 @@ interface Props {
   message: string;
 }
 export default function AlertDismissible({ message }: Props) {
-  const [show, setShow] = useState(true);
+  const [shown, setShow] = useState(true);
 
-  return show ? (
+  return shown ? (
     <Alert variant="danger" onClose={() => setShow(false)} dismissible>
       <Alert.Heading>Something went wrong!</Alert.Heading>
       <span>{message}</span>
     </Alert>
   ) : (
-    <div />
+    <></>
   );
 }

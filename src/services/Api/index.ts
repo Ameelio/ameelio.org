@@ -36,7 +36,6 @@ export async function fetchReferrerName(referrerId: string): Promise<string> {
   const response = await fetch(
     url.resolve(getApiUrl(), `referrer/${referrerId}`)
   );
-  console.log(url.resolve(getApiUrl(), `referrer/${referrerId}`));
   const body = await response.json();
 
   if (body.status !== "OK" || body.exception) throw body;

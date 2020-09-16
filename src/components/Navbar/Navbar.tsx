@@ -20,23 +20,24 @@ export default function NavBar({ showMenuItems }: Props): ReactElement {
     { path: "organizations", name: "For Organizations", key: "orgs" },
   ];
 
-  const [signup_clicked, setSignupClicked] = useState(false);
-  const [login_clicked, setLoginClicked] = useState(false);
-  const [donate_clicked, setDonateClicked] = useState(false);
+  const [signupClicked, setSignupClicked] = useState(false);
+  const [loginClicked, setLoginClicked] = useState(false);
+  const [donateClicked, setDonateClicked] = useState(false);
 
   useEffect(() => {
-    if (signup_clicked) {
+    if (signupClicked) {
       trackButtonClick(BUTTON_TYPES.SIGNUP, PLACEMENT.NAV);
       window.open(LINKS.SIGNUP, "_self");
-    } else if (login_clicked) {
+    } else if (loginClicked) {
       trackButtonClick(BUTTON_TYPES.LOGIN, PLACEMENT.NAV);
       window.open(LINKS.LOGIN, "_self");
-    } else if (donate_clicked) {
+    } else if (donateClicked) {
       trackButtonClick(BUTTON_TYPES.DONATE, PLACEMENT.NAV);
       window.open(LINKS.DONATION, "_self");
     }
   });
-  const donate_className = isMobile ? "" : "btn secondary-btn";
+
+  const donateClassName = isMobile ? "" : "btn secondary-btn";
   return (
     <Navbar
       collapseOnSelect
@@ -67,12 +68,12 @@ export default function NavBar({ showMenuItems }: Props): ReactElement {
             ))}
 
             <Nav.Link
-              className={donate_className}
+              className={donateClassName}
               onClick={() => setDonateClicked(true)}
             >
               Donate
             </Nav.Link>
-            {isMobile ? <NavDropdown.Divider /> : <div></div>}
+            {isMobile ? <NavDropdown.Divider /> : null}
           </Nav>
 
           <div className="d-flex flex-column flex-md-row">

@@ -5,7 +5,6 @@ import SendContent from "src/assets/HowItWorks/SendContent.png";
 import Sample from "src/assets/HowItWorks/Sample.png";
 import DownloadButton from "src/components/buttons/DownloadButton";
 
-//TODO here
 export default function HowItWorks(): ReactElement {
   return (
     <section className="d-flex flex-column align-items-center w-100 py-5">

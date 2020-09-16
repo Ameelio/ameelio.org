@@ -8,18 +8,19 @@ interface Props {
   redirectPath: string;
 }
 
-export default function ErrorModal({
+export default function GenericModal({
   title,
   body,
   cta,
   redirectPath,
 }: Props): ReactElement {
   const history = useHistory();
+
   return (
     <Modal show={true}>
       <Modal.Body>
         <div className="d-flex flex-column align-items-center">
-          <span className="p3 font-weight-bold mb-3">Oops</span>
+          <span className="p3 font-weight-bold mb-3">{title}</span>
           <span className="mb-3">{body}</span>
           <Button size="lg" onClick={(e) => history.push(redirectPath)}>
             {cta}

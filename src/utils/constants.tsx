@@ -160,7 +160,7 @@ export const JUSTICE_BOARD: BoardMember[] = [
   },
 ];
 
-export const MEMBERS: TeamMember[] = [
+export const MEMBERS: Member[] = [
   {
     name: "Zo Orchingwa",
     img: Zo,
