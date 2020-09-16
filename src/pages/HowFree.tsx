@@ -1,5 +1,5 @@
 import React, { FunctionComponent } from "react";
-import Supporters from "../sections/Supporters";
+import Supporters from "src/components/sections/Supporters";
 import Image from "react-bootstrap/Image";
 import AuthorCard from "src/components/cards/AuthorCard";
 import Lara from "src/assets/Team/Lara.png";
@@ -72,7 +72,15 @@ const HowFree: FunctionComponent = () => {
             >
               Eric Schmidt
             </a>{" "}
-            (the former CEO of Google) and{" "}
+            (the former CEO of Google),{" "}
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://en.wikipedia.org/wiki/Jack_Dorsey"
+            >
+              Jack Dorsey
+            </a>{" "}
+            (the CEO of Twitter and Square) and{" "}
             <a
               target="_blank"
               rel="noopener noreferrer"

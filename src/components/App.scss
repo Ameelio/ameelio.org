@@ -2,7 +2,7 @@
 @import "./scss/custom.scss";
 
 :root {
-  --main-blue-200: #f7fbff;
+  --blue-200: #f7fbff;
   --blue-400: #8da1d1;
   --blue-500: #4884f8;
   --blue-600: #0a207b;
@@ -98,7 +98,7 @@ a:hover {
 }
 
 .blue-200-bg {
-  background-color: var(--main-blue-200);
+  background-color: var(--blue-200);
 }
 
 .p1 {
@@ -175,7 +175,9 @@ h1 {
 }
 
 .btn {
-  border-radius: 4px;
+  border-radius: 8px;
+  font-weight: bold;
+  box-shadow: 0px 4px 4px rgba(58, 117, 252, 0.25);
 }
 
 .default-px {
@@ -281,4 +283,19 @@ h1 {
 }
 .font-black {
   font-weight: 900;
+}
+
+// Hero
+.hero-title {
+  line-height: 25px;
+}
+
+.hero-subtitle {
+  line-height: 25px;
+  width: 500px;
+  max-width: 90%;
+}
+.hero-illustration {
+  width: 750px;
+  max-width: 100%;
 }

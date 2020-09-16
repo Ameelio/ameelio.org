@@ -1,10 +1,10 @@
 import React, { FunctionComponent } from "react";
-import TutorialList from "../tutorial/TutorialList";
-import AuthorCard from "../cards/AuthorCard";
+import TutorialList from "src/components/tutorial/TutorialList";
+import AuthorCard from "src/components/cards/AuthorCard";
 import Lara from "src/assets/Team/Lara.png";
 import { STEPS } from "src/utils/constants";
-import SummaryCard from "../cards/SummaryCard";
-import CtaCard from "../cards/CtaCard";
+import SummaryCard from "src/components/cards/SummaryCard";
+import CtaCard from "src/components/cards/CtaCard";
 import { BUTTON_TYPES } from "src/utils/constants";
 
 const HowItWorks: FunctionComponent = () => {

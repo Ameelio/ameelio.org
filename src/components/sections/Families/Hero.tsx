@@ -13,9 +13,10 @@ type LetterCounter = {
 
 export default class Hero extends Component<{}, LetterCounter> {
   tick() {
-    const weekly_letters = 2162;
+    const MAIL_SENT = 54000;
+    const weekly_letters = 3300;
     const increment_seconds = weekly_letters / 604800;
-    const startDate = new Date(2020, 6, 26, 0, 0, 0, 0);
+    const startDate = new Date(2020, 8, 15, 0, 0, 0, 0);
     const today = new Date();
 
     const dif = today.getTime() - startDate.getTime();
@@ -23,7 +24,7 @@ export default class Hero extends Component<{}, LetterCounter> {
 
     this.setState({
       letters: numberWithCommas(
-        Math.round(31089 + dif_seconds * increment_seconds)
+        Math.round(MAIL_SENT + dif_seconds * increment_seconds)
       ),
     });
   }
@@ -64,7 +65,7 @@ export default class Hero extends Component<{}, LetterCounter> {
               to your incarcerated <br /> loved ones
             </span>
           </div>
-          <div className="p5 subtitle mt-1">
+          <div className="p5 hero-subtitle mt-1">
             Staying connected to your loved ones and paying for basic needs
             shouldn't be a tradeoff. That's why we're a <b>nonprofit</b>.
           </div>

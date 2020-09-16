@@ -1,7 +1,7 @@
 import React from "react";
 import { ResponsiveEmbed } from "react-bootstrap";
-import Context from "../sections/Context";
-import Products from "../sections/Products";
+import Context from "src/components/sections/Context";
+import Products from "src/components/sections/Products";
 import WhyAmeelio from "src/components/sections/WhyAmeelio";
 import { isMobile } from "react-device-detect";
 

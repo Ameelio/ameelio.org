@@ -1,16 +1,16 @@
 import React, { useEffect, ReactElement } from "react";
 import "./App.scss";
 
-import Landing from "./pages/landing";
-import Mission from "./pages/Mission";
-import HowFree from "./pages/HowFree";
-import NavBar from "./Navbar/Navbar";
-import Team from "./pages/Team";
-import Footer from "./footer/Footer";
-import HowItWorks from "./pages/HowItWorks";
-import GetInvolved from "./pages/GetInvolved";
-import ReferralPage from "./pages/ReferralPage";
-import Onboarding from "./pages/Onboarding";
+import Landing from "src/pages/landing";
+import Mission from "src/pages/Mission";
+import HowFree from "src/pages/HowFree";
+import NavBar from "src/components/Navbar/Navbar";
+import Team from "src/pages/Team";
+import Footer from "src/components/Footer/Footer";
+import HowItWorks from "src/pages/HowItWorks";
+import GetInvolved from "src/pages/GetInvolved";
+import ReferralPage from "src/pages/ReferralPage";
+import Onboarding from "src/pages/Onboarding";
 
 import ReactPixel from "react-facebook-pixel";
 import {
@@ -25,6 +25,7 @@ import { RouteComponentProps } from "react-router";
 
 import AOS from "aos";
 import "aos/dist/aos.css";
+import LettersOrgs from "src/pages/LettersOrgs";
 
 if (process.env.REACT_APP_PIXEL_KEY) {
   ReactPixel.init(process.env.REACT_APP_PIXEL_KEY);
@@ -51,6 +52,7 @@ const Main = withRouter(({ location }: RouteComponentProps) => {
       <Route path="/get-involved" component={GetInvolved} />
       <Route path="/join/:id" component={ReferralPage} />
       <Route path="/signup" component={Onboarding} />
+      <Route path="/organizations" component={LettersOrgs} />
     </div>
   );
 });

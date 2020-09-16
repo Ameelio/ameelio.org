@@ -17,6 +17,7 @@ export default function NavBar({ showMenuItems }: Props): ReactElement {
     { path: "how-we-work", name: "How We Work", key: "walkthrough" },
     { path: "transparency", name: "How Are We Free", key: "transparency" },
     { path: "team", name: "Team", key: "team" },
+    { path: "organizations", name: "For Organizations", key: "orgs" },
   ];
 
   const [signup_clicked, setSignupClicked] = useState(false);

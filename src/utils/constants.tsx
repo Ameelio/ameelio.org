@@ -48,6 +48,24 @@ import Morrison from "src/assets/LawFirms/Morrison.jpg";
 import Covington from "src/assets/LawFirms/Covington.jpg";
 import Orrick from "src/assets/LawFirms/Orrick.png";
 
+// Orgs
+import Pen from "src/assets/Orgs/Pen.png";
+import BailFund from "src/assets/Orgs/CTBF.png";
+import Marshall from "src/assets/Orgs/Marshall.png";
+import PLAP from "src/assets/Orgs/PLAP.png";
+import Defy from "src/assets/Orgs/Defy.png";
+
+// Orgs Use Cases
+import Contacts from "src/assets/OrgsHowItWorks/Contacts.png";
+import MassMail from "src/assets/OrgsHowItWorks/MassMail.png";
+import Persons from "src/assets/OrgsHowItWorks/Persons.png";
+
+// Orgs Testimonials
+import Robbie from "src/assets/OrgsTestimonials/Robbie.png";
+import PenLogo from "src/assets/OrgsTestimonials/PenLogo.png";
+import Marina from "src/assets/OrgsTestimonials/Marina.jpg";
+import Dreamkit from "src/assets/OrgsTestimonials/Dreamkit.png";
+
 export enum PLACEMENT {
   NAV = "navbar",
   HERO = "hero",
@@ -83,7 +101,7 @@ export enum APP_STORES {
 
 export const IMPACT_METRICS = [
   { image: Family, metric: ">10,000", label: "Families served" },
-  { image: Mailbox, metric: ">40,000", label: "Letters sent" },
+  { image: Mailbox, metric: ">50,000", label: "Letters sent" },
   { image: Globe, metric: ">11,000", label: "Incarcerated people reached" },
 ];
 
@@ -351,4 +369,46 @@ export const STATES: string[] = [
   "WV",
   "WI",
   "WY",
+];
+
+export const PartnerOrgs: string[] = [Marshall, Pen, BailFund, PLAP, Defy];
+
+export const ORGS_USE_CASES: UseCase[] = [
+  {
+    image: Persons,
+    title: "Manage Volunteers",
+    description:
+      "Manage correspondence between your team and incarcerated individuals.",
+  },
+  {
+    image: MassMail,
+    title: "Mass Mail",
+    description:
+      " Send out PDFs, newsletters, or packets to incarcerated people in bulk.",
+  },
+  {
+    image: Contacts,
+    title: "Find Contacts",
+    description:
+      "Locate incarcerated people that need your services even before release.",
+  },
+];
+
+export const ORGS_TESTIMONIALS: OrgTestimonial[] = [
+  {
+    image: Robbie,
+    orgImage: PenLogo,
+    org: "Pen America",
+    testimonial:
+      "Thanks to Ameelio, instead of shutting down our mail efforts we were able to continue and expand our mentorship program for incarcerated writers by 50% and have the capacity to expand even further.",
+    name: "Robbie",
+  },
+  {
+    image: Marina,
+    orgImage: Dreamkit,
+    org: "Dreamkit",
+    name: "Marina",
+    testimonial:
+      "From couch surfing to staying at various shelters, unstably housed youth are such a hard population to provide resources to because of their high transiency circumstances. Ameelio has helped us target and connect with these youth before they disappear into the system, and for that we are forever grateful.",
+  },
 ];

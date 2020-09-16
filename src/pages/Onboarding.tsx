@@ -1,7 +1,7 @@
 import React, { ReactElement, useState } from "react";
 import { Form, Button, Col, Image, ProgressBar } from "react-bootstrap";
 import "./Onboarding.css";
-import AlertDismissible from "src/components/alerts/Alert";
+import AlertDismissible from "src/components/Alert/Alert";
 
 import Mailbox from "src/assets/Referral/Mailbox.json";
 
@@ -34,7 +34,7 @@ export default function Onboarding(): ReactElement {
   const [city, setCity] = useState<string>("");
   const [postal, setPostal] = useState<string>("");
 
-  const [step, setStep] = useState<number>(3);
+  const [step, setStep] = useState<number>(0);
   const [isLoading, setLoading] = useState<boolean>(false);
   const [errorMessage, setErrorMessage] = useState<string>("");
 
