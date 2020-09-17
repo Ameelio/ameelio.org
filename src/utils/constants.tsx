@@ -36,6 +36,7 @@ import Mozilla from "src/assets/supporters/mozilla.png";
 import Robinhood from "src/assets/supporters/robinhood.png";
 import FastForward from "src/assets/supporters/ffw.png";
 import SchmidtFuture from "src/assets/supporters/SchmidtFuture.png";
+import Google from "src/assets/supporters/Google.png";
 
 // Law Firms
 import Wilson from "src/assets/LawFirms/Wilson.jpg";
@@ -245,15 +246,18 @@ export const MEMBERS: Member[] = [
 ];
 
 export const FOUNDATIONS: Supporter[] = [
+  { name: "Jack Dorsey" },
   { name: "Schmidt Futures", image: SchmidtFuture },
   { name: "Robinhood Foundation", image: Robinhood },
   { name: "Mozilla Foundation", image: Mozilla },
   { name: "Fast Forward", image: FastForward },
+  { name: "Google.org", image: Google },
+  { name: "Paige Henchen" },
 ];
 
 export const LAW_FIRMS: Supporter[] = [
   { name: "Wilson Sonsini", image: Wilson },
-  { name: "Wiggins and Dana", image: Wiggins },
+  { name: "Wiggin and Dana", image: Wiggins },
   { name: "Cooley", image: Cooley },
   { name: "Fish & Richardson", image: Fish },
   { name: "Orrick", image: Orrick },

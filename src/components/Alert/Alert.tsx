@@ -5,10 +5,10 @@ interface Props {
   message: string;
 }
 export default function AlertDismissible({ message }: Props) {
-  const [shown, setShow] = useState(true);
+  const [shown, setShown] = useState(true);
 
   return shown ? (
-    <Alert variant="danger" onClose={() => setShow(false)} dismissible>
+    <Alert variant="danger" onClose={() => setShown(false)} dismissible>
       <Alert.Heading>Something went wrong!</Alert.Heading>
       <span>{message}</span>
     </Alert>

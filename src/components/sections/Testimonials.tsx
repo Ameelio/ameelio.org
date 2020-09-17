@@ -2,6 +2,10 @@ import React from "react";
 import "./Testimonials.css";
 import Carousel from "react-bootstrap/Carousel";
 import Image from "react-bootstrap/Image";
+import Carol from "src/assets/Testimonials/Carol.png";
+import Shari from "src/assets/Testimonials/Shari.png";
+import Kimberly from "src/assets/Testimonials/Kimberly.jpg";
+import Trish from "src/assets/Testimonials/Trish.png";
 
 interface Testimonial {
   name: string;
@@ -32,26 +36,26 @@ const Testimonials: React.FC = () => {
   const testimonials: Testimonial[] = [
     {
       name: "Shari Copeland",
-      img: require("../../assets/testimonials/shari.png"),
+      img: Shari,
       quote:
         "This is the most amazing blessing. It costs so much money for phone calls and I have to sacrifice one or more basic needs to pay .",
     },
     {
       name: "Trish Cooper",
-      img: require("../../assets/testimonials/trish.png"),
+      img: Trish,
       quote:
         "It is a blessing to loved ones to be able to communicate with our family especially during these times.",
     },
     {
       name: "Carol Brown",
-      img: require("../../assets/testimonials/carol.png"),
+      img: Carol,
       quote:
         "I am totally blind. Before hearing about you and your organization. I was only able to talk with my son and nephew on the phone, and mail cards.",
     },
     // {
     //   name: "Kimberly Hernandez",
     //   img: require("../../assets/testimonials/kimberly.jpg"),
-    //   quote:c
+    //   quote:
     //     "Your organization is an answer to so many prayers. I believe you came to me as an answer. I really do.",
     // },
   ];

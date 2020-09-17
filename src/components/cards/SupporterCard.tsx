@@ -8,11 +8,12 @@ interface Props {
 }
 
 export default function SupporterCard({ image, name }: Props): ReactElement {
+  const layout = image ? "mt-auto border-top py-2" : "m-auto";
   return (
     <div className="d-flex flex-column border supporter-card align-items-center mb-3 mr-md-4  mw-100">
       {image && <Image src={image} className="supporter-logo p-3 m-auto" />}
 
-      <div className="border-top w-100 text-center py-2 mt-auto">
+      <div className={`w-100 text-center ${layout}`}>
         <span className="-1">{name}</span>
       </div>
     </div>
