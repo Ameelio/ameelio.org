@@ -1,0 +1,35 @@
+.testimonials-container {
+  background: linear-gradient(180deg, #102e75 0%, #061e56 100%);
+}
+
+.quote-symbol {
+  font-size: 125px;
+  font-family: "Libre Baskerville";
+}
+
+.testimonial-title {
+  font-size: 32px;
+}
+
+.testimonial-card {
+  height: 400px;
+  width: 300px;
+  border-radius: 8px;
+  margin-bottom: 64px;
+}
+
+.quote-text {
+  margin-top: -45px;
+}
+
+@media (min-width: 768px) {
+  .testimonial-card {
+    height: 200px;
+    width: 500px;
+  }
+
+  .quote-symbol {
+    font-size: 64px;
+    font-family: "Libre Baskerville";
+  }
+}

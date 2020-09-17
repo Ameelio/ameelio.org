@@ -1,0 +1,23 @@
+.summary {
+  padding: 0px 0px 1em;
+  margin: 0px auto 2em;
+  border-width: 2px;
+  border-style: solid;
+  border-color: rgb(240, 241, 242);
+  border-image: initial;
+  background: rgb(255, 255, 255);
+}
+
+.summary b {
+  font-size: 18px;
+  position: relative;
+  top: -0.8em;
+  background: rgb(255, 255, 255);
+  padding: 0.25em 1em;
+  margin: 0px 1em;
+}
+
+.summary p {
+  padding: 0px 2em;
+  margin: 1em 0px 1.5em;
+}

@@ -1,0 +1,14 @@
+.maincard-background {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+}
+
+@media (min-width: 992px) {
+  .maincard-background {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    margin-top: -140px;
+  }
+}

@@ -1,0 +1,28 @@
+.title {
+  font-weight: 800;
+  font-size: 45px;
+  line-height: 120%;
+  color: #222222;
+}
+
+.media-container {
+  z-index: 999;
+}
+.media-article {
+  max-height: 20px;
+}
+
+.letter-counter {
+  border-bottom: 4px solid rgb(247, 247, 250);
+}
+
+.main-illustration {
+  max-width: 90%;
+  width: 450px;
+}
+
+@media (min-width: 768px) {
+  .media-article {
+    max-height: 20px;
+  }
+}

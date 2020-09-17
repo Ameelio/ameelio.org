@@ -19,9 +19,9 @@
     "noEmit": true,
     "jsx": "react",
     "noImplicitAny": false,
-    "baseUrl": "src",
+    "baseUrl": "."
   },
   "include": [
     "src"
-  ],
+  ]
 }

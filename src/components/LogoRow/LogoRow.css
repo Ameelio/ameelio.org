@@ -1,0 +1,10 @@
+.logo-row-small {
+  max-width: 100px;
+  height: 45px;
+}
+
+.logo-row-large {
+  max-width: 200px;
+  height: 90px;
+  object-fit: contain;
+}

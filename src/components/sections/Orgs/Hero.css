@@ -1,0 +1,14 @@
+.hero-value-prop {
+  width: 550px;
+  max-width: 90%;
+}
+
+.hero-bg {
+  margin-top: -25px;
+}
+
+@media (min-width: 768px) {
+  .hero-bg {
+    margin-top: -90px;
+  }
+}

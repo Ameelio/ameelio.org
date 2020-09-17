@@ -1,0 +1,16 @@
+.instruction-section {
+  background-color: #f5f8fa;
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .instruction-section {
+    width: 40%;
+    height: 100vh;
+  }
+}
+
+.onboarding-success-mockup {
+  width: 500px;
+  max-width: 100%;
+}
