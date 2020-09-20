@@ -9,33 +9,33 @@ import CardContentLoader from "src/components/loading/CardContentLoader";
 import GenericModal from "src/components/modals/GenericModal";
 
 import { RouteComponentProps, useHistory } from "react-router-dom";
-import { fetchReferrerName } from "src/services/Api/index";
+import { fetchReferrer } from "src/services/Api/index";
 import { trackButtonClick } from "src/utils/analytics";
 import { BUTTON_TYPES, PLACEMENT } from "src/utils/constants";
+import { format } from "date-fns/esm";
 
 type TParams = { id: string };
 
 export default function Referral({
   match,
 }: RouteComponentProps<TParams>): ReactElement {
-  const [referrer, setReferrer] = useState<string>("");
+  const [referrer, setReferrer] = useState<Referrer>();
   const [isLoading, setIsLoading] = useState<boolean>(true);
   const [hasError, setHasError] = useState<boolean>(false);
 
   const history = useHistory();
   useEffect(() => {
-    async function fetchReferrer() {
+    async function loadReferrer() {
       const { id } = match.params;
       try {
-        const name = await fetchReferrerName(id);
-        localStorage.setItem("referrer_id", id);
-        setReferrer(name);
+        const referrer = await fetchReferrer(id);
+        setReferrer(referrer);
       } catch (e) {
         setHasError(true);
       }
       setIsLoading(false);
     }
-    fetchReferrer();
+    loadReferrer();
   }, [match]);
 
   const defaultOptions = {
@@ -73,16 +73,36 @@ export default function Referral({
           <div className="d-flex flex-column">
             <span className="font-weight-medium p2">Hi there!</span>
             <span className="mt-3">
-              You were invited by {referrer} to join Ameelio.
+              You were invited by {referrer?.name} to join Ameelio.
             </span>
             <span className="mt-3">
-              In less than 5 minutes, you send your first free <b>photos</b>,{" "}
-              <b>letter</b> or <b>postcards</b> to your incarcerated loved one.
+              In less than 5 minutes, you can send your first free <b>photos</b>
+              , <b>letter</b> or <b>postcards</b> to your incarcerated loved
+              one.
             </span>
             <Lottie options={defaultOptions} height="60%" width="60%" />
             <Button size="lg" className="mt-3" onClick={handleClick}>
               Accept Invitation
             </Button>
+            <hr />
+            <div className="d-flex flex-row flex-md-row mt-3 align-items-center">
+              <Image
+                src={referrer?.image}
+                className="medium-img"
+                alt="Profile Image"
+                roundedCircle
+              />
+              <div className="d-flex flex-column ml-3 text-left">
+                <span>{referrer?.name}</span>
+                <span className="p6">
+                  {referrer?.city}, {referrer?.state}
+                </span>
+                <span className="p6">
+                  Member of Ameelio since{" "}
+                  {format(referrer?.createdAt, "MMMM, YYY")}
+                </span>
+              </div>
+            </div>
           </div>
         )}
       </div>

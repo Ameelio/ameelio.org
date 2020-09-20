@@ -9,7 +9,7 @@ import StarBackground from "src/components/backgrounds/StarBackground";
 
 const Landing: React.FC = () => {
   return (
-    <div>
+    <div className="overflow-hidden">
       <Hero />
       <MainCardBackground />
       <Testimonials />

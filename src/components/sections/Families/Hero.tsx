@@ -39,8 +39,8 @@ export default class Hero extends Component<{}, LetterCounter> {
 
   render() {
     return (
-      <div className="px-md-5 mb-md-5 mb-0 pb-3 pt-5  d-flex flex-lg-row flex-column  w-100 justify-content-center align-items-center align-items-md-start">
-        <div className="mx-5 d-flex flex-column align-items-lg-start">
+      <div className="px-3 px-md-5 mb-md-5 mb-0 pb-3 pt-5  d-flex flex-lg-row flex-column  w-100 justify-content-center align-items-center align-items-md-start">
+        <div className="mw-100 d-flex flex-column align-items-lg-start">
           <div className="d-flex flex-column">
             <div className="d-flex flex-column flex-md-row ">
               <span className="p1 font-weight-bold">Send free&nbsp;</span>

@@ -30,6 +30,8 @@ import Jay from "src/assets/Board/Jay.png";
 import Bijan from "src/assets/Board/Bijan.png";
 import Adryann from "src/assets/Board/Adryann.png";
 import Shon from "src/assets/Board/Shon.png";
+import Raph from "src/assets/Board/Raph.png";
+import RJ from "src/assets/Board/RJ.png";
 
 // Supporters
 import Mozilla from "src/assets/supporters/mozilla.png";
@@ -125,6 +127,18 @@ export const TECH_BOARD: BoardMember[] = [
     name: "Bijan Marashi",
     title: "Studio Lead",
     company: "Mozilla",
+  },
+  {
+    img: Raph,
+    name: "Raphael Lee",
+    title: "Project Co-Lead",
+    company: "U.S. Digital Response",
+  },
+  {
+    img: RJ,
+    name: "RJ Fox",
+    title: "Growth Marketing Director",
+    company: "LinkedIn",
   },
 ];
 
