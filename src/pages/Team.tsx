@@ -19,7 +19,7 @@ export default function Team(): ReactElement {
             loved ones.
           </span>
 
-          <div className="d-flex flex-column flex-md-row flex-wrap w-75 pt-5 justify-content-center">
+          <div className="d-flex flex-column flex-md-row flex-wrap w-75 pt-5 justify-content-center align-items-center">
             {MEMBERS.map(function (member, index) {
               return <MemberCard key={index} member={member} />;
             })}
@@ -28,14 +28,14 @@ export default function Team(): ReactElement {
         <section className="d-flex flex-column align-items-center">
           <h2 className="font-weight-bold pb-5">Our Board of Advisors</h2>
           <span className="font-semibold p3">Criminal Justice</span>
-          <div className="d-flex flex-column flex-md-row  flex-wrap w-75 mt-3 justify-content-center">
+          <div className="d-flex flex-column flex-md-row  flex-wrap w-75 mt-3 justify-content-center align-items-center">
             {JUSTICE_BOARD.map(function (member, index) {
               return <MemberCard key={index} member={member} boardMember />;
             })}
           </div>
 
           <span className="p3 font-semibold mt-5">Tech</span>
-          <div className="d-flex flex-column flex-md-row flex-wrap  w-75 mt-3 justify-content-center">
+          <div className="d-flex flex-column flex-md-row flex-wrap  w-75 mt-3 justify-content-center align-items-center">
             {TECH_BOARD.map(function (member, index) {
               return <MemberCard key={index} member={member} boardMember />;
             })}

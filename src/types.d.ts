@@ -45,3 +45,12 @@ interface OrgTestimonial extends Testimonial {
   org: string;
   orgImage: string;
 }
+
+interface Referrer {
+  name: string;
+  image: string;
+  createdAt: Date;
+  city: string;
+  state: string;
+  totalLettersSent: number;
+}
