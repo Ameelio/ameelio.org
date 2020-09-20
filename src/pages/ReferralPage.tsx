@@ -10,7 +10,7 @@ import GenericModal from "src/components/modals/GenericModal";
 
 import { RouteComponentProps, useHistory } from "react-router-dom";
 import { fetchReferrer } from "src/services/Api/index";
-import { trackButtonClick } from "src/utils/analytics";
+import { trackButtonClick, track } from "src/utils/analytics";
 import { BUTTON_TYPES, PLACEMENT } from "src/utils/constants";
 import { format } from "date-fns/esm";
 
@@ -27,6 +27,7 @@ export default function Referral({
   useEffect(() => {
     async function loadReferrer() {
       const { id } = match.params;
+      track("Landing Page - Referral Page Open", { referrer: id });
       try {
         const referrer = await fetchReferrer(id);
         setReferrer(referrer);
@@ -85,14 +86,14 @@ export default function Referral({
               Accept Invitation
             </Button>
             <hr />
-            <div className="d-flex flex-row flex-md-row mt-3 align-items-center">
+            <div className="d-flex flex-column flex-md-row mt-3 align-items-center">
               <Image
                 src={referrer?.image}
                 className="medium-img"
                 alt="Profile Image"
                 roundedCircle
               />
-              <div className="d-flex flex-column ml-3 text-left">
+              <div className="d-flex flex-column mt-2 mt-md-0 ml-md-3 text-center text-md-left">
                 <span>{referrer?.name}</span>
                 <span className="p6">
                   {referrer?.city}, {referrer?.state}
