@@ -2,7 +2,7 @@
 import { PLACEMENT, BUTTON_TYPES, APP_STORES } from "src/utils/constants";
 declare const window: any;
 
-export const track = (event: string, properties: Object) => {
+export const track = (event: string, properties?: Object) => {
   window.analytics.track(event, properties);
 };
 

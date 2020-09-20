@@ -16,7 +16,7 @@ import {
 } from "src/utils/constants";
 import { isValidUSZipCode } from "src/utils/utils";
 import { register } from "src/services/Api/index";
-import { registerSegment } from "src/utils/analytics";
+import { registerSegment, track, trackButtonClick } from "src/utils/analytics";
 
 export default function Onboarding(): ReactElement {
   const [firstName, setFirstName] = useState<string>("");
@@ -80,10 +80,11 @@ export default function Onboarding(): ReactElement {
   const handleClick = async (event: React.MouseEvent) => {
     event.preventDefault();
     if (step === 0) {
+      track("Landing Page - Onboarding - Click on Next");
       setStep((step) => step + 1);
     } else {
       setLoading(true);
-
+      track("Landing Page - Onboarding - Click on Create Acccount");
       const referrer = referredBy ? "Referral Invitation" : referralSource;
       const userData: UserRegisterInfo = {
         email,
@@ -105,17 +106,24 @@ export default function Onboarding(): ReactElement {
         setLoading(false);
         setStep((step) => step + 1);
       } catch (err) {
+        let error = "";
         if (err.data && err.data.email) {
+          error = `Email was taken`;
           setErrorMessage(`The email (${email}) has already been taken.`);
         } else if (err.message === "timeout") {
+          error = `Timeout`;
           setErrorMessage(
             "Your request timed out! If this error keeps happening, please contact support."
           );
         } else {
+          error = "Other";
           setErrorMessage(
             "Something went wrong and it's our fault! If this error happens again, please contact support."
           );
         }
+        track("Landing Page - Onboarding - Create Account Error", {
+          error: error,
+        });
         setLoading(false);
       }
     }
