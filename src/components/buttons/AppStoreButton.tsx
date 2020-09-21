@@ -1,4 +1,5 @@
 import React, { ReactElement } from "react";
+import ReactGA from "react-ga";
 import AppleStoreBadge from "src/assets/Badge/AppleStoreBadge.svg";
 import GooglePlayBadge from "src/assets/Badge/GooglePlayBadge.png";
 import Image from "react-bootstrap/Image";
@@ -22,6 +23,11 @@ export default function AppStoreButton({
   const link =
     type === APP_STORES.APPLE ? LINKS.APPLE_STORE : LINKS.GOOGLE_PLAY;
   const handleClick = (e: React.MouseEvent) => {
+    ReactGA.event({
+      category: BUTTON_TYPES.DOWNLOAD,
+      action: `Click on ${type} button`,
+    });
+
     trackButtonClick(BUTTON_TYPES.DOWNLOAD, placement, type);
     window.open(link, "_blank");
   };

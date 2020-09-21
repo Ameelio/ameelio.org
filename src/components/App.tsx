@@ -16,6 +16,8 @@ import Footer from "src/components/Footer/Footer";
 
 import NavBar from "src/components/Navbar/Navbar";
 import ReactPixel from "react-facebook-pixel";
+import ReactGA from "react-ga";
+
 import {
   HashRouter as Router,
   Route,
@@ -32,6 +34,11 @@ import "aos/dist/aos.css";
 if (process.env.REACT_APP_PIXEL_KEY) {
   ReactPixel.init(process.env.REACT_APP_PIXEL_KEY);
   ReactPixel.pageView();
+}
+
+if (process.env.REACT_APP_GA_KEY) {
+  ReactGA.initialize(process.env.REACT_APP_GA_KEY);
+  ReactGA.pageview(window.location.pathname + window.location.search);
 }
 
 const Main = withRouter(({ location }: RouteComponentProps) => {
