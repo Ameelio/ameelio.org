@@ -38,7 +38,6 @@ if (process.env.REACT_APP_PIXEL_KEY) {
 
 if (process.env.REACT_APP_GA_KEY) {
   ReactGA.initialize(process.env.REACT_APP_GA_KEY);
-  ReactGA.pageview(window.location.pathname + window.location.search);
 }
 
 const Main = withRouter(({ location }: RouteComponentProps) => {
