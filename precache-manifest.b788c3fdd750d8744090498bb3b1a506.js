@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "cbb09693a69a69f1a0842172c0f59235",
+    "revision": "fa1d5cdae5f2efa1787b6e3a9b3fc763",
     "url": "/index.html"
   },
   {
-    "revision": "e7f2b0930fd87c9c79ed",
+    "revision": "da93f2e5c4f8f247b688",
     "url": "/static/css/2.eb43dee1.chunk.css"
   },
   {
-    "revision": "2783759cc4c1cdf864ab",
-    "url": "/static/css/main.af43f519.chunk.css"
+    "revision": "d21f0ff279f34721f65c",
+    "url": "/static/css/main.082d14f2.chunk.css"
   },
   {
-    "revision": "e7f2b0930fd87c9c79ed",
-    "url": "/static/js/2.1c18714a.chunk.js"
+    "revision": "da93f2e5c4f8f247b688",
+    "url": "/static/js/2.3432d432.chunk.js"
   },
   {
     "revision": "c7f9d179b0eb3ce2148f6ca0748457b0",
-    "url": "/static/js/2.1c18714a.chunk.js.LICENSE.txt"
+    "url": "/static/js/2.3432d432.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "2783759cc4c1cdf864ab",
-    "url": "/static/js/main.e58f868a.chunk.js"
+    "revision": "d21f0ff279f34721f65c",
+    "url": "/static/js/main.6552c657.chunk.js"
   },
   {
     "revision": "74de76855f116d2d3a1e",
@@ -64,6 +64,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/Bart.eb66c96a.png"
   },
   {
+    "revision": "174d974f2e50811975d92fab9a6b34ca",
+    "url": "/static/media/Bi.174d974f.png"
+  },
+  {
     "revision": "97349b50681aad51a4b06a656ff05208",
     "url": "/static/media/Bijan.97349b50.png"
   },
@@ -100,6 +104,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/Defy.a4a05102.png"
   },
   {
+    "revision": "70439380ad184cbbe692b033ad1ecaff",
+    "url": "/static/media/Deray.70439380.png"
+  },
+  {
     "revision": "792866b41d40bf342da543c2f29663f3",
     "url": "/static/media/Dreamkit.792866b4.png"
   },
@@ -114,6 +122,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "3730eb72fba0dd1adc7d79c0034bdbc1",
     "url": "/static/media/Fish.3730eb72.jpg"
+  },
+  {
+    "revision": "f8cb0b2c8d667505cb1530bc21f489a0",
+    "url": "/static/media/Forbes.f8cb0b2c.png"
   },
   {
     "revision": "786c21ea8bd0c45ea57bba7f8891854f",
@@ -232,6 +244,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/Morrison.670fa4d8.jpg"
   },
   {
+    "revision": "572ced9aa9d094df2b088c3d08c95be8",
+    "url": "/static/media/Nikki.572ced9a.png"
+  },
+  {
     "revision": "08f9ae0b819dc0439d8598ea8a5181c4",
     "url": "/static/media/OrgsMockup.08f9ae0b.png"
   },
@@ -322,10 +338,6 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "da35d30b121bebc262aa22eae7fd7d69",
     "url": "/static/media/Zo.da35d30b.png"
-  },
-  {
-    "revision": "174d974f2e50811975d92fab9a6b34ca",
-    "url": "/static/media/bi.174d974f.png"
   },
   {
     "revision": "c8639a6816898e7c5f7cd0a13bc74981",
