@@ -7,7 +7,7 @@ export const track = (event: string, properties?: Object) => {
 };
 
 export const trackPageOpen = () => {
-  window.analytics.track("Landing Page Open");
+  window.analytics.track("Landing Page - Open");
 };
 
 export const trackButtonClick = (
@@ -15,14 +15,14 @@ export const trackButtonClick = (
   position: PLACEMENT,
   store?: APP_STORES
 ) => {
-  window.analytics.track(`Click on ${type} Button`, {
+  window.analytics.track(`Landing Page - Click on ${type} Button`, {
     position: position,
     store: store,
   });
 };
 
 export const trackNav = (page) => {
-  window.analytics.track("Click on Menu Item", { page: page });
+  window.analytics.track("Landing Page - Click on Menu Item", { page: page });
 };
 
 export const page = () => {
@@ -46,7 +46,7 @@ export const registerSegment = (userData: UserRegisterInfo) => {
     state: userData.state,
     referrer: userData.referrer,
   });
-  window.analytics.track("Signup - Account Created", {
+  window.analytics.track("Landing Page - Onboarding - Account Created", {
     city: userData.city,
     state: userData.state,
     referrer: userData.referrer,

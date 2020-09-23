@@ -1,4 +1,5 @@
 import React, { FunctionComponent } from "react";
+import { Button } from "react-bootstrap";
 import Image from "react-bootstrap/Image";
 import "./ProductCard.css";
 
@@ -27,17 +28,18 @@ const ProductCard: FunctionComponent<ProductProps> = ({
         className="product-card-illustration mb-3"
         alt="Product picture"
       />
-      <div className="products-card-body my-4">{description}</div>
+      <div className="products-card-body mt-auto">{description}</div>
       {ctaLink && (
-        <button
+        <Button
           onClick={() => window.open(ctaLink)}
-          className="products-signup-button mt-auto mb-3"
+          size="lg"
+          className="mt-auto mb-3"
         >
           {cta}
-        </button>
+        </Button>
       )}
       {learnMoreLink && (
-        <a className="learn-more mt-auto mb-5" href={learnMoreLink}>
+        <a className="learn-more mb-5" href={learnMoreLink}>
           Learn More
         </a>
       )}

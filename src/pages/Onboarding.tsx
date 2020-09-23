@@ -16,7 +16,7 @@ import {
 } from "src/utils/constants";
 import { isValidUSZipCode } from "src/utils/utils";
 import { register } from "src/services/Api/index";
-import { registerSegment, track, trackButtonClick } from "src/utils/analytics";
+import { registerSegment, track } from "src/utils/analytics";
 
 export default function Onboarding(): ReactElement {
   const [firstName, setFirstName] = useState<string>("");

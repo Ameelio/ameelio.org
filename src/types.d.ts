@@ -54,3 +54,9 @@ interface Referrer {
   state: string;
   totalLettersSent: number;
 }
+
+interface MediaArticle {
+  logo: string;
+  link: string;
+  name: string;
+}

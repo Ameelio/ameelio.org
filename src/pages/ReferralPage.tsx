@@ -78,8 +78,7 @@ export default function Referral({
             </span>
             <span className="mt-3">
               In less than 5 minutes, you can send your first free <b>photos</b>
-              , <b>letter</b> or <b>postcards</b> to your incarcerated loved
-              one.
+              , <b>letter</b> or <b>postcard</b> to your incarcerated loved one.
             </span>
             <Lottie options={defaultOptions} height="60%" width="60%" />
             <Button size="lg" className="mt-3" onClick={handleClick}>
@@ -101,6 +100,9 @@ export default function Referral({
                 <span className="p6">
                   Member of Ameelio since{" "}
                   {format(referrer?.createdAt, "MMMM, YYY")}
+                </span>
+                <span className="p6">
+                  {referrer?.totalLettersSent} letters & photos sent
                 </span>
               </div>
             </div>

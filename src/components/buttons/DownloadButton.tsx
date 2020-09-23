@@ -9,18 +9,18 @@ import {
 } from "src/utils/constants";
 import { trackButtonClick } from "src/utils/analytics";
 import "./DownloadButton.css";
+import { useHistory } from "react-router-dom";
 
 interface Props {
   isBlock?: boolean;
 }
 export default function DownloadButton({ isBlock }: Props): ReactElement {
+  const history = useHistory();
   const genLink = () => {
     if (isAndroid) {
       return LINKS.GOOGLE_PLAY;
-    } else if (isIOS) {
-      return LINKS.APPLE_STORE;
     } else {
-      return LINKS.SIGNUP;
+      return LINKS.APPLE_STORE;
     }
   };
 
@@ -53,9 +53,14 @@ export default function DownloadButton({ isBlock }: Props): ReactElement {
   };
 
   const handleClick = () => {
-    const LINK = genLink();
     logClickEvent();
-    window.open(LINK, "_blank");
+
+    if (!isIOS && !isAndroid) {
+      history.push("/signup");
+    } else {
+      const LINK = genLink();
+      window.open(LINK, "_blank");
+    }
   };
 
   return (

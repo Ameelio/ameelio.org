@@ -14,7 +14,7 @@ const Products: React.FC = () => {
       description:
         "Send free letters & photos to your incarcerated loved ones. We service all correctional and immigrant detention facilities in the United States.",
       cta: "Sign Up",
-      ctaLink: "https://letters.ameelio.org/register",
+      ctaLink: "https://ameelio.org/#/signup",
     },
     {
       name: "Letters for Organizations",

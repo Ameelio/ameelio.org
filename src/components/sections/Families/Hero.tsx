@@ -3,7 +3,7 @@ import "./Hero.css";
 import Typical from "react-typical";
 import Image from "react-bootstrap/Image";
 import { numberWithCommas } from "src/utils/utils";
-import { PLACEMENT, APP_STORES } from "src/utils/constants";
+import { PLACEMENT, APP_STORES, MEDIA } from "src/utils/constants";
 import Mockup from "src/assets/Hero/Mockup.png";
 import AppStoreButton from "src/components/buttons/AppStoreButton";
 
@@ -37,9 +37,20 @@ export default class Hero extends Component<{}, LetterCounter> {
     setInterval(() => this.tick(), 360000);
   }
 
+  genMediaArticle(media: MediaArticle): JSX.Element {
+    return (
+      <a href={media.link}>
+        <Image
+          src={media.logo}
+          className="media-article mt-3 mt-md-0 mr-3"
+          alt={`${media.name} Logo`}
+        />
+      </a>
+    );
+  }
   render() {
     return (
-      <div className="px-3 px-md-5 mb-md-5 mb-0 pb-3 pt-5  d-flex flex-lg-row flex-column  w-100 justify-content-center align-items-center align-items-md-start">
+      <div className="px-3 px-md-5 mb-md-5 mb-0 py-4  d-flex flex-lg-row flex-column  w-100 justify-content-center align-items-center align-items-md-start">
         <div className="mw-100 d-flex flex-column align-items-lg-start">
           <div className="d-flex flex-column">
             <div className="d-flex flex-column flex-md-row ">
@@ -90,34 +101,7 @@ export default class Hero extends Component<{}, LetterCounter> {
             letters, cards & photos.
           </span>
           <div className="d-flex flex-row mt-3 position-relative media-container flex-wrap">
-            <a href="https://www.fastcompany.com/90514321/this-app-bypasses-the-absurdly-high-cost-of-making-phone-calls-to-prison-by-converting-texts-to-snail-mail?partner=rss&utm_source=rss&utm_medium=feed&utm_campaign=rss+fastcompany&utm_content=rss">
-              <Image
-                src={require("src/assets/media/fc.png")}
-                alt="Fast Company Article"
-                className="media-article ml-md-0"
-              />
-            </a>
-            <a href="https://www.fastcompany.com/90514321/this-app-bypasses-the-absurdly-high-cost-of-making-phone-calls-to-prison-by-converting-texts-to-snail-mail?partner=rss&utm_source=rss&utm_medium=feed&utm_campaign=rss+fastcompany&utm_content=rss">
-              <Image
-                src={require("src/assets/media/wapo.png")}
-                alt="Washington Post Article"
-                className="media-article ml-4 ml-md-3"
-              />
-            </a>
-            <a href="https://techcrunch.com/2020/05/14/ameelio-wants-to-take-on-for-profit-prison-calling-rackets-after-starting-with-free-letters-to-inmates/">
-              <Image
-                src={require("src/assets/media/tc.png")}
-                alt="Techcrunch Article"
-                className="media-article ml-md-3"
-              />
-            </a>
-            <a href="https://www.businessinsider.com/how-to-use-app-talk-family-prison-ameelio-2020-6">
-              <Image
-                src={require("src/assets/media/bi.png")}
-                alt="Business Insider Article"
-                className="media-article  ml-4 ml-md-3"
-              />
-            </a>
+            {MEDIA.map((media) => this.genMediaArticle(media))}
           </div>
         </div>
         <div

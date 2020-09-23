@@ -69,6 +69,13 @@ import PenLogo from "src/assets/OrgsTestimonials/PenLogo.png";
 import Marina from "src/assets/OrgsTestimonials/Marina.jpg";
 import Dreamkit from "src/assets/OrgsTestimonials/Dreamkit.png";
 
+// Media
+import Forbes from "src/assets/Media/Forbes.png";
+import Techcrunch from "src/assets/Media/Tc.png";
+import Bi from "src/assets/Media/Bi.png";
+import Wapo from "src/assets/Media/Wapo.png";
+import FastCompany from "src/assets/Media/Fc.png";
+
 export enum PLACEMENT {
   NAV = "navbar",
   HERO = "hero",
@@ -78,7 +85,6 @@ export enum PLACEMENT {
 }
 
 export enum LINKS {
-  SIGNUP = "https://letters.ameelio.org/register",
   LOGIN = "https://letters.ameelio.org/login",
   ORGS_DEMO = "https://calendly.com/emma-gray-ameelio/letters-for-organizations-information-session",
   DONATION = "https://letters.ameelio.org/donate",
@@ -428,5 +434,38 @@ export const ORGS_TESTIMONIALS: OrgTestimonial[] = [
     name: "Marina",
     testimonial:
       "From couch surfing to staying at various shelters, unstably housed youth are such a hard population to provide resources to because of their high transiency circumstances. Ameelio has helped us target and connect with these youth before they disappear into the system, and for that we are forever grateful.",
+  },
+];
+
+export const MEDIA: MediaArticle[] = [
+  {
+    logo: Forbes,
+    link:
+      "https://www.forbes.com/sites/angelauyeung/2020/09/21/the-prison-communications-nonprofit-backed-by-twitters-jack-dorsey-and-former-google-chief-eric-schmidt/#139203bc3b92",
+    name: "Forbes",
+  },
+  {
+    logo: Wapo,
+    link:
+      "https://www.washingtonpost.com/opinions/2020/03/20/coronavirus-is-upending-society-here-are-ideas-mitigate-its-impact/?arc404=true#Orchingwa-Saruhashi-Schull",
+    name: "Washington Post",
+  },
+  {
+    logo: Techcrunch,
+    link:
+      "https://techcrunch.com/2020/05/14/ameelio-wants-to-take-on-for-profit-prison-calling-rackets-after-starting-with-free-letters-to-inmates/",
+    name: "Techcrunch",
+  },
+  {
+    logo: Bi,
+    link:
+      "https://www.businessinsider.com/startup-ameelio-communicate-loved-ones-incarcerated-yale-2020-6",
+    name: "Business Insider",
+  },
+  {
+    logo: FastCompany,
+    link:
+      "https://www.fastcompany.com/90514321/this-app-bypasses-the-absurdly-high-cost-of-making-phone-calls-to-prison-by-converting-texts-to-snail-mail?partner=rss&utm_source=rss&utm_medium=feed&utm_campaign=rss+fastcompany&utm_content=rss",
+    name: "Fast Company",
   },
 ];

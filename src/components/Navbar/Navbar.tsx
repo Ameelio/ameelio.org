@@ -1,7 +1,7 @@
 import React, { ReactElement, useEffect, useState } from "react";
 import "./Navbar.css";
-import { Navbar, Nav, NavDropdown } from "react-bootstrap";
-import { Link } from "react-router-dom";
+import { Navbar, Nav, NavDropdown, Button } from "react-bootstrap";
+import { Link, useHistory } from "react-router-dom";
 import { trackNav, trackButtonClick } from "src/utils/analytics";
 import { PLACEMENT, LINKS, BUTTON_TYPES } from "src/utils/constants";
 import Logo from "src/assets/logo.svg";
@@ -20,15 +20,13 @@ export default function NavBar({ showMenuItems }: Props): ReactElement {
     { path: "organizations", name: "For Organizations", key: "orgs" },
   ];
 
-  const [signupClicked, setSignupClicked] = useState(false);
+  const history = useHistory();
+
   const [loginClicked, setLoginClicked] = useState(false);
   const [donateClicked, setDonateClicked] = useState(false);
 
   useEffect(() => {
-    if (signupClicked) {
-      trackButtonClick(BUTTON_TYPES.SIGNUP, PLACEMENT.NAV);
-      window.open(LINKS.SIGNUP, "_self");
-    } else if (loginClicked) {
+    if (loginClicked) {
       trackButtonClick(BUTTON_TYPES.LOGIN, PLACEMENT.NAV);
       window.open(LINKS.LOGIN, "_self");
     } else if (donateClicked) {
@@ -77,15 +75,18 @@ export default function NavBar({ showMenuItems }: Props): ReactElement {
           </Nav>
 
           <div className="d-flex flex-column flex-md-row">
-            <Nav.Link className="login" onClick={() => setLoginClicked(true)}>
+            <Nav.Link className="" onClick={() => setLoginClicked(true)}>
               Login
             </Nav.Link>
-            <button
-              className="signup-button ml-md-3 mr-5"
-              onClick={() => setSignupClicked(true)}
+            <Button
+              className="ml-md-3 mr-5 mt-3 "
+              onClick={() => {
+                trackButtonClick(BUTTON_TYPES.SIGNUP, PLACEMENT.NAV);
+                history.push("/signup");
+              }}
             >
               Sign Up
-            </button>
+            </Button>
           </div>
         </Navbar.Collapse>
       )}
