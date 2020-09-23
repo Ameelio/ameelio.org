@@ -373,7 +373,11 @@ export default function Onboarding(): ReactElement {
               Are these physical letters?
             </span>
             <span>
-              Yes! We print and mail letters, photos and postcards for you.
+              Yes! We print and mail letters, photos and postcards for you{" "}
+              <span role="img" aria-label="love letter emoji">
+                💌
+              </span>
+              .
             </span>
           </div>
 
@@ -382,7 +386,7 @@ export default function Onboarding(): ReactElement {
               How long does it take for the letters & photos to arrive?
             </span>
             <span>
-              7-9 business days. We've been experiencing some delays due to
+              4-6 business days. We've been experiencing some delays due to
               COVID{" "}
               <span role="img" aria-label="pensive face emoji">
                 😔

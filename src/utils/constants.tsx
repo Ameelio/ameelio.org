@@ -19,6 +19,7 @@ import Kevin from "src/assets/Team/Kevin.png";
 import Joy from "src/assets/Team/Joy.png";
 import Adam from "src/assets/Team/Adam.png";
 import Andrew from "src/assets/Team/Andrew.png";
+import Nikki from "src/assets/Team/Nikki.png";
 
 // Board
 import Angel from "src/assets/Board/Angel.png";
@@ -32,6 +33,7 @@ import Adryann from "src/assets/Board/Adryann.png";
 import Shon from "src/assets/Board/Shon.png";
 import Raph from "src/assets/Board/Raph.png";
 import RJ from "src/assets/Board/RJ.png";
+import Deray from "src/assets/Board/Deray.png";
 
 // Supporters
 import Mozilla from "src/assets/supporters/mozilla.png";
@@ -179,6 +181,12 @@ export const JUSTICE_BOARD: BoardMember[] = [
     title: "Associate Professor",
     company: "Georgetown University Law Center",
   },
+  {
+    img: Deray,
+    name: "DeRay McKesson",
+    title: "Co-Founder",
+    company: "Campaign Zero",
+  },
 ];
 
 export const MEMBERS: Member[] = [
@@ -262,6 +270,11 @@ export const MEMBERS: Member[] = [
     name: "Joy Qiu",
     img: Joy,
     title: "Engineering",
+  },
+  {
+    name: "Nikki Baim",
+    img: Nikki,
+    title: "Communications",
   },
 ];
 
