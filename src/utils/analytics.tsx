@@ -46,7 +46,7 @@ export const registerSegment = (userData: UserRegisterInfo) => {
     state: userData.state,
     referrer: userData.referrer,
   });
-  window.analytics.track("Landing Page - Onboarding - Account Created", {
+  window.analytics.track("Signup - Account Created", {
     city: userData.city,
     state: userData.state,
     referrer: userData.referrer,

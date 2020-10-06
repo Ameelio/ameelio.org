@@ -5,7 +5,7 @@ export function numberWithCommas(x: number): string {
 export function getApiUrl(): string {
   if (process.env.NODE_ENV === "production") {
     return (
-      process.env.REACT_APP_API_URL_STAGING || "http://127.0.0.1:8000/api/"
+      process.env.REACT_APP_API_URL_PRODUCTION || "http://127.0.0.1:8000/api/"
     );
   } else {
     return (
