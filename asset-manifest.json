@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/static/css/main.082d14f2.chunk.css",
-    "main.js": "/static/js/main.09b320de.chunk.js",
-    "main.js.map": "/static/js/main.09b320de.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.625fd12f.js",
-    "runtime-main.js.map": "/static/js/runtime-main.625fd12f.js.map",
+    "main.css": "/static/css/main.e2d803b5.chunk.css",
+    "main.js": "/static/js/main.92064144.chunk.js",
+    "main.js.map": "/static/js/main.92064144.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.35036d0e.js",
+    "runtime-main.js.map": "/static/js/runtime-main.35036d0e.js.map",
     "static/css/2.eb43dee1.chunk.css": "/static/css/2.eb43dee1.chunk.css",
-    "static/js/2.3432d432.chunk.js": "/static/js/2.3432d432.chunk.js",
-    "static/js/2.3432d432.chunk.js.map": "/static/js/2.3432d432.chunk.js.map",
+    "static/js/2.ec82fbb8.chunk.js": "/static/js/2.ec82fbb8.chunk.js",
+    "static/js/2.ec82fbb8.chunk.js.map": "/static/js/2.ec82fbb8.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.4561e447b44caa321335f86645338513.js": "/precache-manifest.4561e447b44caa321335f86645338513.js",
+    "precache-manifest.b599a78a98a158740bce1b1a4cce1213.js": "/precache-manifest.b599a78a98a158740bce1b1a4cce1213.js",
     "service-worker.js": "/service-worker.js",
     "static/css/2.eb43dee1.chunk.css.map": "/static/css/2.eb43dee1.chunk.css.map",
-    "static/css/main.082d14f2.chunk.css.map": "/static/css/main.082d14f2.chunk.css.map",
-    "static/js/2.3432d432.chunk.js.LICENSE.txt": "/static/js/2.3432d432.chunk.js.LICENSE.txt",
+    "static/css/main.e2d803b5.chunk.css.map": "/static/css/main.e2d803b5.chunk.css.map",
+    "static/js/2.ec82fbb8.chunk.js.LICENSE.txt": "/static/js/2.ec82fbb8.chunk.js.LICENSE.txt",
     "static/media/Adam.png": "/static/media/Adam.6d896719.png",
     "static/media/Adryann.png": "/static/media/Adryann.7cfa55fa.png",
     "static/media/Alisa.png": "/static/media/Alisa.8242aa46.png",
@@ -98,10 +98,10 @@
     "static/media/trends.png": "/static/media/trends.f223b169.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.625fd12f.js",
+    "static/js/runtime-main.35036d0e.js",
     "static/css/2.eb43dee1.chunk.css",
-    "static/js/2.3432d432.chunk.js",
-    "static/css/main.082d14f2.chunk.css",
-    "static/js/main.09b320de.chunk.js"
+    "static/js/2.ec82fbb8.chunk.js",
+    "static/css/main.e2d803b5.chunk.css",
+    "static/js/main.92064144.chunk.js"
   ]
 }
