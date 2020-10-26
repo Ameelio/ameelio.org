@@ -17,29 +17,12 @@ const Careers: React.FC = () => {
 
   const full_time = [
     new Job(
-      "Full-Stack Developers (Contract, 6-months)",
-      "We're looking for senior developers that are motivated to help us create the nation's first free prison videoconferencing platform."
+      "Software Engineer",
+      "We're looking for developers that are motivated to help us create the nation's first free prison videoconferencing platform."
     ),
   ];
 
-  const volunteer = [
-    new Job(
-      "Developers",
-      "We're looking for developers that can help us make better, faster, and smarter code."
-    ),
-    new Job(
-      "Growth Hackers",
-      "We're looking for growth hackers to help us expand user acquisition and improve retention."
-    ),
-    new Job(
-      "Product Designer",
-      "We're looking for product designers to help us create beautiful products that people love to use."
-    ),
-    new Job(
-      "Writers",
-      "We're looking for writers to help us communicate our work to users, donors, and more. Any background in criminal justice and/or journalism is preferred."
-    ),
-  ];
+  const volunteer = [];
 
   return (
     <div
@@ -64,7 +47,7 @@ const Careers: React.FC = () => {
                 />
               );
             })}
-            <div className="careers-main-title">Volunteer positions</div>
+            {/* <div className="careers-main-title">Volunteer positions</div>
             <div className="careers-subtitle">
               Right now, we're only looking for volunteers able to commit 20+
               hours per week.
@@ -79,7 +62,7 @@ const Careers: React.FC = () => {
                   type="volunteer"
                 />
               );
-            })}
+            })} */}
             <div className="careers-main-title">Media Inquiries</div>
             <div className="media-contact-container d-flex flex-column flex-md-row  align-items-md-center">
               <div className="media-contact-description">
@@ -87,7 +70,7 @@ const Careers: React.FC = () => {
               </div>
               <button
                 className="media-contact-button mt-3 mt-md-0"
-                onClick={() => window.open(`mailto:zo@ameelio.org`)}
+                onClick={() => window.open(`mailto:nikki@ameelio.org`)}
               >
                 Contact Us
               </button>
@@ -95,7 +78,7 @@ const Careers: React.FC = () => {
           </div>
         </div>
       </div>
-      <img className="careers-background" src={background} alt="" />
+      {/* <img className="careers-background" src={background} alt="" /> */}
     </div>
   );
 };

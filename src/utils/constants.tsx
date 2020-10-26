@@ -16,7 +16,6 @@ import Kiran from "src/assets/Team/Kiran.png";
 import Alisa from "src/assets/Team/Alisa.png";
 import Isis from "src/assets/Team/Isis.png";
 import Kevin from "src/assets/Team/Kevin.png";
-import Joy from "src/assets/Team/Joy.png";
 import Adam from "src/assets/Team/Adam.png";
 import Andrew from "src/assets/Team/Andrew.png";
 import Nikki from "src/assets/Team/Nikki.png";
@@ -41,6 +40,7 @@ import Robinhood from "src/assets/supporters/robinhood.png";
 import FastForward from "src/assets/supporters/ffw.png";
 import SchmidtFuture from "src/assets/supporters/SchmidtFuture.png";
 import Google from "src/assets/supporters/Google.png";
+import NYCT from "src/assets/supporters/NYCT.jpg";
 
 // Law Firms
 import Wilson from "src/assets/LawFirms/Wilson.jpg";
@@ -111,9 +111,9 @@ export enum APP_STORES {
 }
 
 export const IMPACT_METRICS = [
-  { image: Family, metric: ">10,000", label: "Families served" },
-  { image: Mailbox, metric: ">50,000", label: "Letters sent" },
-  { image: Globe, metric: ">11,000", label: "Incarcerated people reached" },
+  { image: Family, metric: ">20,000", label: "Families served" },
+  { image: Mailbox, metric: ">100,000", label: "Mail sent" },
+  { image: Globe, metric: ">23,000", label: "Incarcerated people reached" },
 ];
 
 export const TECH_BOARD: BoardMember[] = [
@@ -216,11 +216,11 @@ export const MEMBERS: Member[] = [
     img: Lara,
     title: "Engineering",
   },
-  {
-    name: "Jenny Lee",
-    img: Jenny,
-    title: "Social Media",
-  },
+  // {
+  //   name: "Jenny Lee",
+  //   img: Jenny,
+  //   title: "Social Media",
+  // },
   {
     name: "Mark Pekala",
     img: Mark,
@@ -266,11 +266,11 @@ export const MEMBERS: Member[] = [
     img: Adam,
     title: "Engineering",
   },
-  {
-    name: "Joy Qiu",
-    img: Joy,
-    title: "Engineering",
-  },
+  // {
+  //   name: "Joy Qiu",
+  //   img: Joy,
+  //   title: "Engineering",
+  // },
   {
     name: "Nikki Baim",
     img: Nikki,
@@ -282,9 +282,10 @@ export const FOUNDATIONS: Supporter[] = [
   { name: "Jack Dorsey" },
   { name: "Schmidt Futures", image: SchmidtFuture },
   { name: "Robinhood Foundation", image: Robinhood },
+  { name: "The New York Community Trust", image: NYCT },
   { name: "Mozilla Foundation", image: Mozilla },
   { name: "Fast Forward", image: FastForward },
-  { name: "Google.org", image: Google },
+  { name: "Google", image: Google },
   { name: "Paige Henchen" },
 ];
 

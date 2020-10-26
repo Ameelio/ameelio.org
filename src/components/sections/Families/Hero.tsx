@@ -13,10 +13,10 @@ type LetterCounter = {
 
 export default class Hero extends Component<{}, LetterCounter> {
   tick() {
-    const MAIL_SENT = 54000;
-    const weekly_letters = 3300;
+    const MAIL_SENT = 106126;
+    const weekly_letters = 9000;
     const increment_seconds = weekly_letters / 604800;
-    const startDate = new Date(2020, 8, 15, 0, 0, 0, 0);
+    const startDate = new Date(2020, 9, 26, 0, 0, 0, 0);
     const today = new Date();
 
     const dif = today.getTime() - startDate.getTime();
