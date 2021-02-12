@@ -5,20 +5,17 @@ import Mailbox from "src/assets/WhyAmeelio/Mailbox.svg";
 // Team
 import Zo from "src/assets/Team/Zo.png";
 import Gabe from "src/assets/Team/Gabe.png";
-import Emma from "src/assets/Team/Emma.png";
-import Lara from "src/assets/Team/Lara.png";
 import Jesse from "src/assets/Team/Jesse.png";
-import Jenny from "src/assets/Team/Jenny.png";
 import Mark from "src/assets/Team/Mark.png";
 import Liz from "src/assets/Team/Liz.png";
-import Joyce from "src/assets/Team/Joyce.png";
-import Kiran from "src/assets/Team/Kiran.png";
-import Alisa from "src/assets/Team/Alisa.png";
 import Isis from "src/assets/Team/Isis.png";
-import Kevin from "src/assets/Team/Kevin.png";
-import Adam from "src/assets/Team/Adam.png";
 import Andrew from "src/assets/Team/Andrew.png";
-import Nikki from "src/assets/Team/Nikki.png";
+import Pallavi from "src/assets/Team/Pallavi.png";
+import Tony from "src/assets/Team/Tony.png";
+import Anthony from "src/assets/Team/Anthony.png";
+import LizGray from "src/assets/Team/LizGray.png";
+import Ceci from "src/assets/Team/Ceci.png";
+import Kamrym from "src/assets/Team/Kamrym.png";
 
 // Board
 import Angel from "src/assets/Board/Angel.png";
@@ -88,7 +85,7 @@ export enum PLACEMENT {
 
 export enum LINKS {
   LOGIN = "https://letters.ameelio.org/login",
-  ORGS_DEMO = "https://calendly.com/emma-gray-ameelio/letters-for-organizations-information-session",
+  ORGS_DEMO = "https://team202897.typeform.com/to/mZts2kPD",
   DONATION = "https://letters.ameelio.org/donate",
   APPLE_STORE = "https://apps.apple.com/us/app/ameelio/id1526489300",
   GOOGLE_PLAY = "https://play.google.com/store/apps/details?id=com.ameelio.letters_mobile&utm_source=website&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1",
@@ -201,34 +198,13 @@ export const MEMBERS: Member[] = [
     title: "Co-Founder",
   },
   {
-    name: "Emma Gray",
-    img: Emma,
-    title: "Partnerships",
-  },
-
-  {
     name: "Jesse Horne",
     img: Jesse,
     title: "Engineering",
   },
   {
-    name: "Lara Schull",
-    img: Lara,
-    title: "Engineering",
-  },
-  // {
-  //   name: "Jenny Lee",
-  //   img: Jenny,
-  //   title: "Social Media",
-  // },
-  {
     name: "Mark Pekala",
     img: Mark,
-    title: "Engineering",
-  },
-  {
-    name: "Joyce Wu",
-    img: Joyce,
     title: "Engineering",
   },
   {
@@ -237,44 +213,44 @@ export const MEMBERS: Member[] = [
     title: "Policy",
   },
   {
-    name: "Kevin Zhang",
-    img: Kevin,
-    title: "Product",
-  },
-  {
     name: "Andrew Lama",
     img: Andrew,
     title: "Policy",
   },
   {
-    name: "Kiran Chokshi",
-    img: Kiran,
-    title: "Finance",
-  },
-  {
     name: "Isis Decrem",
     img: Isis,
-    title: "Storytelling",
+    title: "Fundraising",
   },
   {
-    name: "Alisa Chokshi",
-    img: Alisa,
-    title: "Storytelling",
-  },
-  {
-    name: "Adam Sarsony",
-    img: Adam,
+    name: "Anthony Bau",
+    img: Anthony,
     title: "Engineering",
   },
-  // {
-  //   name: "Joy Qiu",
-  //   img: Joy,
-  //   title: "Engineering",
-  // },
   {
-    name: "Nikki Baim",
-    img: Nikki,
-    title: "Communications",
+    name: "Kamrym Moe",
+    img: Kamrym,
+    title: "Fundraising",
+  },
+  {
+    name: "Pallavi Kenkare",
+    img: Pallavi,
+    title: "Grantwriting",
+  },
+  {
+    name: "Elizabeth Gray",
+    img: LizGray,
+    title: "Design",
+  },
+  {
+    name: "Cecilia Abeid",
+    img: Ceci,
+    title: "Design",
+  },
+  {
+    name: "Luis Pedraza",
+    img: Tony,
+    title: "Engineering",
   },
 ];
 

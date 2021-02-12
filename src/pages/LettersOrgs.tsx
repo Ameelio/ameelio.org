@@ -1,7 +1,7 @@
 import React, { ReactElement } from "react";
-import LogoRow from "src/components/LogoRow/LogoRow";
+// import LogoRow from "src/components/LogoRow/LogoRow";
 import Hero from "src/components/sections/Orgs/Hero";
-import { PartnerOrgs } from "src/utils/constants";
+// import { PartnerOrgs } from "src/utils/constants";
 import UseCases from "src/components/sections/Orgs/UseCases";
 import OrgsTestimonials from "src/components/sections/Orgs/OrgTestimonials";
 

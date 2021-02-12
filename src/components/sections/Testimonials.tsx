@@ -4,7 +4,6 @@ import Carousel from "react-bootstrap/Carousel";
 import Image from "react-bootstrap/Image";
 import Carol from "src/assets/Testimonials/Carol.png";
 import Shari from "src/assets/Testimonials/Shari.png";
-import Kimberly from "src/assets/Testimonials/Kimberly.jpg";
 import Trish from "src/assets/Testimonials/Trish.png";
 
 interface Testimonial {

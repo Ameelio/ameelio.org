@@ -13,16 +13,12 @@ class Job {
 }
 
 const Careers: React.FC = () => {
-  const background: any = require("src/assets/positions_background.png");
-
   const full_time = [
     new Job(
       "Software Engineer",
       "We're looking for developers that are motivated to help us create the nation's first free prison videoconferencing platform."
     ),
   ];
-
-  const volunteer = [];
 
   return (
     <div
@@ -70,7 +66,7 @@ const Careers: React.FC = () => {
               </div>
               <button
                 className="media-contact-button mt-3 mt-md-0"
-                onClick={() => window.open(`mailto:nikki@ameelio.org`)}
+                onClick={() => window.open(`mailto:zo@ameelio.org`)}
               >
                 Contact Us
               </button>
