@@ -16,6 +16,7 @@ import Anthony from "src/assets/Team/Anthony.png";
 import LizGray from "src/assets/Team/LizGray.png";
 import Ceci from "src/assets/Team/Ceci.png";
 import Kamrym from "src/assets/Team/Kamrym.png";
+import David from "src/assets/Team/David.png";
 
 // Board
 import Angel from "src/assets/Board/Angel.png";
@@ -30,6 +31,10 @@ import Shon from "src/assets/Board/Shon.png";
 import Raph from "src/assets/Board/Raph.png";
 import RJ from "src/assets/Board/RJ.png";
 import Deray from "src/assets/Board/Deray.png";
+import Cindy from "src/assets/Board/Cindy.png";
+import Jeff from "src/assets/Board/Jeff.png";
+import Doruk from "src/assets/Board/Doruk.png";
+import Grace from "src/assets/Board/Grace.png";
 
 // Supporters
 import Mozilla from "src/assets/supporters/mozilla.png";
@@ -38,6 +43,8 @@ import FastForward from "src/assets/supporters/ffw.png";
 import SchmidtFuture from "src/assets/supporters/SchmidtFuture.png";
 import Google from "src/assets/supporters/Google.png";
 import NYCT from "src/assets/supporters/NYCT.jpg";
+import ABE from "src/assets/supporters/ABE.png";
+import Uncharted from "src/assets/supporters/Uncharted.png";
 
 // Law Firms
 import Wilson from "src/assets/LawFirms/Wilson.jpg";
@@ -121,10 +128,28 @@ export const TECH_BOARD: BoardMember[] = [
     company: "Facebook",
   },
   {
-    img: Jan,
-    name: "Jan Jedrzejowicz",
-    title: "Product Lead",
-    company: "Google ",
+    img: Raph,
+    name: "Raphael Lee",
+    title: "Co-Founder",
+    company: "U.S. Digital Response",
+  },
+  {
+    img: Grace,
+    name: "Grace Garey",
+    title: "Co-Founder",
+    company: "Watsi",
+  },
+  {
+    img: Jeff,
+    name: "Jeff Kaiser",
+    title: "Co-Founder",
+    company: "Propel",
+  },
+  {
+    img: Doruk,
+    name: "Doruk Gurel",
+    title: "Product Strategist",
+    company: "Wells Fargo",
   },
   { img: Bart, name: "Bart Decrem", title: "Studio Lead", company: "Mozilla" },
   {
@@ -134,16 +159,16 @@ export const TECH_BOARD: BoardMember[] = [
     company: "Mozilla",
   },
   {
-    img: Raph,
-    name: "Raphael Lee",
-    title: "Project Co-Lead",
-    company: "U.S. Digital Response",
-  },
-  {
     img: RJ,
     name: "RJ Fox",
-    title: "Growth Marketing Director",
+    title: "Director of Marketing",
     company: "LinkedIn",
+  },
+  {
+    img: Jan,
+    name: "Jan Jedrzejowicz",
+    title: "Product Lead",
+    company: "Google ",
   },
 ];
 
@@ -181,6 +206,12 @@ export const JUSTICE_BOARD: BoardMember[] = [
   {
     img: Deray,
     name: "DeRay McKesson",
+    title: "Co-Founder",
+    company: "Campaign Zero",
+  },
+  {
+    img: Cindy,
+    name: "Cindy Weining",
     title: "Co-Founder",
     company: "Campaign Zero",
   },
@@ -240,7 +271,7 @@ export const MEMBERS: Member[] = [
   {
     name: "Elizabeth Gray",
     img: LizGray,
-    title: "Design",
+    title: "Product",
   },
   {
     name: "Cecilia Abeid",
@@ -252,6 +283,11 @@ export const MEMBERS: Member[] = [
     img: Tony,
     title: "Engineering",
   },
+  {
+    name: "David Lilienfield",
+    img: David,
+    title: "Finance",
+  },
 ];
 
 export const FOUNDATIONS: Supporter[] = [
@@ -262,7 +298,13 @@ export const FOUNDATIONS: Supporter[] = [
   { name: "Mozilla Foundation", image: Mozilla },
   { name: "Fast Forward", image: FastForward },
   { name: "Google", image: Google },
+  { name: "American Bar Endowment", image: ABE },
+  { name: "Jack Smith" },
   { name: "Paige Henchen" },
+  { name: "Uncharted", image: Uncharted },
+  { name: "Kevin Ryan" },
+  { name: "Edward S. Moore Family Foundation" },
+  { name: "Cindy Wenig" },
 ];
 
 export const LAW_FIRMS: Supporter[] = [
