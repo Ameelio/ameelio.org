@@ -27,10 +27,12 @@ export default function GlassCase(): ReactElement {
           lasting memories.
         </span>
       </div>
-      <div className="d-flex flex-row w-100 justify-content-center mt-5 scrolling-wrapper-flexbox">
-        {CARDS.map((card) => (
-          <GlassCaseCard name={card.name} image={card.image} />
-        ))}
+      <div className="d-flex w-100 justify-content-center">
+        <div className="d-flex flex-row mt-5 scrolling-wrapper-flexbox">
+          {CARDS.map((card) => (
+            <GlassCaseCard name={card.name} image={card.image} />
+          ))}
+        </div>
       </div>
     </section>
   );
