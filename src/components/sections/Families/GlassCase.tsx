@@ -1,4 +1,4 @@
-import React, { ReactElement } from "react";
+import React, { ReactElement, useEffect } from "react";
 import GlassCaseCard, {
   GlassCaseCardProps,
 } from "src/components/cards/GlassCaseCard";
@@ -16,9 +16,20 @@ export default function GlassCase(): ReactElement {
     { name: "Beautiful", image: Scenery },
     { name: "Fun", image: Game },
   ];
+  
+  const scroller = React.createRef();
+  const scrollToCenter = () => {
+    const element = scroller.current;
+    element.scrollLeft = (element.scrollWidth - element.offsetWidth) / 2;
+  }
+
+  useEffect(() => {
+    scrollToCenter();
+  });
+
   return (
     <section className="d-flex blue-200-bg flex-column align-items-center py-5">
-      <div className="d-flex flex-column justify-content-center text-center px-3">
+      <div className="d-flex flex-column justify-content-center text-center px-3" ref={scroller}>
         <span className="dark p2 font-weight-bold">
           Always stay close, no matter the distance.
         </span>
